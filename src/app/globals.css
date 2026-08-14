@@ -23,6 +23,11 @@
   --font-sans: var(--font-geist);
   --font-mono: var(--font-geist);
   --shadow-soft: 0 12px 32px rgba(23, 37, 31, 0.08);
+  --shadow-btn: 0 1.67px 4.18px rgba(181, 186, 203, 0.31),
+    0 17.57px 10.88px rgba(181, 187, 203, 0.16),
+    0 31.8px 12.55px rgba(181, 187, 203, 0.05),
+    0 50.2px 14.23px rgba(181, 187, 203, 0.01),
+    inset 0 7px 32px 1px rgba(255, 255, 255, 1);
   --animate-fade-in: fade-in 0.6s ease-out forwards;
   --animate-fade-up: fade-up 0.6s ease-out forwards;
   --animate-slide-in-right: slide-in-right 0.6s ease-out forwards;

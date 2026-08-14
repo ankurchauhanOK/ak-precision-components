@@ -18,13 +18,12 @@ export default function Button({
   onClick,
 }: ButtonProps) {
   const base =
-    "inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl text-sm font-medium transition-all duration-200";
+    "inline-flex items-center justify-center gap-2 px-5 py-[15px] rounded-[50px] text-sm font-medium bg-[#F0F2F5] text-[#315C4A] border border-white/40 shadow-btn transition-all duration-200 hover:bg-white";
 
   const variants = {
-    primary: "bg-deep-forest text-white hover:bg-forest shadow-sm",
-    secondary: "bg-action-green text-white hover:bg-action-green-dark shadow-sm",
-    outline:
-      "border border-light-sage text-deep-forest hover:border-deep-forest hover:bg-light-sage/40",
+    primary: "",
+    secondary: "",
+    outline: "",
   };
 
   const content = (
