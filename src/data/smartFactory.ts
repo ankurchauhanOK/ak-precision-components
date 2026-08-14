@@ -27,12 +27,12 @@ export const hero = {
   headline: [
     [
       { text: "Precision", color: "forest" },
-      { text: " parts.", color: "deep-forest" },
+      { text: " parts.", color: "sage" },
     ],
-    [{ text: "Built for machines", color: "deep-forest" }],
+    [{ text: "Built for machines", color: "sage" }],
     [
-      { text: "that can't afford to be ", color: "deep-forest" },
-      { text: "average.", color: "action-green" },
+      { text: "that can't afford to ", color: "forest" },
+      { text: "be average.", color: "sage" },
     ],
   ],
   cta: "Book a Demo",
