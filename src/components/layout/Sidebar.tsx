@@ -123,7 +123,7 @@ export default function Sidebar() {
         </div>
       </header>
 
-      <aside className="hidden lg:flex fixed inset-y-0 left-0 z-40 w-[240px] flex-col bg-white border-r border-light-sage">
+      <aside className="hidden lg:flex w-[340px] flex-col bg-white border-r border-light-sage">
         <div className="px-6 pt-8 pb-7">
           <Logo />
         </div>
@@ -144,7 +144,7 @@ export default function Sidebar() {
               aria-hidden
             />
             <motion.aside
-              className="fixed inset-y-0 left-0 z-50 w-[280px] flex flex-col bg-white border-r border-light-sage lg:hidden"
+              className="fixed inset-y-0 left-0 z-50 w-[340px] flex flex-col bg-white border-r border-light-sage lg:hidden"
               initial={{ x: -280 }}
               animate={{ x: 0 }}
               exit={{ x: -280 }}
