@@ -23,9 +23,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${geist.variable} scroll-smooth`}>
-      <body className="flex flex-col lg:flex-row min-h-screen lg:h-screen lg:overflow-hidden bg-warm-bg text-deep-forest font-sans antialiased">
+      <body className="flex flex-col lg:flex-row min-h-screen lg:h-screen lg:overflow-hidden bg-viewport-bg text-deep-forest font-sans antialiased">
         <Sidebar />
-        <div className="flex flex-col flex-1 min-w-0 lg:mt-6 lg:ml-6 lg:mr-6 lg:h-[calc(100vh-24px)] lg:overflow-y-auto bg-white lg:rounded-tl-[30px] lg:rounded-tr-[30px] lg:shadow-soft lg:ring-1 lg:ring-black/5">
+        <div className="flex flex-col flex-1 min-w-0 lg:mt-6 lg:ml-6 lg:mr-6 lg:h-[calc(100vh-24px)] lg:overflow-y-auto bg-warm-bg lg:rounded-tl-[30px] lg:rounded-tr-[30px] lg:shadow-soft">
           <div className="flex-1 px-6 md:px-16 lg:px-[120px]">
             <main className="flex-1">{children}</main>
           </div>

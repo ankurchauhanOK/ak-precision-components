@@ -47,7 +47,7 @@ const products = [
 export default function SoftwarePage() {
   return (
     <>
-      <section className="pt-32 pb-20 bg-gradient-to-b from-white to-warm-bg">
+      <section className="pt-32 pb-20 bg-warm-bg">
         <Container>
           <div className="max-w-3xl">
             <p className="text-xs font-medium text-forest uppercase tracking-[0.16em] mb-3">

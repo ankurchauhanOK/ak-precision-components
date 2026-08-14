@@ -26,7 +26,7 @@ function HeadlineLine({ segments }: { segments: { text: string; color: string }[
 
 export default function HeroSection() {
   return (
-    <section className="bg-white pt-20 md:pt-24 pb-16 md:pb-20">
+    <section className="bg-warm-bg pt-20 md:pt-24 pb-16 md:pb-20">
       <div className="w-full">
         <div className="flex flex-col items-start text-left">
           <motion.p

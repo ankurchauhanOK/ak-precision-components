@@ -107,7 +107,7 @@ export default function ProjectsPage() {
     activeFilter === "All" || activeFilter === "Software";
 
   return (
-    <section className="pt-16 md:pt-24 pb-16 md:pb-24 bg-white">
+    <section className="pt-16 md:pt-24 pb-16 md:pb-24 bg-warm-bg">
       <Container>
         <AnimatedSection>
           <div className="max-w-[640px]">

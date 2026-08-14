@@ -7,7 +7,7 @@ import { videoStory } from "@/data/smartFactory";
 
 export default function PrecisionInMotionSection() {
   return (
-    <section className="bg-white pt-0 pb-16 md:pb-24">
+    <section className="bg-warm-bg pt-0 pb-16 md:pb-24">
       <div className="w-full">
         <div className="flex flex-col items-center text-center">
           <motion.div
