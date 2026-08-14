@@ -24,11 +24,11 @@ export default function PrecisionInMotionSection() {
             <div className="mt-6 md:mt-8 flex flex-wrap items-center justify-center gap-2 md:gap-3">
               {videoStory.steps.map((step, i) => (
                 <span key={step} className="flex items-center gap-2 md:gap-3">
-                  <span className="text-xs font-medium text-gray-metallic uppercase tracking-[0.2em]">
+                  <span className="text-xs font-medium text-sage uppercase tracking-[0.2em]">
                     {step}
                   </span>
                   {i < videoStory.steps.length - 1 && (
-                    <span className="text-accent-blue text-xs" aria-hidden>
+                    <span className="text-forest text-xs" aria-hidden>
                       →
                     </span>
                   )}

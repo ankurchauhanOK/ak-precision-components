@@ -25,9 +25,15 @@ export const site = {
 export const hero = {
   eyebrow: "Precision Manufacturing + Industry 4.0",
   headline: [
-    { text: "Precision parts.", accent: "Precision" },
-    { text: "Built for machines", accent: "" },
-    { text: "that can't afford to be average.", accent: "average." },
+    [
+      { text: "Precision", color: "forest" },
+      { text: " parts.", color: "deep-forest" },
+    ],
+    [{ text: "Built for machines", color: "deep-forest" }],
+    [
+      { text: "that can't afford to be ", color: "deep-forest" },
+      { text: "average.", color: "action-green" },
+    ],
   ],
   cta: "Book a Demo",
   ctaHref: "/contact",
@@ -44,14 +50,14 @@ export const machiningCapabilities = {
   rows: [
     {
       tile: "CNC",
-      gradient: "from-accent-blue to-blue-400",
+      gradient: "from-forest to-action-green",
       name: "JYOTI DX 200", // ⚠ SAMPLE — real machine
       type: "CNC Turning Center",
       line: "Max turning dia 200 mm · ±0.005 mm accuracy", // ⚠ SAMPLE — verify from datasheet
     },
     {
       tile: "VMC",
-      gradient: "from-blue-400 to-blue-300",
+      gradient: "from-forest to-action-green",
       name: "ACE VMC 740 PRO", // ⚠ SAMPLE — real machine
       type: "Vertical Machining Center",
       line: "Table 800 × 500 mm · 4-axis capability", // ⚠ SAMPLE — verify from datasheet

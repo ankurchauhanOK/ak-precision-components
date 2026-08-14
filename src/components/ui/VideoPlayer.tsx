@@ -129,7 +129,7 @@ export default function VideoPlayer({ src, className = "" }: VideoPlayerProps) {
 
   const controlBase = "flex items-center justify-center rounded-lg transition-colors duration-200";
   const controlOnDark = "text-white hover:bg-white/15";
-  const controlOnLight = "text-navy hover:bg-gray-100";
+  const controlOnLight = "text-deep-forest hover:bg-light-sage/40";
   const controlClass = `${controlBase} ${fullscreen ? controlOnDark : controlOnLight}`;
 
   return (
@@ -137,12 +137,12 @@ export default function VideoPlayer({ src, className = "" }: VideoPlayerProps) {
       ref={containerRef}
       className={`w-full rounded-[24px] border shadow-soft ${
         fullscreen
-          ? "bg-navy border-transparent"
-          : "bg-white border-gray-200"
+          ? "bg-deep-forest border-transparent"
+          : "bg-white border-light-sage"
       } ${className}`}
     >
       <div className="p-2">
-        <div className="relative w-full rounded-[16px] bg-navy flex items-center justify-center p-2">
+        <div className="relative w-full rounded-[16px] bg-deep-forest flex items-center justify-center p-2">
           <div
             className={`relative aspect-[16/9] rounded-[16px] overflow-hidden flex-shrink-0 ${
               fullscreen
@@ -189,7 +189,7 @@ export default function VideoPlayer({ src, className = "" }: VideoPlayerProps) {
 
       <div
         className={`flex items-center gap-1.5 px-2 py-2 border-t ${
-          fullscreen ? "border-white/15" : "border-gray-200"
+          fullscreen ? "border-white/15" : "border-light-sage"
         }`}
       >
         <button
@@ -234,23 +234,23 @@ export default function VideoPlayer({ src, className = "" }: VideoPlayerProps) {
         >
           <div
             className={`relative h-1.5 w-full rounded-full overflow-hidden ${
-              fullscreen ? "bg-white/20" : "bg-gray-200"
+              fullscreen ? "bg-white/20" : "bg-light-sage/60"
             }`}
           >
             <div
-              className="absolute inset-y-0 left-0 bg-accent-blue rounded-full"
+              className="absolute inset-y-0 left-0 bg-action-green rounded-full"
               style={{ width: `${progress * 100}%` }}
             />
           </div>
           <div
-            className="absolute top-1/2 -translate-y-1/2 w-3.5 h-3.5 rounded-full bg-accent-blue shadow opacity-0 group-hover:opacity-100 transition-opacity duration-150"
+            className="absolute top-1/2 -translate-y-1/2 w-3.5 h-3.5 rounded-full bg-action-green shadow opacity-0 group-hover:opacity-100 transition-opacity duration-150"
             style={{ left: `calc(${progress * 100}% - 7px)` }}
           />
         </div>
 
         <span
           className={`text-xs tabular-nums font-medium ${
-            fullscreen ? "text-gray-300" : "text-gray-metallic"
+            fullscreen ? "text-light-sage" : "text-sage"
           }`}
         >
           {formatTime(progress * duration)}

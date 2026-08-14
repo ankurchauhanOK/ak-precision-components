@@ -20,40 +20,40 @@ function MachineCard({
 }) {
   const info = (order: string) => (
     <div className={`p-6 md:p-8 lg:p-10 flex flex-col min-w-0 ${order}`}>
-      <span className="text-xs font-medium text-accent-blue tracking-[0.2em]">
+      <span className="text-xs font-medium text-forest tracking-[0.2em]">
         {project.number} — {project.tab}
       </span>
-      <h2 className="mt-3 text-2xl md:text-[30px] font-semibold tracking-tight text-navy">
+      <h2 className="mt-3 text-2xl md:text-[30px] font-semibold tracking-tight text-deep-forest">
         {project.name}
       </h2>
-      <p className="mt-1.5 text-sm font-medium text-accent-blue">
+      <p className="mt-1.5 text-sm font-medium text-forest">
         {project.category}
       </p>
-      <p className="mt-4 text-[15px] md:text-base leading-normal text-gray-metallic max-w-[520px]">
+      <p className="mt-4 text-[15px] md:text-base leading-normal text-sage max-w-[520px]">
         {project.description}
       </p>
 
       <dl className="mt-7 grid grid-cols-2 md:grid-cols-4 gap-x-6 gap-y-5 max-w-[560px]">
         {project.specs.map((spec) => (
           <div key={spec.label}>
-            <dt className="text-xs font-medium uppercase tracking-[0.14em] text-gray-metallic">
+            <dt className="text-xs font-medium uppercase tracking-[0.14em] text-sage">
               {spec.label}
             </dt>
-            <dd className="mt-1 text-base font-medium text-navy">{spec.value}</dd>
+            <dd className="mt-1 text-base font-medium text-deep-forest">{spec.value}</dd>
           </div>
         ))}
       </dl>
 
-      <div className="mt-8 pt-6 border-t border-gray-200 flex flex-col sm:flex-row sm:items-center justify-between gap-5">
+      <div className="mt-8 pt-6 border-t border-light-sage flex flex-col sm:flex-row sm:items-center justify-between gap-5">
         <div>
-          <p className="text-xs font-medium uppercase tracking-[0.14em] text-gray-metallic">
+          <p className="text-xs font-medium uppercase tracking-[0.14em] text-sage">
             {project.rateLabel}
           </p>
-          <p className="mt-1 text-base font-medium text-navy">{project.rateValue}</p>
+          <p className="mt-1 text-base font-medium text-deep-forest">{project.rateValue}</p>
         </div>
         <Link
           href={project.href}
-          className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl text-sm font-medium bg-accent-blue text-white transition-colors duration-200 hover:bg-accent-blue-light"
+          className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl text-sm font-medium bg-action-green text-white transition-colors duration-200 hover:bg-action-green-dark"
         >
           {project.cta}
           <span aria-hidden>→</span>
@@ -64,9 +64,9 @@ function MachineCard({
 
   const imageCol = (order: string) => (
     <div
-      className={`relative ${order} bg-gray-light p-4 md:p-6 flex items-center justify-center ${
+      className={`relative ${order} bg-warm-bg p-4 md:p-6 flex items-center justify-center ${
         mirrored ? "lg:border-r" : "lg:border-l"
-      } border-gray-200`}
+      } border-light-sage`}
     >
       <div className="relative w-full h-56 lg:h-[380px] rounded-xl overflow-hidden bg-white">
         <Image
@@ -80,7 +80,7 @@ function MachineCard({
   );
 
   return (
-    <article className="bg-white rounded-2xl border border-gray-200 shadow-sm overflow-hidden">
+    <article className="bg-white rounded-2xl border border-light-sage shadow-sm overflow-hidden">
       <div className="grid lg:grid-cols-[1fr_360px]">
         {mirrored ? (
           <>
@@ -111,19 +111,19 @@ export default function ProjectsPage() {
       <Container>
         <AnimatedSection>
           <div className="max-w-[640px]">
-            <p className="text-xs font-medium text-accent-blue uppercase tracking-[0.16em]">
+            <p className="text-xs font-medium text-forest uppercase tracking-[0.16em]">
               {projectsPage.eyebrow}
             </p>
-            <h1 className="mt-3 text-[clamp(36px,4vw,48px)] font-semibold leading-[1.1] tracking-tight text-navy">
+            <h1 className="mt-3 text-[clamp(36px,4vw,48px)] font-semibold leading-[1.1] tracking-tight text-deep-forest">
               {projectsPage.heading}
             </h1>
-            <p className="mt-5 text-base md:text-[17px] leading-[1.55] text-gray-metallic max-w-[560px]">
+            <p className="mt-5 text-base md:text-[17px] leading-[1.55] text-sage max-w-[560px]">
               {projectsPage.subhead}
             </p>
           </div>
         </AnimatedSection>
 
-        <div className="mt-10 md:mt-14 rounded-[28px] bg-[#F7F8FA] border border-gray-200/70 shadow-soft px-4 sm:px-6 md:px-10 py-6 md:py-10">
+        <div className="mt-10 md:mt-14 rounded-[28px] bg-[#F7F8FA] border border-light-sage/70 shadow-soft px-4 sm:px-6 md:px-10 py-6 md:py-10">
           <div className="flex gap-2 flex-nowrap overflow-x-auto">
             {filters.map((f) => {
               const active = activeFilter === f;
@@ -135,8 +135,8 @@ export default function ProjectsPage() {
                   aria-pressed={active}
                   className={`shrink-0 px-4 py-1.5 rounded-full text-sm font-medium transition-colors duration-200 ${
                     active
-                      ? "bg-white text-navy shadow-soft border border-gray-200"
-                      : "text-gray-metallic hover:text-navy border border-transparent"
+                      ? "bg-white text-deep-forest shadow-soft border border-light-sage"
+                      : "text-sage hover:text-deep-forest border border-transparent"
                   }`}
                 >
                   {f}
@@ -159,11 +159,11 @@ export default function ProjectsPage() {
                   <MachineCard project={projectsPage.projects[0]} />
 
                   <div className="py-2 text-center">
-                    <p className="text-[15px] md:text-base text-gray-metallic leading-normal">
+                    <p className="text-[15px] md:text-base text-sage leading-normal">
                       {projectsPage.statement.text}{" "}
                       <Link
                         href={projectsPage.statement.href}
-                        className="text-accent-blue font-medium hover:text-accent-blue-light transition-colors"
+                        className="text-forest font-medium hover:text-sage transition-colors"
                       >
                         {projectsPage.statement.linkText}
                         <span aria-hidden> →</span>

@@ -21,10 +21,10 @@ export default function Button({
     "inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl text-sm font-medium transition-all duration-200";
 
   const variants = {
-    primary: "bg-navy text-white hover:bg-navy-light shadow-sm",
-    secondary: "bg-accent-blue text-white hover:bg-accent-blue-light shadow-sm",
+    primary: "bg-deep-forest text-white hover:bg-forest shadow-sm",
+    secondary: "bg-action-green text-white hover:bg-action-green-dark shadow-sm",
     outline:
-      "border border-gray-300 text-navy hover:border-navy hover:bg-gray-50",
+      "border border-light-sage text-deep-forest hover:border-deep-forest hover:bg-light-sage/40",
   };
 
   const content = (

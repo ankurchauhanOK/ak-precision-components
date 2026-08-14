@@ -26,24 +26,24 @@ const footerLinks = {
 
 export default function Footer() {
   return (
-    <footer className="bg-navy text-white">
+    <footer className="bg-deep-forest text-white">
       <div className="w-full py-16">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           <div className="col-span-2 md:col-span-1">
             <Link href="/" className="text-xl font-semibold tracking-tight">
-              AK<span className="text-accent-blue">.</span>
-              <span className="hidden sm:inline text-xs text-gray-400 font-normal ml-2">
+              AK<span className="text-forest">.</span>
+              <span className="hidden sm:inline text-xs text-sage font-normal ml-2">
                 Precision Components
               </span>
             </Link>
-            <p className="mt-3 text-sm text-gray-400 leading-normal">
+            <p className="mt-3 text-sm text-sage leading-normal">
               Precision component manufacturing and practical Industry 4.0
               software for CNC &amp; VMC machine shops.
             </p>
           </div>
           {Object.entries(footerLinks).map(([title, links]) => (
             <div key={title}>
-              <h4 className="text-sm font-medium text-gray-300 uppercase tracking-wider mb-3">
+              <h4 className="text-sm font-medium text-light-sage uppercase tracking-wider mb-3">
                 {title}
               </h4>
               <ul className="space-y-2">
@@ -51,7 +51,7 @@ export default function Footer() {
                   <li key={link.href}>
                     <Link
                       href={link.href}
-                      className="text-sm text-gray-400 hover:text-white transition-colors"
+                      className="text-sm text-sage hover:text-white transition-colors"
                     >
                       {link.label}
                     </Link>
@@ -61,7 +61,7 @@ export default function Footer() {
             </div>
           ))}
         </div>
-        <div className="mt-12 pt-8 border-t border-navy-light flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-gray-500">
+        <div className="mt-12 pt-8 border-t border-forest flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-sage">
           <p>&copy; {new Date().getFullYear()} AK Precision Components.</p>
           <p>Precision Manufacturing. Practical Industry 4.0.</p>
         </div>

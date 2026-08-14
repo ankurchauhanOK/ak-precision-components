@@ -5,14 +5,21 @@ import { motion } from "framer-motion";
 import Button from "@/components/ui/Button";
 import { hero } from "@/data/smartFactory";
 
-function HeadlineLine({ text, accent }: { text: string; accent?: string }) {
-  if (!accent) return <>{text}</>;
-  const [before, after] = text.split(accent);
+const colorClass: Record<string, string> = {
+  forest: "text-forest",
+  "deep-forest": "text-deep-forest",
+  "action-green": "text-action-green",
+  sage: "text-sage",
+};
+
+function HeadlineLine({ segments }: { segments: { text: string; color: string }[] }) {
   return (
     <>
-      {before}
-      <span className="text-accent-blue">{accent}</span>
-      {after}
+      {segments.map((s, i) => (
+        <span key={i} className={colorClass[s.color] ?? "text-deep-forest"}>
+          {s.text}
+        </span>
+      ))}
     </>
   );
 }
@@ -26,7 +33,7 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="text-xs font-medium text-accent-blue uppercase tracking-[0.16em]"
+            className="text-xs font-medium text-forest uppercase tracking-[0.16em]"
           >
             {hero.eyebrow}
           </motion.p>
@@ -35,12 +42,12 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="mt-6 max-w-[1100px] text-[clamp(38px,4.5vw,58px)] font-semibold leading-[1.08] tracking-[-2.24px] text-navy"
+            className="mt-6 max-w-[1100px] text-[clamp(38px,4.5vw,58px)] font-semibold leading-[1.08] tracking-[-2.24px] text-deep-forest"
           >
             {hero.headline.map((line, i) => (
-              <Fragment key={line.text}>
+              <Fragment key={i}>
                 {i > 0 && <br />}
-                <HeadlineLine text={line.text} accent={line.accent} />
+                <HeadlineLine segments={line} />
               </Fragment>
             ))}
           </motion.h1>

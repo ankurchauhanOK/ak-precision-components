@@ -27,16 +27,16 @@ const jobs = [
 export default function CareersPage() {
   return (
     <>
-      <section className="pt-32 pb-20 bg-gradient-to-b from-white to-gray-light">
+      <section className="pt-32 pb-20 bg-gradient-to-b from-white to-warm-bg">
         <Container>
           <div className="max-w-3xl">
-            <p className="text-xs font-medium text-accent-blue uppercase tracking-[0.16em] mb-3">
+            <p className="text-xs font-medium text-forest uppercase tracking-[0.16em] mb-3">
               Careers
             </p>
             <h1 className="text-[clamp(32px,3vw,40px)] font-semibold leading-[1.15] tracking-tight mb-8">
               Join the Team
             </h1>
-            <p className="text-base md:text-[17px] text-gray-metallic leading-[1.5]">
+            <p className="text-base md:text-[17px] text-sage leading-[1.5]">
               Help us build the future of manufacturing — in both physical and
               digital realms.
             </p>
@@ -50,11 +50,11 @@ export default function CareersPage() {
             {jobs.map((job) => (
               <div
                 key={job.title}
-                className="bg-white rounded-2xl border border-gray-100 p-6 flex items-center justify-between hover:shadow-md transition-all"
+                className="bg-white rounded-2xl border border-light-sage p-6 flex items-center justify-between hover:shadow-md transition-all"
               >
                 <div>
-                  <h3 className="font-semibold text-navy">{job.title}</h3>
-                  <p className="text-sm text-gray-metallic">
+                  <h3 className="font-semibold text-deep-forest">{job.title}</h3>
+                  <p className="text-sm text-sage">
                     {job.dept} · {job.type}
                   </p>
                 </div>

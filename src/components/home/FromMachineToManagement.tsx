@@ -25,10 +25,10 @@ export default function FromMachineToManagement() {
   const line4 = useTransform(scrollYProgress, [0.66, 0.8], [0, 1]);
 
   return (
-    <section className="py-20 md:py-28 bg-navy overflow-hidden">
+    <section className="py-20 md:py-28 bg-deep-forest overflow-hidden">
       <Container>
         <div className="text-center mb-14">
-          <p className="text-xs font-medium text-accent-blue-light uppercase tracking-[0.16em] mb-3">
+          <p className="text-xs font-medium text-sage uppercase tracking-[0.16em] mb-3">
             {machineToManagement.eyebrow}
           </p>
           <h2 className="text-[clamp(30px,3vw,40px)] font-semibold leading-[1.15] tracking-tight text-white">
@@ -40,7 +40,7 @@ export default function FromMachineToManagement() {
           {/* SHOP FLOOR */}
           <motion.div style={{ opacity: floorOpacity }}>
             <div className="bg-white/5 border border-white/10 rounded-2xl p-6 text-center">
-              <p className="text-xs font-medium text-gray-400 uppercase tracking-widest mb-4">
+              <p className="text-xs font-medium text-sage uppercase tracking-widest mb-4">
                 Shop Floor
               </p>
               <div className="flex justify-center gap-3 flex-wrap">
@@ -57,7 +57,7 @@ export default function FromMachineToManagement() {
           </motion.div>
 
           {/* CONNECTOR */}
-          <motion.div style={{ scaleY: line1 }} className="h-10 w-px bg-accent-blue-light mx-auto origin-top" />
+          <motion.div style={{ scaleY: line1 }} className="h-10 w-px bg-sage mx-auto origin-top" />
 
           {/* CONNECTIVITY */}
           <motion.div style={{ opacity: connectivityOpacity }}>
@@ -69,22 +69,22 @@ export default function FromMachineToManagement() {
           </motion.div>
 
           {/* CONNECTOR */}
-          <motion.div style={{ scaleY: line2 }} className="h-10 w-px bg-accent-blue-light mx-auto origin-top" />
+          <motion.div style={{ scaleY: line2 }} className="h-10 w-px bg-sage mx-auto origin-top" />
 
           {/* PLATFORM */}
           <motion.div style={{ opacity: platformOpacity }}>
-            <div className="bg-gradient-to-br from-accent-blue to-blue-400 rounded-2xl px-6 py-6 text-center shadow-lg">
+            <div className="bg-gradient-to-br from-forest to-action-green rounded-2xl px-6 py-6 text-center shadow-lg">
               <p className="text-white font-semibold text-lg">
                 {machineToManagement.platform}
               </p>
-              <p className="text-blue-100 text-sm mt-1">
+              <p className="text-sage text-sm mt-1">
                 {machineToManagement.platformSub}
               </p>
             </div>
           </motion.div>
 
           {/* CONNECTOR + SPLIT */}
-          <motion.div style={{ scaleY: line3 }} className="h-10 w-px bg-accent-blue-light mx-auto origin-top" />
+          <motion.div style={{ scaleY: line3 }} className="h-10 w-px bg-sage mx-auto origin-top" />
 
           {/* INTELLIGENCE */}
           <motion.div style={{ opacity: intelligenceOpacity }}>
@@ -94,7 +94,7 @@ export default function FromMachineToManagement() {
                   key={item.label}
                   className="bg-white/5 border border-white/10 rounded-xl px-6 py-4 text-center min-w-28"
                 >
-                  <p className="text-accent-blue-light text-xl mb-1">●</p>
+                  <p className="text-sage text-xl mb-1">●</p>
                   <p className="text-white font-semibold text-sm">{item.label}</p>
                 </div>
               ))}
@@ -102,7 +102,7 @@ export default function FromMachineToManagement() {
           </motion.div>
 
           {/* CONNECTOR */}
-          <motion.div style={{ scaleY: line4 }} className="h-10 w-px bg-accent-blue-light mx-auto origin-top" />
+          <motion.div style={{ scaleY: line4 }} className="h-10 w-px bg-sage mx-auto origin-top" />
 
           {/* MANAGEMENT */}
           <motion.div style={{ opacity: managementOpacity }}>
@@ -117,7 +117,7 @@ export default function FromMachineToManagement() {
         <div className="text-center mt-12">
           <Link
             href="/smart-factory"
-            className="inline-flex items-center gap-2 text-accent-blue-light font-medium hover:text-white transition-colors"
+            className="inline-flex items-center gap-2 text-sage font-medium hover:text-white transition-colors"
           >
             See the full architecture →
           </Link>

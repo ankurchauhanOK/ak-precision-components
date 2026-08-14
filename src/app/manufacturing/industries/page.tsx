@@ -12,16 +12,16 @@ const industries = [
 export default function IndustriesPage() {
   return (
     <>
-      <section className="pt-32 pb-20 bg-gradient-to-b from-white to-gray-light">
+      <section className="pt-32 pb-20 bg-gradient-to-b from-white to-warm-bg">
         <Container>
           <div className="max-w-3xl">
-            <p className="text-xs font-medium text-accent-blue uppercase tracking-[0.16em] mb-3">
+            <p className="text-xs font-medium text-forest uppercase tracking-[0.16em] mb-3">
               Manufacturing
             </p>
             <h1 className="text-[clamp(32px,3vw,40px)] font-semibold leading-[1.15] tracking-tight mb-8">
               Industries We Serve
             </h1>
-            <p className="text-base md:text-[17px] text-gray-metallic leading-[1.5]">
+            <p className="text-base md:text-[17px] text-sage leading-[1.5]">
               Our precision components power critical industries.
             </p>
           </div>
@@ -32,9 +32,9 @@ export default function IndustriesPage() {
         <Container>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {industries.map((ind) => (
-              <div key={ind.name} className="bg-white rounded-2xl border border-gray-100 p-6 hover:shadow-md transition-all">
-                <h3 className="font-semibold text-navy mb-2">{ind.name}</h3>
-                <p className="text-sm text-gray-metallic leading-normal">{ind.desc}</p>
+              <div key={ind.name} className="bg-white rounded-2xl border border-light-sage p-6 hover:shadow-md transition-all">
+                <h3 className="font-semibold text-deep-forest mb-2">{ind.name}</h3>
+                <p className="text-sm text-sage leading-normal">{ind.desc}</p>
               </div>
             ))}
           </div>

@@ -1,26 +1,28 @@
 @import "tailwindcss";
 
 :root {
-  --navy: #0F1B2D;
-  --navy-light: #1a2a4a;
-  --gray-metallic: #667085;
-  --gray-light: #F8FAFC;
-  --accent-blue: #2563EB;
-  --accent-blue-light: #3b82f6;
+  --deep-forest: #17251F;
+  --forest: #315C4A;
+  --action-green: #5D8F68;
+  --action-green-dark: #4A7556;
+  --sage: #8FA99B;
+  --light-sage: #C9D6CE;
+  --warm-bg: #F7F8F5;
   --white: #FFFFFF;
   --black: #0A0A0A;
 }
 
 @theme inline {
-  --color-navy: var(--navy);
-  --color-navy-light: var(--navy-light);
-  --color-gray-metallic: var(--gray-metallic);
-  --color-gray-light: var(--gray-light);
-  --color-accent-blue: var(--accent-blue);
-  --color-accent-blue-light: var(--accent-blue-light);
+  --color-deep-forest: var(--deep-forest);
+  --color-forest: var(--forest);
+  --color-action-green: var(--action-green);
+  --color-action-green-dark: var(--action-green-dark);
+  --color-sage: var(--sage);
+  --color-light-sage: var(--light-sage);
+  --color-warm-bg: var(--warm-bg);
   --font-sans: var(--font-geist);
   --font-mono: var(--font-geist);
-  --shadow-soft: 0 12px 32px rgba(15, 27, 45, 0.08);
+  --shadow-soft: 0 12px 32px rgba(23, 37, 31, 0.08);
   --animate-fade-in: fade-in 0.6s ease-out forwards;
   --animate-fade-up: fade-up 0.6s ease-out forwards;
   --animate-slide-in-right: slide-in-right 0.6s ease-out forwards;

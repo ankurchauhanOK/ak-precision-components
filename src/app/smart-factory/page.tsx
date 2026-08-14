@@ -24,16 +24,16 @@ const statusText: Record<string, string> = {
 export default function SmartFactoryPage() {
   return (
     <>
-      <section className="pt-32 pb-20 bg-gradient-to-b from-white to-gray-light">
+      <section className="pt-32 pb-20 bg-gradient-to-b from-white to-warm-bg">
         <Container>
           <div className="max-w-3xl">
-            <p className="text-xs font-medium text-accent-blue uppercase tracking-[0.16em] mb-3">
+            <p className="text-xs font-medium text-forest uppercase tracking-[0.16em] mb-3">
               {productPage.hero.eyebrow}
             </p>
             <h1 className="text-[clamp(32px,3vw,40px)] font-semibold leading-[1.15] tracking-tight mb-8">
               {productPage.hero.heading}
             </h1>
-            <p className="text-base md:text-[17px] text-gray-metallic leading-[1.5] mb-8">
+            <p className="text-base md:text-[17px] text-sage leading-[1.5] mb-8">
               {productPage.hero.subhead}
             </p>
             <div className="flex flex-wrap gap-4">
@@ -52,7 +52,7 @@ export default function SmartFactoryPage() {
         <Container>
           <AnimatedSection>
             <div className="text-center mb-14">
-              <p className="text-xs font-medium text-accent-blue uppercase tracking-[0.16em] mb-3">
+              <p className="text-xs font-medium text-forest uppercase tracking-[0.16em] mb-3">
                 One Platform
               </p>
               <h2 className="text-[clamp(30px,3vw,40px)] font-semibold leading-[1.15] tracking-tight">
@@ -63,14 +63,14 @@ export default function SmartFactoryPage() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {capabilities.map((cap, i) => (
               <AnimatedSection key={cap.title} delay={i * 0.05}>
-                <div className="bg-white rounded-2xl border border-gray-100 p-6 h-full hover:shadow-md hover:border-gray-200 transition-all duration-300">
+                <div className="bg-white rounded-2xl border border-light-sage p-6 h-full hover:shadow-md hover:border-light-sage transition-all duration-300">
                   <div className="flex items-start justify-between mb-3">
-                    <h3 className="font-semibold text-navy text-lg">{cap.title}</h3>
-                    <span className="text-sm font-medium text-accent-blue">
+                    <h3 className="font-semibold text-deep-forest text-lg">{cap.title}</h3>
+                    <span className="text-sm font-medium text-forest">
                       {cap.number}
                     </span>
                   </div>
-                  <p className="text-sm text-gray-metallic leading-normal">
+                  <p className="text-sm text-sage leading-normal">
                     {cap.desc}
                   </p>
                 </div>
@@ -80,11 +80,11 @@ export default function SmartFactoryPage() {
         </Container>
       </section>
 
-      <section className="py-20 md:py-28 bg-gray-light">
+      <section className="py-20 md:py-28 bg-warm-bg">
         <Container>
           <AnimatedSection>
             <div className="text-center mb-14">
-              <p className="text-xs font-medium text-accent-blue uppercase tracking-[0.16em] mb-3">
+              <p className="text-xs font-medium text-forest uppercase tracking-[0.16em] mb-3">
                 The Dashboard
               </p>
               <h2 className="text-[clamp(30px,3vw,40px)] font-semibold leading-[1.15] tracking-tight">
@@ -94,7 +94,7 @@ export default function SmartFactoryPage() {
           </AnimatedSection>
 
           <AnimatedSection delay={0.1}>
-            <div className="bg-navy rounded-3xl p-6 md:p-10 shadow-2xl border border-navy-light">
+            <div className="bg-deep-forest rounded-3xl p-6 md:p-10 shadow-2xl border border-forest">
               <div className="flex items-center justify-between mb-6 flex-wrap gap-3">
                 <div className="flex items-center gap-2">
                   <span className="w-3 h-3 rounded-full bg-rose-400" />
@@ -102,30 +102,30 @@ export default function SmartFactoryPage() {
                   <span className="w-3 h-3 rounded-full bg-emerald-400" />
                   <span className="ml-3 text-white font-semibold">{dashboard.title}</span>
                 </div>
-                <span className="text-gray-400 text-sm">{dashboard.shift}</span>
+                <span className="text-sage text-sm">{dashboard.shift}</span>
               </div>
 
               <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
                 <div className="bg-white/5 border border-white/10 rounded-2xl p-5">
-                  <p className="text-gray-400 text-sm mb-1">OEE</p>
+                  <p className="text-sage text-sm mb-1">OEE</p>
                   <p className="text-3xl font-semibold text-emerald-400">{dashboard.oee}</p>
                 </div>
                 <div className="bg-white/5 border border-white/10 rounded-2xl p-5">
-                  <p className="text-gray-400 text-sm mb-1">Production</p>
+                  <p className="text-sage text-sm mb-1">Production</p>
                   <p className="text-3xl font-semibold text-white">{dashboard.production}</p>
                 </div>
                 <div className="bg-white/5 border border-white/10 rounded-2xl p-5">
-                  <p className="text-gray-400 text-sm mb-1">Downtime</p>
+                  <p className="text-sage text-sm mb-1">Downtime</p>
                   <p className="text-3xl font-semibold text-white">{dashboard.downtime}</p>
                 </div>
                 <div className="bg-white/5 border border-white/10 rounded-2xl p-5">
-                  <p className="text-gray-400 text-sm mb-1">Efficiency</p>
+                  <p className="text-sage text-sm mb-1">Efficiency</p>
                   <p className="text-3xl font-semibold text-white">{dashboard.efficiency}</p>
                 </div>
               </div>
 
               <div className="bg-white/5 border border-white/10 rounded-2xl overflow-hidden">
-                <div className="grid grid-cols-[1fr_auto_auto_auto] md:grid-cols-[2fr_1fr_1fr_1fr] gap-4 px-6 py-3 text-xs font-medium text-gray-400 uppercase tracking-wider border-b border-white/10">
+                <div className="grid grid-cols-[1fr_auto_auto_auto] md:grid-cols-[2fr_1fr_1fr_1fr] gap-4 px-6 py-3 text-xs font-medium text-sage uppercase tracking-wider border-b border-white/10">
                   <span>Machine</span>
                   <span className="text-right">Status</span>
                   <span className="text-right">Cycle</span>
@@ -140,7 +140,7 @@ export default function SmartFactoryPage() {
                       <p className="text-white font-semibold text-sm">
                         {machine.name}
                       </p>
-                      <p className="text-gray-500 text-xs">{machine.type}</p>
+                      <p className="text-sage text-xs">{machine.type}</p>
                     </div>
                     <p
                       className={`text-sm font-semibold text-right flex items-center justify-end gap-2 ${statusText[machine.status]}`}
@@ -148,8 +148,8 @@ export default function SmartFactoryPage() {
                       <span className={`w-2 h-2 rounded-full ${statusColor[machine.status]}`} />
                       {machine.status}
                     </p>
-                    <p className="text-sm text-gray-300 text-right">{machine.cycleTime}</p>
-                    <p className="text-sm text-gray-300 text-right">
+                    <p className="text-sm text-light-sage text-right">{machine.cycleTime}</p>
+                    <p className="text-sm text-light-sage text-right">
                       {machine.status === "RUNNING" ? `${machine.oee}%` : "—"}
                     </p>
                   </div>
@@ -164,7 +164,7 @@ export default function SmartFactoryPage() {
         <Container>
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <AnimatedSection>
-              <p className="text-xs font-medium text-accent-blue uppercase tracking-[0.16em] mb-3">
+              <p className="text-xs font-medium text-forest uppercase tracking-[0.16em] mb-3">
                 What&apos;s Included
               </p>
               <h2 className="text-[clamp(30px,3vw,40px)] font-semibold leading-[1.15] tracking-tight mb-8">
@@ -172,7 +172,7 @@ export default function SmartFactoryPage() {
               </h2>
               <ul className="space-y-3">
                 {productPage.included.map((item) => (
-                  <li key={item} className="flex items-center gap-3 text-navy font-medium">
+                  <li key={item} className="flex items-center gap-3 text-deep-forest font-medium">
                     <span className="w-6 h-6 rounded-full bg-emerald-500/15 flex items-center justify-center flex-shrink-0">
                       <span className="text-emerald-600 font-semibold text-sm">✓</span>
                     </span>
@@ -183,14 +183,14 @@ export default function SmartFactoryPage() {
             </AnimatedSection>
 
             <AnimatedSection delay={0.1}>
-              <div className="bg-navy rounded-3xl p-8">
-                <p className="text-xs font-medium text-accent-blue-light uppercase tracking-widest mb-6">
+              <div className="bg-deep-forest rounded-3xl p-8">
+                <p className="text-xs font-medium text-sage uppercase tracking-widest mb-6">
                   {productPage.architecture.label}
                 </p>
                 <div className="space-y-0">
                   {productPage.architecture.layers.map((layer, i) => (
                     <div key={layer} className="flex items-start gap-4">
-                      <span className="w-8 h-8 rounded-full bg-white/10 text-accent-blue-light flex items-center justify-center text-sm font-semibold flex-shrink-0">
+                      <span className="w-8 h-8 rounded-full bg-white/10 text-sage flex items-center justify-center text-sm font-semibold flex-shrink-0">
                         {i + 1}
                       </span>
                       <div>
@@ -208,11 +208,11 @@ export default function SmartFactoryPage() {
         </Container>
       </section>
 
-      <section className="py-20 md:py-28 bg-gray-light">
+      <section className="py-20 md:py-28 bg-warm-bg">
         <Container>
           <AnimatedSection>
             <div className="text-center mb-14">
-              <p className="text-xs font-medium text-accent-blue uppercase tracking-[0.16em] mb-3">
+              <p className="text-xs font-medium text-forest uppercase tracking-[0.16em] mb-3">
                 Deployment
               </p>
               <h2 className="text-[clamp(30px,3vw,40px)] font-semibold leading-[1.15] tracking-tight">
@@ -223,10 +223,10 @@ export default function SmartFactoryPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
             {productPage.deployment.map((step, i) => (
               <AnimatedSection key={step.step} delay={i * 0.08}>
-                <div className="bg-white rounded-2xl border border-gray-100 p-6 h-full hover:shadow-md transition-all duration-300">
-                  <p className="text-sm font-medium text-accent-blue mb-3">{step.step}</p>
-                  <h3 className="font-semibold text-navy mb-2">{step.title}</h3>
-                  <p className="text-sm text-gray-metallic leading-normal">{step.desc}</p>
+                <div className="bg-white rounded-2xl border border-light-sage p-6 h-full hover:shadow-md transition-all duration-300">
+                  <p className="text-sm font-medium text-forest mb-3">{step.step}</p>
+                  <h3 className="font-semibold text-deep-forest mb-2">{step.title}</h3>
+                  <p className="text-sm text-sage leading-normal">{step.desc}</p>
                 </div>
               </AnimatedSection>
             ))}
@@ -237,18 +237,18 @@ export default function SmartFactoryPage() {
       <section className="py-20 md:py-28">
         <Container>
           <AnimatedSection>
-            <div className="bg-white rounded-3xl border border-gray-100 p-10 md:p-14 text-center max-w-3xl mx-auto shadow-sm">
-              <p className="text-xs font-medium text-accent-blue uppercase tracking-[0.16em] mb-3">
+            <div className="bg-white rounded-3xl border border-light-sage p-10 md:p-14 text-center max-w-3xl mx-auto shadow-sm">
+              <p className="text-xs font-medium text-forest uppercase tracking-[0.16em] mb-3">
                 {pricing.eyebrow}
               </p>
               <h2 className="text-[clamp(30px,3vw,40px)] font-semibold leading-[1.15] tracking-tight mb-4">
                 {pricing.heading}
               </h2>
-              <p className="text-4xl font-semibold text-navy mb-2">
+              <p className="text-4xl font-semibold text-deep-forest mb-2">
                 {pricing.startingFrom}
               </p>
-              <p className="text-sm text-gray-metallic mb-4">{pricing.range}</p>
-              <p className="text-sm text-gray-metallic max-w-md mx-auto mb-8">
+              <p className="text-sm text-sage mb-4">{pricing.range}</p>
+              <p className="text-sm text-sage max-w-md mx-auto mb-8">
                 {pricing.note}
               </p>
               <Button href="/contact" variant="secondary">

@@ -14,13 +14,13 @@ export default function BuiltAroundMachinesSection() {
       <Container>
         <AnimatedSection>
           <div className="text-center mb-14">
-            <p className="text-xs font-medium text-accent-blue uppercase tracking-[0.16em] mb-3">
+            <p className="text-xs font-medium text-forest uppercase tracking-[0.16em] mb-3">
               {builtAroundMachines.eyebrow}
             </p>
             <h2 className="text-[clamp(30px,3vw,40px)] font-semibold leading-[1.15] tracking-tight">
               {builtAroundMachines.heading}
             </h2>
-            <p className="mt-4 text-gray-metallic max-w-2xl mx-auto leading-normal">
+            <p className="mt-4 text-sage max-w-2xl mx-auto leading-normal">
               {builtAroundMachines.subhead}
             </p>
           </div>
@@ -29,7 +29,7 @@ export default function BuiltAroundMachinesSection() {
         <div className="grid md:grid-cols-2 gap-8">
           {machines.map((machine, i) => (
             <AnimatedSection key={machine.id} delay={i * 0.1}>
-              <div className="bg-white rounded-3xl border border-gray-100 overflow-hidden hover:shadow-md transition-all duration-300 group">
+              <div className="bg-white rounded-3xl border border-light-sage overflow-hidden hover:shadow-md transition-all duration-300 group">
                 <div className="relative h-64 overflow-hidden">
                   <Image
                     src={machine.image}
@@ -44,7 +44,7 @@ export default function BuiltAroundMachinesSection() {
                   </div>
                 </div>
                 <div className="p-6 flex items-center justify-between gap-4">
-                  <p className="text-sm text-gray-metallic">{machine.spec}</p>
+                  <p className="text-sm text-sage">{machine.spec}</p>
                   <span className="flex-shrink-0 text-xs font-medium text-emerald-600 bg-emerald-50 border border-emerald-100 rounded-full px-3 py-1">
                     On our floor
                   </span>

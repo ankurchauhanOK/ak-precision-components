@@ -4,11 +4,11 @@ import { roadmap } from "@/data/smartFactory";
 
 export default function RoadmapSection() {
   return (
-    <section className="py-20 md:py-28 bg-gray-light">
+    <section className="py-20 md:py-28 bg-warm-bg">
       <Container>
         <AnimatedSection>
           <div className="text-center mb-14">
-            <p className="text-xs font-medium text-accent-blue uppercase tracking-[0.16em] mb-3">
+            <p className="text-xs font-medium text-forest uppercase tracking-[0.16em] mb-3">
               {roadmap.eyebrow}
             </p>
             <h2 className="text-[clamp(30px,3vw,40px)] font-semibold leading-[1.15] tracking-tight">
@@ -23,12 +23,12 @@ export default function RoadmapSection() {
               <div className="flex items-start gap-6 group">
                 <div className="flex flex-col items-center flex-shrink-0">
                   <div className="w-16 text-center">
-                    <span className="text-sm font-medium text-accent-blue whitespace-nowrap">
+                    <span className="text-sm font-medium text-forest whitespace-nowrap">
                       {layer.year}
                     </span>
                   </div>
                   {i < roadmap.layers.length - 1 && (
-                    <div className="w-px h-10 bg-gray-200 mt-2" />
+                    <div className="w-px h-10 bg-light-sage/60 mt-2" />
                   )}
                 </div>
                 <div className="pb-10 flex-1">
@@ -36,7 +36,7 @@ export default function RoadmapSection() {
                     {layer.items.map((item) => (
                       <span
                         key={item}
-                        className="text-sm font-semibold text-navy bg-white border border-gray-200 rounded-xl px-4 py-2"
+                        className="text-sm font-semibold text-deep-forest bg-white border border-light-sage rounded-xl px-4 py-2"
                       >
                         {item}
                       </span>
@@ -49,7 +49,7 @@ export default function RoadmapSection() {
         </div>
 
         <AnimatedSection delay={0.2}>
-          <p className="text-center text-gray-metallic max-w-2xl mx-auto leading-normal">
+          <p className="text-center text-sage max-w-2xl mx-auto leading-normal">
             {roadmap.closer}
           </p>
         </AnimatedSection>
