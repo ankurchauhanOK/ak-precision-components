@@ -189,7 +189,7 @@ export default function VideoPlayer({ src, className = "" }: VideoPlayerProps) {
 
       <div
         className={`flex items-center gap-2 px-4 h-[60px] ${
-          fullscreen ? "bg-transparent" : "bg-warm-bg rounded-b-[31px]"
+          fullscreen ? "bg-transparent" : "rounded-b-[31px]"
         }`}
       >
         <button
