@@ -1,11 +1,10 @@
 Sofia Pro font files
 
-Place your licensed Sofia Pro .woff2 files here (e.g. Regular, Medium, Semibold):
+Sofia Pro is wired up in src/app/layout.tsx (next/font/local) from the
+sofia-pro-cufonfonts/ directory and mapped to --font-sans in globals.css.
+Zodiak (variable) is loaded from zodiak-var.woff2 / zodiak-italic.woff2 and
+mapped to --font-display (applied to all h1/h2 via a base rule).
 
-  SofiaPro-Regular.woff2
-  SofiaPro-Medium.woff2
-  SofiaPro-Semibold.woff2
-
-Then wire them up in src/app/layout.tsx with next/font/local and point
---font-sans to the new variable (see the existing Zodiak setup in the same file).
-Currently --font-sans falls back to Geist until the files are added.
+Font roles:
+- Zodiak  = headlines / major statements (brand voice)
+- Sofia Pro = everything functional (body, nav, buttons, labels)

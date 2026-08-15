@@ -26,8 +26,8 @@
   --color-viewport-bg: var(--viewport-bg);
   --color-nav-text: var(--nav-text);
   --color-nav-icon: var(--nav-icon);
-  --font-sans: var(--font-geist);
-  --font-mono: var(--font-geist);
+  --font-sans: var(--font-sofia);
+  --font-mono: var(--font-sofia);
   --font-display: var(--font-zodiak);
   --shadow-soft: 0 12px 32px rgba(23, 37, 31, 0.08);
   --shadow-btn: 0 1.67px 4.18px rgba(181, 186, 203, 0.31),
