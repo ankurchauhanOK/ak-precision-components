@@ -142,9 +142,9 @@ export default function VideoPlayer({ src, className = "" }: VideoPlayerProps) {
       } ${className}`}
     >
       <div className="p-2">
-        <div className="relative w-full rounded-[16px] bg-deep-forest flex items-center justify-center p-2">
+        <div className="relative w-full rounded-[32px] bg-deep-forest flex items-center justify-center p-2">
           <div
-            className={`relative aspect-[16/9] rounded-[16px] overflow-hidden flex-shrink-0 ${
+            className={`relative aspect-[16/9] rounded-[32px] overflow-hidden flex-shrink-0 ${
               fullscreen
                 ? "h-[calc(100dvh-160px)] w-auto max-w-full"
                 : "w-full"
