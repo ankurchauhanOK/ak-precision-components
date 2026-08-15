@@ -187,11 +187,7 @@ export default function VideoPlayer({ src, className = "" }: VideoPlayerProps) {
         </div>
       </div>
 
-      <div
-        className={`flex items-center gap-1.5 px-2 py-2 border-t ${
-          fullscreen ? "border-white/15" : "border-light-sage"
-        }`}
-      >
+      <div className="flex items-center gap-1.5 px-2 py-2">
         <button
           type="button"
           onClick={togglePlay}
