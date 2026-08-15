@@ -128,7 +128,7 @@ export default function VideoPlayer({ src, className = "" }: VideoPlayerProps) {
   }, [togglePlay]);
 
   const controlClass =
-    "flex items-center justify-center gap-2 rounded-full px-5 h-10 bg-[#F0F2F5] border border-white/40 shadow-btn text-[#315C4A] transition-all duration-200 hover:bg-white";
+    "flex items-center justify-center gap-2 rounded-full px-5 h-10 bg-[#F0F2F5] border border-white/40 shadow-btn text-[#315C4A] text-sm font-medium transition-all duration-200 hover:bg-white";
 
   return (
     <div
