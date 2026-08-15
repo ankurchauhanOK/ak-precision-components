@@ -214,6 +214,7 @@ export default function VideoPlayer({ src, className = "" }: VideoPlayerProps) {
           ) : (
             <SpeakerWaveIcon className="w-5 h-5" />
           )}
+          <span>{muted ? "Unmute" : "Mute"}</span>
         </button>
 
         <div
@@ -267,6 +268,7 @@ export default function VideoPlayer({ src, className = "" }: VideoPlayerProps) {
           ) : (
             <ArrowsPointingOutIcon className="w-5 h-5" />
           )}
+          <span>{fullscreen ? "Exit Fullscreen" : "Fullscreen"}</span>
         </button>
       </div>
     </div>
