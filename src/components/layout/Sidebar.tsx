@@ -44,7 +44,7 @@ function SidebarNav({ pathname, onNavigate }: { pathname: string; onNavigate?: (
     href === "/" ? pathname === "/" : pathname.startsWith(href);
 
   return (
-    <nav className="flex-1 px-5 pt-6 space-y-1">
+    <nav className="flex-1 px-10 pt-6 space-y-1">
       {navLinks.map((link) => {
         const active = isActive(link.href);
         return (
@@ -74,7 +74,7 @@ function SidebarNav({ pathname, onNavigate }: { pathname: string; onNavigate?: (
 
 function SidebarFooter() {
   return (
-    <div className="px-5 py-6">
+    <div className="px-10 py-6">
       <p className="px-2 text-[10px] font-medium uppercase tracking-[0.2em] text-nav-text">
         Ready to work with us?
       </p>
@@ -124,10 +124,10 @@ export default function Sidebar() {
       </header>
 
       <aside className="hidden lg:flex w-[340px] flex-col bg-viewport-bg">
-        <div className="px-5 pt-8 pb-6">
+        <div className="px-10 pt-8 pb-6">
           <Logo />
         </div>
-        <div className="mx-5 border-t border-light-sage" />
+        <div className="mx-10 border-t border-light-sage" />
         <SidebarNav pathname={pathname} />
         <SidebarFooter />
       </aside>
@@ -151,7 +151,7 @@ export default function Sidebar() {
               exit={{ x: -280 }}
               transition={{ duration: 0.25, ease: [0.25, 0.1, 0.25, 1] }}
             >
-              <div className="flex items-center justify-between px-5 pt-8 pb-6">
+              <div className="flex items-center justify-between px-10 pt-8 pb-6">
                 <Logo />
                 <button
                   type="button"
@@ -162,7 +162,7 @@ export default function Sidebar() {
                   <XMarkIcon className="w-6 h-6" />
                 </button>
               </div>
-              <div className="mx-5 border-t border-light-sage" />
+              <div className="mx-10 border-t border-light-sage" />
               <SidebarNav pathname={pathname} onNavigate={() => setOpen(false)} />
               <SidebarFooter />
             </motion.aside>
