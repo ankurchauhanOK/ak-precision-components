@@ -129,7 +129,7 @@ export default function VideoPlayer({ src, className = "" }: VideoPlayerProps) {
 
   const controlBase = "flex items-center justify-center rounded-lg transition-colors duration-200";
   const controlOnDark = "text-white hover:bg-white/15";
-  const controlOnLight = "text-deep-forest hover:bg-light-sage/40";
+  const controlOnLight = "text-[#315C4A] hover:bg-light-sage/40";
   const controlClass = `${controlBase} ${fullscreen ? controlOnDark : controlOnLight}`;
 
   return (
@@ -187,17 +187,21 @@ export default function VideoPlayer({ src, className = "" }: VideoPlayerProps) {
         </div>
       </div>
 
-      <div className="flex items-center gap-1.5 px-2 py-2">
+      <div
+        className={`flex items-center gap-2 px-4 h-[60px] ${
+          fullscreen ? "bg-transparent" : "bg-warm-bg rounded-b-[31px]"
+        }`}
+      >
         <button
           type="button"
           onClick={togglePlay}
           aria-label={playing ? "Pause video" : "Play video"}
-          className={`w-8 h-8 ${controlClass}`}
+          className={`w-11 h-11 ${controlClass}`}
         >
           {playing ? (
-            <PauseIcon className="w-4 h-4" />
+            <PauseIcon className="w-5 h-5" />
           ) : (
-            <PlayIcon className="w-4 h-4 ml-0.5" />
+            <PlayIcon className="w-5 h-5 ml-0.5" />
           )}
         </button>
 
@@ -205,12 +209,12 @@ export default function VideoPlayer({ src, className = "" }: VideoPlayerProps) {
           type="button"
           onClick={toggleMute}
           aria-label={muted ? "Unmute video" : "Mute video"}
-          className={`w-8 h-8 ${controlClass}`}
+          className={`w-11 h-11 ${controlClass}`}
         >
           {muted ? (
-            <SpeakerXMarkIcon className="w-4 h-4" />
+            <SpeakerXMarkIcon className="w-5 h-5" />
           ) : (
-            <SpeakerWaveIcon className="w-4 h-4" />
+            <SpeakerWaveIcon className="w-5 h-5" />
           )}
         </button>
 
@@ -229,8 +233,8 @@ export default function VideoPlayer({ src, className = "" }: VideoPlayerProps) {
           className="group relative flex-1 h-8 flex items-center cursor-pointer"
         >
           <div
-            className={`relative h-1.5 w-full rounded-full overflow-hidden ${
-              fullscreen ? "bg-white/20" : "bg-light-sage/60"
+            className={`relative h-1 w-full rounded-full overflow-hidden ${
+              fullscreen ? "bg-white/20" : "bg-[#D4DDD8]"
             }`}
           >
             <div
@@ -258,12 +262,12 @@ export default function VideoPlayer({ src, className = "" }: VideoPlayerProps) {
           type="button"
           onClick={toggleFullscreen}
           aria-label={fullscreen ? "Exit fullscreen" : "Enter fullscreen"}
-          className={`w-8 h-8 ${controlClass}`}
+          className={`w-11 h-11 ${controlClass}`}
         >
           {fullscreen ? (
-            <ArrowsPointingInIcon className="w-4 h-4" />
+            <ArrowsPointingInIcon className="w-5 h-5" />
           ) : (
-            <ArrowsPointingOutIcon className="w-4 h-4" />
+            <ArrowsPointingOutIcon className="w-5 h-5" />
           )}
         </button>
       </div>
