@@ -152,7 +152,7 @@ export default function VideoPlayer({ src, className = "" }: VideoPlayerProps) {
           >
           <video
             ref={videoRef}
-            className="absolute inset-0 w-full h-full object-contain"
+            className="absolute inset-0 w-full h-full object-cover"
             src={src}
             muted={muted}
             loop
