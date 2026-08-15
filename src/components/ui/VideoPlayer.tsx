@@ -141,7 +141,7 @@ export default function VideoPlayer({ src, className = "" }: VideoPlayerProps) {
           : "bg-white border-light-sage"
       } ${className}`}
     >
-      <div className="p-2">
+      <div className="p-3">
         <div className="relative w-full rounded-[32px] bg-deep-forest flex items-center justify-center p-2">
           <div
             className={`relative aspect-[16/9] rounded-[32px] overflow-hidden flex-shrink-0 ${
