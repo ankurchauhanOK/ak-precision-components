@@ -127,10 +127,8 @@ export default function VideoPlayer({ src, className = "" }: VideoPlayerProps) {
     return () => document.removeEventListener("keydown", onKey);
   }, [togglePlay]);
 
-  const controlBase = "flex items-center justify-center rounded-lg transition-colors duration-200";
-  const controlOnDark = "text-white hover:bg-white/15";
-  const controlOnLight = "text-[#315C4A] hover:bg-light-sage/40";
-  const controlClass = `${controlBase} ${fullscreen ? controlOnDark : controlOnLight}`;
+  const controlClass =
+    "flex items-center justify-center gap-2 rounded-full px-5 h-10 bg-[#F0F2F5] border border-white/40 shadow-btn text-[#315C4A] transition-all duration-200 hover:bg-white";
 
   return (
     <div
@@ -196,7 +194,7 @@ export default function VideoPlayer({ src, className = "" }: VideoPlayerProps) {
           type="button"
           onClick={togglePlay}
           aria-label={playing ? "Pause video" : "Play video"}
-          className={`w-11 h-11 ${controlClass}`}
+          className={controlClass}
         >
           {playing ? (
             <PauseIcon className="w-5 h-5" />
@@ -209,7 +207,7 @@ export default function VideoPlayer({ src, className = "" }: VideoPlayerProps) {
           type="button"
           onClick={toggleMute}
           aria-label={muted ? "Unmute video" : "Mute video"}
-          className={`w-11 h-11 ${controlClass}`}
+          className={controlClass}
         >
           {muted ? (
             <SpeakerXMarkIcon className="w-5 h-5" />
@@ -262,7 +260,7 @@ export default function VideoPlayer({ src, className = "" }: VideoPlayerProps) {
           type="button"
           onClick={toggleFullscreen}
           aria-label={fullscreen ? "Exit fullscreen" : "Enter fullscreen"}
-          className={`w-11 h-11 ${controlClass}`}
+          className={controlClass}
         >
           {fullscreen ? (
             <ArrowsPointingInIcon className="w-5 h-5" />
