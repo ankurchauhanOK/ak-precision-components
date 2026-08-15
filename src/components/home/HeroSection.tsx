@@ -34,7 +34,7 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="text-xs font-medium text-forest uppercase tracking-[0.16em]"
+            className="text-sm font-bold text-forest uppercase tracking-[0.16em]"
           >
             {hero.eyebrow}
           </motion.p>
@@ -57,7 +57,7 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
-            className="mt-10 flex flex-col sm:flex-row items-center gap-3 md:gap-4"
+            className="mt-10 flex flex-col sm:flex-row items-start gap-3 md:gap-4"
           >
             <Button href={hero.ctaHref} variant="secondary" arrow>
               {hero.cta}
