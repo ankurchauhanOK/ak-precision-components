@@ -25,14 +25,11 @@ export const site = {
 export const hero = {
   eyebrow: "Precision Manufacturing + Industry 4.0",
   headline: [
+    [{ text: "Precision parts.", color: "forest" }],
+    [{ text: "Built for machines", color: "deep-forest" }],
     [
-      { text: "Precision", color: "forest" },
-      { text: " parts.", color: "sage" },
-    ],
-    [{ text: "Built for machines", color: "sage" }],
-    [
-      { text: "that can't afford to ", color: "forest" },
-      { text: "be average.", color: "sage" },
+      { text: "that can't afford to be ", color: "forest" },
+      { text: "average.", color: "sage-hero" },
     ],
   ],
   cta: "Book a Demo",

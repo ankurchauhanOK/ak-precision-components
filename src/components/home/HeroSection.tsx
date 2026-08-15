@@ -10,6 +10,7 @@ const colorClass: Record<string, string> = {
   "deep-forest": "text-deep-forest",
   "action-green": "text-action-green",
   sage: "text-sage",
+  "sage-hero": "text-[#8FA99B]",
 };
 
 function HeadlineLine({ segments }: { segments: { text: string; color: string }[] }) {

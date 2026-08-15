@@ -28,6 +28,7 @@
   --color-nav-icon: var(--nav-icon);
   --font-sans: var(--font-geist);
   --font-mono: var(--font-geist);
+  --font-display: var(--font-zodiak);
   --shadow-soft: 0 12px 32px rgba(23, 37, 31, 0.08);
   --shadow-btn: 0 1.67px 4.18px rgba(181, 186, 203, 0.31),
     0 17.57px 10.88px rgba(181, 187, 203, 0.16),
@@ -52,4 +53,9 @@
 @keyframes slide-in-right {
   from { opacity: 0; transform: translateX(24px); }
   to { opacity: 1; transform: translateX(0); }
+}
+
+h1,
+h2 {
+  font-family: var(--font-zodiak);
 }

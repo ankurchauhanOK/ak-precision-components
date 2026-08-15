@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 import Sidebar from "@/components/layout/Sidebar";
 import Footer from "@/components/layout/Footer";
@@ -8,6 +9,15 @@ import { site } from "@/data/smartFactory";
 const geist = Geist({
   variable: "--font-geist",
   subsets: ["latin"],
+  display: "swap",
+});
+
+const zodiak = localFont({
+  src: [
+    { path: "../fonts/zodiak-var.woff2", style: "normal", weight: "100 900" },
+    { path: "../fonts/zodiak-italic.woff2", style: "italic", weight: "100 900" },
+  ],
+  variable: "--font-zodiak",
   display: "swap",
 });
 
@@ -22,7 +32,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${geist.variable} scroll-smooth`}>
+    <html lang="en" className={`${geist.variable} ${zodiak.variable} scroll-smooth`}>
       <body className="flex flex-col lg:flex-row min-h-screen lg:h-screen lg:overflow-hidden bg-viewport-bg text-deep-forest font-sans antialiased">
         <Sidebar />
         <div className="flex flex-col flex-1 min-w-0 lg:mt-[60px] lg:ml-6 lg:mr-6 lg:h-[calc(100vh-60px)] lg:overflow-y-auto bg-warm-bg lg:rounded-tl-[30px] lg:rounded-tr-[30px] lg:shadow-soft">
