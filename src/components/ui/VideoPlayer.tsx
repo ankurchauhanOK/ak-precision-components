@@ -135,7 +135,7 @@ export default function VideoPlayer({ src, className = "" }: VideoPlayerProps) {
   return (
     <div
       ref={containerRef}
-      className={`w-full rounded-[24px] border shadow-soft ${
+      className={`w-full rounded-[32px] border shadow-soft ${
         fullscreen
           ? "bg-deep-forest border-transparent"
           : "bg-white border-light-sage"
