@@ -124,7 +124,6 @@ export default function Sidebar() {
         <div className="px-10 pt-8 pb-5">
           <Logo />
         </div>
-        <div className="mx-10 border-t border-light-sage" />
         <SidebarNav pathname={pathname} />
         <SidebarFooter />
       </aside>
@@ -159,7 +158,6 @@ export default function Sidebar() {
                   <XMarkIcon className="w-6 h-6" />
                 </button>
               </div>
-              <div className="mx-10 border-t border-light-sage" />
               <SidebarNav pathname={pathname} onNavigate={() => setOpen(false)} />
               <SidebarFooter />
             </motion.aside>
