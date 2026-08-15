@@ -59,10 +59,10 @@ export default function HeroSection() {
             transition={{ duration: 0.5, delay: 0.3 }}
             className="mt-10 flex flex-col sm:flex-row items-start gap-3 md:gap-4"
           >
-            <Button href={hero.ctaHref} variant="secondary" arrow>
+            <Button href={hero.ctaHref} variant="secondary">
               {hero.cta}
             </Button>
-            <Button href={hero.ctaSecondaryHref} variant="outline" arrow>
+            <Button href={hero.ctaSecondaryHref} variant="outline">
               {hero.ctaSecondary}
             </Button>
           </motion.div>
