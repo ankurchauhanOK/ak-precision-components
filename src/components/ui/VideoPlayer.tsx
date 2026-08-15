@@ -186,7 +186,7 @@ export default function VideoPlayer({ src, className = "" }: VideoPlayerProps) {
       </div>
 
       <div
-        className={`flex items-center gap-2 px-4 h-[60px] ${
+        className={`flex items-center gap-2 px-4 py-4 ${
           fullscreen ? "bg-transparent" : "rounded-b-[31px]"
         }`}
       >
