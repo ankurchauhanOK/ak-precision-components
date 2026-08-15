@@ -53,7 +53,7 @@ function MachineCard({
         </div>
         <Link
           href={project.href}
-          className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl text-sm font-medium bg-action-green text-white transition-colors duration-200 hover:bg-action-green-dark"
+          className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl text-base font-medium bg-action-green text-white transition-colors duration-200 hover:bg-action-green-dark"
         >
           {project.cta}
           <span aria-hidden>→</span>

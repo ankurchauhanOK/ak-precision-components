@@ -82,7 +82,7 @@ export default function SoftwarePage() {
                 </div>
                 <h3 className="font-semibold text-deep-forest mb-2">{p.title}</h3>
                 <p className="text-sm text-sage mb-4">{p.desc}</p>
-                <Button href={p.href} variant="outline" className="text-sm px-4 py-2">
+                <Button href={p.href} variant="outline" className="px-4 py-2">
                   Learn More →
                 </Button>
               </div>

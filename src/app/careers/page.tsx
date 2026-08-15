@@ -58,7 +58,7 @@ export default function CareersPage() {
                     {job.dept} · {job.type}
                   </p>
                 </div>
-                <Button variant="outline" className="text-sm px-4 py-2">
+                <Button variant="outline" className="px-4 py-2">
                   Apply
                 </Button>
               </div>

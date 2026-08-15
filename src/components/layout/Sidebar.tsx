@@ -77,7 +77,7 @@ function SidebarFooter() {
       </p>
       <Link
         href="/contact"
-        className="mt-3 flex items-center justify-center gap-2 rounded-full bg-[#F0F2F5] border border-white/40 shadow-btn px-5 py-[15px] text-sm font-medium text-[#315C4A] transition-colors duration-200 hover:bg-white"
+        className="mt-3 flex items-center justify-center gap-2 rounded-full bg-[#F0F2F5] border border-white/40 shadow-btn px-5 py-[15px] text-base font-medium text-[#315C4A] transition-colors duration-200 hover:bg-white"
       >
         Book a Demo
         <ArrowRightIcon className="w-4 h-4" />
