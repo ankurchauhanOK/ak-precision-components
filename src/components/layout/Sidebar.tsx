@@ -53,7 +53,7 @@ function SidebarNav({ pathname, onNavigate }: { pathname: string; onNavigate?: (
             href={link.href}
             onClick={onNavigate}
             aria-current={active ? "page" : undefined}
-            className={`flex items-center gap-3 h-12 w-full rounded-full text-sm font-medium transition-colors duration-200 ${
+            className={`flex items-center gap-3 h-12 w-full rounded-full text-sm font-bold transition-colors duration-200 ${
               active
                 ? "bg-[#F0F2F5] text-[#315C4A] border border-white/40 shadow-btn font-semibold"
                 : "text-nav-text hover:bg-light-sage/40 hover:text-[#17251F]"
