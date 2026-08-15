@@ -9,6 +9,8 @@
   --light-sage: #C9D6CE;
   --warm-bg: #EFEFEF;
   --viewport-bg: #E8E8E8;
+  --nav-text: #52695D;
+  --nav-icon: #6F887B;
   --white: #FFFFFF;
   --black: #0A0A0A;
 }
@@ -22,6 +24,8 @@
   --color-light-sage: var(--light-sage);
   --color-warm-bg: var(--warm-bg);
   --color-viewport-bg: var(--viewport-bg);
+  --color-nav-text: var(--nav-text);
+  --color-nav-icon: var(--nav-icon);
   --font-sans: var(--font-geist);
   --font-mono: var(--font-geist);
   --shadow-soft: 0 12px 32px rgba(23, 37, 31, 0.08);

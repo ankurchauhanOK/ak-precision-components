@@ -44,7 +44,7 @@ function SidebarNav({ pathname, onNavigate }: { pathname: string; onNavigate?: (
     href === "/" ? pathname === "/" : pathname.startsWith(href);
 
   return (
-    <nav className="flex-1 px-3 space-y-1">
+    <nav className="flex-1 px-5 pt-6 space-y-1">
       {navLinks.map((link) => {
         const active = isActive(link.href);
         return (
@@ -53,15 +53,15 @@ function SidebarNav({ pathname, onNavigate }: { pathname: string; onNavigate?: (
             href={link.href}
             onClick={onNavigate}
             aria-current={active ? "page" : undefined}
-            className={`flex items-center gap-3 rounded-xl px-3.5 py-2.5 text-sm font-medium transition-colors duration-200 ${
+            className={`flex items-center gap-3 h-12 w-full rounded-full text-sm font-medium transition-colors duration-200 ${
               active
-                ? "bg-forest/10 text-deep-forest"
-                : "text-sage hover:bg-light-sage/40 hover:text-deep-forest"
+                ? "bg-[#F0F2F5] text-[#315C4A] border border-white/40 shadow-btn font-semibold"
+                : "text-nav-text hover:bg-light-sage/40 hover:text-[#17251F]"
             }`}
           >
             <link.icon
               className={`w-5 h-5 flex-shrink-0 ${
-                active ? "text-forest" : "text-sage"
+                active ? "text-[#315C4A]" : "text-nav-icon"
               }`}
             />
             {link.label}
@@ -74,18 +74,18 @@ function SidebarNav({ pathname, onNavigate }: { pathname: string; onNavigate?: (
 
 function SidebarFooter() {
   return (
-    <div className="px-4 py-5 border-t border-light-sage">
-      <p className="px-2 text-[10px] font-medium uppercase tracking-[0.2em] text-sage">
+    <div className="px-5 py-6">
+      <p className="px-2 text-[10px] font-medium uppercase tracking-[0.2em] text-nav-text">
         Ready to work with us?
       </p>
       <Link
         href="/contact"
-        className="mt-3 flex items-center justify-center gap-2 rounded-xl bg-action-green px-4 py-2.5 text-sm font-medium text-white transition-colors duration-200 hover:bg-action-green-dark"
+        className="mt-3 flex items-center justify-center gap-2 rounded-full bg-[#F0F2F5] border border-white/40 shadow-btn px-5 py-[15px] text-sm font-medium text-[#315C4A] transition-colors duration-200 hover:bg-white"
       >
         Book a Demo
         <ArrowRightIcon className="w-4 h-4" />
       </Link>
-      <p className="mt-4 px-2 text-xs text-sage">{site.location}</p>
+      <p className="mt-4 px-2 text-xs text-nav-icon">{site.location}</p>
     </div>
   );
 }
@@ -124,9 +124,10 @@ export default function Sidebar() {
       </header>
 
       <aside className="hidden lg:flex w-[340px] flex-col bg-viewport-bg">
-        <div className="px-6 pt-8 pb-7">
+        <div className="px-5 pt-8 pb-6">
           <Logo />
         </div>
+        <div className="mx-5 border-t border-light-sage" />
         <SidebarNav pathname={pathname} />
         <SidebarFooter />
       </aside>
@@ -150,7 +151,7 @@ export default function Sidebar() {
               exit={{ x: -280 }}
               transition={{ duration: 0.25, ease: [0.25, 0.1, 0.25, 1] }}
             >
-              <div className="flex items-center justify-between px-6 pt-8 pb-7">
+              <div className="flex items-center justify-between px-5 pt-8 pb-6">
                 <Logo />
                 <button
                   type="button"
@@ -161,6 +162,7 @@ export default function Sidebar() {
                   <XMarkIcon className="w-6 h-6" />
                 </button>
               </div>
+              <div className="mx-5 border-t border-light-sage" />
               <SidebarNav pathname={pathname} onNavigate={() => setOpen(false)} />
               <SidebarFooter />
             </motion.aside>
