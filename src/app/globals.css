@@ -29,6 +29,7 @@
   --font-sans: var(--font-sofia);
   --font-mono: var(--font-sofia);
   --font-display: var(--font-zodiak);
+  --font-pally: var(--font-pally);
   --shadow-soft: 0 12px 32px rgba(23, 37, 31, 0.08);
   --shadow-btn: 0 1.67px 4.18px rgba(181, 186, 203, 0.31),
     0 17.57px 10.88px rgba(181, 187, 203, 0.16),

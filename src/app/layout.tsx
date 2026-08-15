@@ -14,6 +14,14 @@ const zodiak = localFont({
   display: "swap",
 });
 
+const pally = localFont({
+  src: [
+    { path: "../fonts/pally-variable.woff2", style: "normal", weight: "400 700" },
+  ],
+  variable: "--font-pally",
+  display: "swap",
+});
+
 const sofiaPro = localFont({
   src: [
     {
@@ -52,7 +60,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${zodiak.variable} ${sofiaPro.variable} scroll-smooth`}>
+    <html lang="en" className={`${zodiak.variable} ${pally.variable} ${sofiaPro.variable} scroll-smooth`}>
       <body className="flex flex-col lg:flex-row min-h-screen lg:h-screen lg:overflow-hidden bg-viewport-bg text-deep-forest font-sans antialiased">
         <Sidebar />
         <div className="flex flex-col flex-1 min-w-0 lg:mt-[60px] lg:ml-6 lg:mr-6 lg:h-[calc(100vh-60px)] lg:overflow-y-auto bg-warm-bg lg:rounded-tl-[30px] lg:rounded-tr-[30px] lg:shadow-soft">

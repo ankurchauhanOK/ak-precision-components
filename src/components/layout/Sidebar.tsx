@@ -29,11 +29,8 @@ const navLinks = [
 function Logo() {
   return (
     <Link href="/" className="block">
-      <span className="text-2xl font-semibold tracking-tight text-deep-forest">
-        AK<span className="text-forest">.</span>
-      </span>
-      <span className="mt-1 block text-[10px] font-medium uppercase tracking-[0.28em] text-sage">
-        Precision Components
+      <span className="font-pally font-bold leading-none tracking-[-0.02em] text-deep-forest text-[32px] sm:text-[36px]">
+        AKPC
       </span>
     </Link>
   );
@@ -124,7 +121,7 @@ export default function Sidebar() {
       </header>
 
       <aside className="hidden lg:flex w-[340px] flex-col bg-viewport-bg">
-        <div className="px-10 pt-8 pb-6">
+        <div className="px-10 pt-8 pb-5">
           <Logo />
         </div>
         <div className="mx-10 border-t border-light-sage" />
@@ -151,7 +148,7 @@ export default function Sidebar() {
               exit={{ x: -280 }}
               transition={{ duration: 0.25, ease: [0.25, 0.1, 0.25, 1] }}
             >
-              <div className="flex items-center justify-between px-10 pt-8 pb-6">
+              <div className="flex items-center justify-between px-10 pt-8 pb-5">
                 <Logo />
                 <button
                   type="button"
