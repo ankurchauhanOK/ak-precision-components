@@ -119,6 +119,55 @@ export const whatWeDo = {
 };
 
 // ---------------------------------------------------------------------------
+// WHAT WE DO SHOWCASE — interactive banner showcase below the What We Do grid
+// ---------------------------------------------------------------------------
+export const showcase = {
+  eyebrow: "What We Do",
+  heading: "Precision manufacturing. Digital systems. Connected automation.",
+  subhead:
+    "One engineering partner for the modern factory — components, software and integration under one roof.",
+  closing: {
+    left: "Precision Manufacturing",
+    plus: "+",
+    right: "Smart Factory",
+    equals: "=",
+    result: "One Engineering Partner",
+  },
+  slides: [
+    {
+      id: "manufacturing",
+      label: "Manufacturing",
+      title: "Precision Manufacturing",
+      subtitle: "CNC Turning · VMC · Precision Components",
+      image: "/images/banner-manufacturing.jpg",
+      imageAlt: "Precision CNC and VMC manufacturing at AK Precision Components",
+      href: "/manufacturing",
+      cta: "Explore Manufacturing",
+    },
+    {
+      id: "software",
+      label: "Software",
+      title: "Factory Software",
+      subtitle: "AK Smart Factory Lite · OEE · Traceability",
+      image: "/images/banner-software.jpg",
+      imageAlt: "AK Smart Factory Lite live production dashboard",
+      href: "/software",
+      cta: "Explore Software",
+    },
+    {
+      id: "automation",
+      label: "Automation + Integration",
+      title: "Automation & Integration",
+      subtitle: "Machine Connectivity · Shop-Floor Integration",
+      image: "/images/banner-automation.jpg",
+      imageAlt: "Factory automation and machine integration at AK Precision Components",
+      href: "/smart-factory",
+      cta: "Explore Automation",
+    },
+  ],
+};
+
+// ---------------------------------------------------------------------------
 // MANUFACTURING CREDIBILITY — bridge into the Smart Factory story
 // ---------------------------------------------------------------------------
 export const credibility = {
