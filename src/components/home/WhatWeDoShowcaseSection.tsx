@@ -16,7 +16,6 @@ type Direction = 1 | -1;
 export default function WhatWeDoShowcaseSection() {
   const { slides, closing } = showcase;
   const [active, setActive] = useState(0);
-  const [tick, setTick] = useState(0);
   const [direction, setDirection] = useState<Direction>(1);
   const reducedMotion = useReducedMotion();
   const touchStart = useRef<{ x: number; y: number } | null>(null);
@@ -33,7 +32,6 @@ export default function WhatWeDoShowcaseSection() {
       if (clamped !== active) {
         setDirection(dir);
         setActive(clamped);
-        setTick((t) => t + 1);
       }
     },
     [active, count]
@@ -112,34 +110,14 @@ export default function WhatWeDoShowcaseSection() {
                       : "text-nav-text hover:bg-light-sage/40 hover:text-[#17251F] border border-transparent"
                   }`}
                 >
-                  <span className={isActive ? "pb-1 border-b-2 border-forest" : ""}>
-                    {slide.label}
-                  </span>
-                  {isActive && (
-                    <span
-                      className="absolute inset-x-7 bottom-1.5 h-0.5 rounded-full bg-light-sage overflow-hidden"
-                      aria-hidden
-                    >
-                      <motion.span
-                        key={`${active}-${tick}`}
-                        className="block h-full bg-forest rounded-full"
-                        initial={reducedMotion ? { width: "100%" } : { width: "0%" }}
-                        animate={{ width: "100%" }}
-                        transition={
-                          reducedMotion
-                            ? { duration: 0 }
-                            : { duration: ROTATION_MS / 1000, ease: "linear" }
-                        }
-                      />
-                    </span>
-                  )}
+                  <span>{slide.label}</span>
                 </button>
               );
             })}
           </div>
         </div>
 
-        <div className="mt-8 md:mt-10">
+        <div className="mt-12 md:mt-14 mx-[-4px] md:mx-[-32px] lg:mx-[-80px]">
           <div
             role="tabpanel"
             id="showcase-panel"
