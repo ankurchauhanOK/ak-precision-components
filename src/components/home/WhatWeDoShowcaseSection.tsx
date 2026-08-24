@@ -2,7 +2,6 @@
 
 import { useCallback, useEffect, useRef, useState } from "react";
 import Image from "next/image";
-import Link from "next/link";
 import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
 import AnimatedSection from "@/components/ui/AnimatedSection";
 import Container from "@/components/ui/Container";
@@ -138,55 +137,35 @@ export default function WhatWeDoShowcaseSection() {
           </div>
         </div>
 
-        <div className="mt-8 md:mt-10 mx-auto max-w-[1050px]">
-          <div className="rounded-[32px] border border-light-sage bg-white shadow-soft p-4 md:p-8 lg:p-10">
-            <div
-              role="tabpanel"
-              id="showcase-panel"
-              aria-labelledby={`showcase-tab-${slides[active].id}`}
-              className="relative w-full aspect-[7/5] overflow-hidden rounded-3xl bg-warm-bg"
-              onTouchStart={handleTouchStart}
-              onTouchEnd={handleTouchEnd}
-            >
-              <AnimatePresence custom={direction} initial={false}>
-                <motion.div
-                  key={active}
-                  custom={direction}
-                  variants={variants}
-                  initial="enter"
-                  animate="center"
-                  exit="exit"
-                  transition={{ duration: TRANSITION_MS / 1000, ease: [0.25, 0.1, 0.25, 1] }}
-                  className="absolute inset-0"
-                >
-                  <Image
-                    src={slides[active].image}
-                    alt={slides[active].imageAlt}
-                    fill
-                    className="object-contain"
-                    sizes="(max-width: 1050px) 100vw, 1050px"
-                  />
-                </motion.div>
-              </AnimatePresence>
-            </div>
-
-            <div className="mt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left" aria-live="polite">
-              <div>
-                <h3 className="text-xl md:text-2xl font-semibold text-deep-forest">
-                  {slides[active].title}
-                </h3>
-                <p className="mt-1 text-sm text-sage">{slides[active].subtitle}</p>
-              </div>
-              <Link
-                href={slides[active].href}
-                className="group inline-flex items-center gap-2 text-sm font-medium text-forest hover:text-sage transition-colors"
+        <div className="mt-8 md:mt-10">
+          <div
+            role="tabpanel"
+            id="showcase-panel"
+            aria-labelledby={`showcase-tab-${slides[active].id}`}
+            className="relative w-full aspect-[7/5] overflow-hidden rounded-[32px] bg-warm-bg"
+            onTouchStart={handleTouchStart}
+            onTouchEnd={handleTouchEnd}
+          >
+            <AnimatePresence custom={direction} initial={false}>
+              <motion.div
+                key={active}
+                custom={direction}
+                variants={variants}
+                initial="enter"
+                animate="center"
+                exit="exit"
+                transition={{ duration: TRANSITION_MS / 1000, ease: [0.25, 0.1, 0.25, 1] }}
+                className="absolute inset-0"
               >
-                {slides[active].cta}
-                <span aria-hidden className="transition-transform duration-300 group-hover:translate-x-1">
-                  →
-                </span>
-              </Link>
-            </div>
+                <Image
+                  src={slides[active].image}
+                  alt={slides[active].imageAlt}
+                  fill
+                  className="object-contain"
+                  sizes="100vw"
+                />
+              </motion.div>
+            </AnimatePresence>
           </div>
         </div>
 
