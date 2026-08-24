@@ -106,10 +106,10 @@ export default function WhatWeDoShowcaseSection() {
                   aria-selected={isActive}
                   aria-controls="showcase-panel"
                   onClick={() => goTo(i)}
-                  className={`relative shrink-0 rounded-full px-6 py-2.5 text-sm font-medium transition-all duration-300 ${
+                  className={`relative shrink-0 rounded-full px-5 py-[15px] text-base font-medium transition-all duration-300 ${
                     isActive
-                      ? "bg-white text-deep-forest shadow-soft border border-light-sage"
-                      : "text-sage hover:text-deep-forest border border-transparent"
+                      ? "bg-[#F0F2F5] text-[#315C4A] border border-white/40 shadow-btn"
+                      : "text-nav-text hover:bg-light-sage/40 hover:text-[#17251F] border border-transparent"
                   }`}
                 >
                   {slide.label}
