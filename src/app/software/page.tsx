@@ -1,93 +1,150 @@
+"use client";
+
+import Link from "next/link";
+import Image from "next/image";
+import AnimatedSection from "@/components/ui/AnimatedSection";
 import Container from "@/components/ui/Container";
 import Button from "@/components/ui/Button";
-
-const products = [
-  {
-    title: "Factory ERP",
-    desc: "End-to-end enterprise resource planning for manufacturing units.",
-    href: "/software/factory-erp",
-  },
-  {
-    title: "Production Management",
-    desc: "Plan, track, and optimize production workflows in real time.",
-    href: "/software/production-management",
-  },
-  {
-    title: "Inventory Management",
-    desc: "Raw material, WIP, and finished goods tracking.",
-    href: "/software/inventory",
-  },
-  {
-    title: "AI Inspection",
-    desc: "Computer vision powered quality inspection system.",
-    href: "/software/ai-inspection",
-  },
-  {
-    title: "Machine Monitoring",
-    desc: "Live machine status, OEE, and predictive alerts.",
-    href: "/software/machine-monitoring",
-  },
-  {
-    title: "Quality Control",
-    desc: "Digital QC checklists, defect tracking, and reporting.",
-    href: "/software/quality-control",
-  },
-  {
-    title: "Job Cards",
-    desc: "Digital job card system from assignment to completion.",
-    href: "/software/job-cards",
-  },
-  {
-    title: "Custom Development",
-    desc: "Tailored software solutions for your manufacturing needs.",
-    href: "/software/custom-development",
-  },
-];
+import VideoPlayer from "@/components/ui/VideoPlayer";
+import EditorialList from "@/components/ui/EditorialList";
+import ProcessSteps from "@/components/ui/ProcessSteps";
+import { softwarePage } from "@/data/smartFactory";
 
 export default function SoftwarePage() {
+  const { hero, capabilities, projects, process, cta } = softwarePage;
+
   return (
     <>
-      <section className="pt-32 pb-20 bg-warm-bg">
+      {/* Hero */}
+      <section className="pt-20 md:pt-28 pb-16 md:pb-24 bg-warm-bg">
         <Container>
-          <div className="max-w-3xl">
-            <p className="text-xs font-medium text-forest uppercase tracking-[0.16em] mb-3">
-              Software
-            </p>
-            <h1 className="text-[clamp(32px,3vw,40px)] font-semibold leading-[1.15] tracking-tight mb-8">
-              Industrial Software
-              <br />
-              <span className="text-forest">Built by Manufacturers.</span>
-            </h1>
-            <p className="text-base md:text-[17px] text-sage leading-[1.5] mb-8">
-              We build software that helps workshops and factories digitize
-              operations, reduce waste, and improve productivity.
-            </p>
-            <Button href="/contact" variant="primary">
-              Book a Demo
-            </Button>
+          <div className="grid lg:grid-cols-[1fr_1fr] gap-12 lg:gap-16 items-center">
+            <AnimatedSection>
+              <p className="text-xs font-medium text-forest uppercase tracking-[0.16em] mb-4">
+                {hero.eyebrow}
+              </p>
+              <h1 className="text-[clamp(32px,4vw,52px)] font-semibold leading-[1.1] tracking-tight text-deep-forest">
+                {hero.heading.map((line, li) => (
+                  <span key={li} className="block">
+                    {line.map((seg, si) => (
+                      <span key={si} className={seg.color === "forest" ? "text-forest" : ""}>
+                        {seg.text}
+                      </span>
+                    ))}
+                  </span>
+                ))}
+              </h1>
+              <p className="mt-6 text-base md:text-[17px] leading-[1.55] text-sage max-w-[520px]">
+                {hero.subhead}
+              </p>
+              <div className="mt-8 flex flex-wrap items-center gap-4">
+                <Button href={hero.ctaHref} arrow>
+                  {hero.cta}
+                </Button>
+                <Link
+                  href={hero.ctaSecondaryHref}
+                  className="text-sm font-medium text-forest hover:text-sage transition-colors"
+                >
+                  {hero.ctaSecondary}
+                  <span aria-hidden className="ml-1">→</span>
+                </Link>
+              </div>
+            </AnimatedSection>
+
+            <AnimatedSection delay={0.1}>
+              <div className="relative rounded-[28px] overflow-hidden border border-light-sage bg-white shadow-soft aspect-[4/3]">
+                <Image
+                  src={hero.image}
+                  alt={hero.imageAlt}
+                  fill
+                  className="object-contain p-6"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                />
+              </div>
+            </AnimatedSection>
           </div>
         </Container>
       </section>
 
-      <section className="py-20">
+      {/* What We Build */}
+      <section className="py-20 md:py-28">
         <Container>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {products.map((p) => (
-              <div
-                key={p.title}
-                className="bg-white rounded-2xl border border-light-sage p-6 hover:shadow-md hover:border-light-sage transition-all group"
-              >
-                <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-forest to-action-green flex items-center justify-center text-white text-sm font-semibold mb-4">
-                  {p.title.charAt(0)}
+          <AnimatedSection>
+            <h2 className="text-[clamp(28px,3vw,40px)] font-semibold leading-[1.15] tracking-tight text-deep-forest max-w-xl">
+              {capabilities.heading}
+            </h2>
+          </AnimatedSection>
+
+          <div className="mt-10 md:mt-14 max-w-[800px]">
+            <EditorialList items={capabilities.items} />
+          </div>
+        </Container>
+      </section>
+
+      {/* Projects */}
+      <section id="projects" className="py-20 md:py-28 bg-warm-bg">
+        <Container>
+          <AnimatedSection>
+            <div className="max-w-3xl">
+              <h2 className="text-[clamp(28px,3vw,40px)] font-semibold leading-[1.15] tracking-tight text-deep-forest">
+                {projects.heading}
+              </h2>
+              <p className="mt-4 text-base md:text-[17px] leading-[1.55] text-sage max-w-[520px]">
+                {projects.subhead}
+              </p>
+            </div>
+          </AnimatedSection>
+
+          <div className="mt-10 md:mt-14 max-w-[900px]">
+            <AnimatedSection delay={0.1}>
+              <VideoPlayer src="/videos/cnc-to-vmc.mp4" />
+            </AnimatedSection>
+
+            <AnimatedSection delay={0.15}>
+              <div className="mt-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                <div>
+                  <h3 className="text-lg font-semibold text-deep-forest">
+                    {projects.items[0].title}
+                  </h3>
+                  <p className="mt-1 text-sm text-sage">{projects.items[0].category}</p>
                 </div>
-                <h3 className="font-semibold text-deep-forest mb-2">{p.title}</h3>
-                <p className="text-sm text-sage mb-4">{p.desc}</p>
-                <Button href={p.href} variant="outline" className="px-4 py-2">
-                  Learn More →
+                <p className="text-sm text-sage max-w-[400px]">{projects.items[0].desc}</p>
+              </div>
+            </AnimatedSection>
+          </div>
+        </Container>
+      </section>
+
+      {/* Process */}
+      <section className="py-20 md:py-28">
+        <Container>
+          <AnimatedSection>
+            <h2 className="text-[clamp(28px,3vw,40px)] font-semibold leading-[1.15] tracking-tight text-deep-forest max-w-xl">
+              {process.heading}
+            </h2>
+          </AnimatedSection>
+
+          <div className="mt-10 md:mt-14">
+            <ProcessSteps steps={process.steps} />
+          </div>
+        </Container>
+      </section>
+
+      {/* CTA */}
+      <section className="py-20 md:py-28 bg-deep-forest text-white">
+        <Container>
+          <AnimatedSection>
+            <div className="max-w-3xl mx-auto text-center">
+              <h2 className="text-[clamp(28px,3vw,40px)] font-semibold leading-[1.15] tracking-tight">
+                {cta.heading}
+              </h2>
+              <div className="mt-10">
+                <Button href={cta.ctaHref} variant="secondary" arrow>
+                  {cta.cta}
                 </Button>
               </div>
-            ))}
-          </div>
+            </div>
+          </AnimatedSection>
         </Container>
       </section>
     </>

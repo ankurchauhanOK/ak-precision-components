@@ -6,8 +6,9 @@ import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   HomeIcon,
-  Cog6ToothIcon,
+  CodeBracketIcon,
   CpuChipIcon,
+  UserGroupIcon,
   FolderIcon,
   BuildingOffice2Icon,
   EnvelopeIcon,
@@ -19,8 +20,9 @@ import { site } from "@/data/smartFactory";
 
 const navLinks = [
   { label: "Home", href: "/", icon: HomeIcon },
-  { label: "Manufacturing", href: "/manufacturing", icon: Cog6ToothIcon },
-  { label: "Smart Factory", href: "/smart-factory", icon: CpuChipIcon },
+  { label: "Software", href: "/software", icon: CodeBracketIcon },
+  { label: "Automation + Integration", href: "/smart-factory", icon: CpuChipIcon },
+  { label: "Collaboration", href: "/collaboration", icon: UserGroupIcon },
   { label: "Projects", href: "/projects", icon: FolderIcon },
   { label: "About", href: "/about", icon: BuildingOffice2Icon },
   { label: "Contact", href: "/contact", icon: EnvelopeIcon },

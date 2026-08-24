@@ -135,16 +135,6 @@ export const showcase = {
   },
   slides: [
     {
-      id: "collaboration",
-      label: "Collaboration",
-      title: "Collaboration & Partnerships",
-      subtitle: "Your services. Our local reach.",
-      image: "/images/banner-manufacturing.jpg",
-      imageAlt: "AKPC collaboration and partnership network across operating regions",
-      href: "/about",
-      cta: "Explore Partnerships",
-    },
-    {
       id: "software",
       label: "Software",
       title: "Factory Software",
@@ -164,7 +154,228 @@ export const showcase = {
       href: "/smart-factory",
       cta: "Explore Automation",
     },
+    {
+      id: "collaboration",
+      label: "Collaboration",
+      title: "Collaboration & Partnerships",
+      subtitle: "Your services. Our local reach.",
+      image: "/images/banner-manufacturing.jpg",
+      imageAlt: "AKPC collaboration and partnership network across operating regions",
+      href: "/collaboration",
+      cta: "Explore Partnerships",
+    },
   ],
+};
+
+// ---------------------------------------------------------------------------
+// SOFTWARE PAGE
+// ---------------------------------------------------------------------------
+export const softwarePage = {
+  hero: {
+    eyebrow: "Factory Software",
+    heading: [
+      [{ text: "Software built for", color: "" }],
+      [{ text: "factories that need", color: "" }],
+      [{ text: "more control.", color: "forest" }],
+    ],
+    subhead:
+      "We build custom software for manufacturing businesses, from production and inventory management to quality, maintenance, traceability and internal workflows.",
+    cta: "Build Your Software",
+    ctaHref: "/contact",
+    ctaSecondary: "View Projects",
+    ctaSecondaryHref: "#projects",
+    image: "/images/dashboard.jpg",
+    imageAlt: "AKPC factory software dashboard",
+  },
+  capabilities: {
+    heading: "Software that fits your factory.",
+    items: [
+      {
+        number: "01",
+        title: "Production Management",
+        desc: "Plan production, monitor output, track jobs and understand what is happening on the shop floor.",
+      },
+      {
+        number: "02",
+        title: "Inventory & Material Management",
+        desc: "Track raw materials, components, tools, consumables and finished goods.",
+      },
+      {
+        number: "03",
+        title: "Quality & Traceability",
+        desc: "Manage inspections, defects, rejection records and traceability across production.",
+      },
+      {
+        number: "04",
+        title: "Maintenance Management",
+        desc: "Track machine maintenance, breakdowns, service history and preventive schedules.",
+      },
+      {
+        number: "05",
+        title: "Dashboards & Analytics",
+        desc: "Turn production data into useful operational information for management.",
+      },
+      {
+        number: "06",
+        title: "Custom Factory Systems",
+        desc: "Build software around workflows that existing systems cannot handle properly.",
+      },
+    ],
+  },
+  projects: {
+    heading: "Built for real operations.",
+    subhead:
+      "A look at the systems and digital tools we develop to solve practical manufacturing problems.",
+    items: [
+      {
+        title: "Production Management System",
+        category: "Manufacturing · Web Application",
+        desc: "End-to-end production tracking from job assignment to completion, with real-time shop floor visibility.",
+      },
+    ],
+  },
+  process: {
+    heading: "From problem to production.",
+    steps: [
+      {
+        number: "01",
+        title: "Understand",
+        desc: "Understand the workflow, bottlenecks and operational requirements.",
+      },
+      {
+        number: "02",
+        title: "Design",
+        desc: "Design the system around the actual business process.",
+      },
+      {
+        number: "03",
+        title: "Build",
+        desc: "Develop and integrate the required software.",
+      },
+      {
+        number: "04",
+        title: "Deploy",
+        desc: "Launch, improve and evolve the system as the business grows.",
+      },
+    ],
+  },
+  cta: {
+    heading: "Your factory already has a way of working. Your software should fit it.",
+    cta: "Talk to AKPC",
+    ctaHref: "/contact",
+  },
+};
+
+// ---------------------------------------------------------------------------
+// COLLABORATION PAGE
+// ---------------------------------------------------------------------------
+export const collaborationPage = {
+  hero: {
+    eyebrow: "Collaboration",
+    heading: "Your service shouldn't stop where your team does.",
+    subhead:
+      "You may have the expertise, technology or service your customers need. But serving customers everywhere isn't always practical. We help extend your service reach into our region.",
+    cta: "Start a Collaboration",
+    ctaHref: "/contact",
+  },
+  problem: {
+    heading: "You're good at what you do.",
+    subheading: "But you can't be everywhere.",
+    paragraphs: [
+      "Your company may have specialized expertise, technology, trained teams, products or technical services that customers rely on.",
+      "But maintaining a local office in every region is expensive and impractical. A customer in another city or state may still need installation, inspection, maintenance, troubleshooting, technical assistance or after-sales support.",
+      "That gap between capability and reach is exactly what we solve.",
+    ],
+  },
+  transition: {
+    statement: "That's where we come in.",
+    flow: [
+      { label: "Your Company", sub: "Expertise + Technology" },
+      { label: "AKPC", sub: "Local Presence · Coordination · Execution" },
+      { label: "Your Customer", sub: "Served in our region" },
+    ],
+  },
+  proposition: {
+    heading: [
+      [{ text: "Your name.", color: "" }],
+      [{ text: "Your service.", color: "" }],
+      [{ text: "Our local presence.", color: "forest" }],
+    ],
+    paragraphs: [
+      "You continue to be the service provider. We become your local extension.",
+      "When your customer needs support in our region, we coordinate and deliver the agreed service on your behalf, under your brand and according to your standards.",
+    ],
+    highlight: {
+      left: "You stay the service provider.",
+      right: "We provide the local reach.",
+    },
+  },
+  howItWorks: {
+    heading: "How it works.",
+    steps: [
+      {
+        number: "01",
+        title: "You bring the expertise",
+        desc: "Your company provides the product, technology or specialized service.",
+      },
+      {
+        number: "02",
+        title: "Your customer needs local support",
+        desc: "A customer in our operating region needs installation, maintenance or technical assistance.",
+      },
+      {
+        number: "03",
+        title: "AKPC becomes your local extension",
+        desc: "We coordinate with your team and handle the local requirement.",
+      },
+      {
+        number: "04",
+        title: "Your customer gets served",
+        desc: "The customer receives the service without waiting for your team to travel.",
+      },
+    ],
+  },
+  localServices: {
+    heading: "What we can deliver locally.",
+    items: [
+      "Installation & Commissioning",
+      "Inspection & Technical Support",
+      "Maintenance & Servicing",
+      "On-site Assistance",
+      "Product Demonstration",
+      "Troubleshooting",
+      "Service Coordination",
+      "After-sales Support",
+    ],
+  },
+  whyCollaborate: {
+    heading: "Extend your reach without building another office.",
+    points: [
+      {
+        title: "Local Presence",
+        desc: "A team that can physically support customers in our operating region.",
+      },
+      {
+        title: "Lower Operational Overhead",
+        desc: "Expand service coverage without establishing another branch.",
+      },
+      {
+        title: "Faster Response",
+        desc: "Reduce the time and complexity associated with sending teams from another region.",
+      },
+      {
+        title: "Local Execution",
+        desc: "Coordinate agreed services while maintaining alignment with your company.",
+      },
+    ],
+  },
+  cta: {
+    heading: "Can't be everywhere?",
+    subheading: "Let us be there for you.",
+    subhead: "Talk to us about extending your service capabilities across our region.",
+    cta: "Start a Collaboration",
+    ctaHref: "/contact",
+  },
 };
 
 // ---------------------------------------------------------------------------
