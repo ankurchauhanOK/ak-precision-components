@@ -123,11 +123,11 @@ export const whatWeDo = {
 // ---------------------------------------------------------------------------
 export const showcase = {
   eyebrow: "What We Do",
-  heading: "Precision manufacturing. Digital systems. Connected automation.",
+  heading: "Collaboration. Digital systems. Connected automation.",
   subhead:
-    "One engineering partner for the modern factory — components, software and integration under one roof.",
+    "One engineering partner for the modern factory — partnerships, software and integration under one roof.",
   closing: {
-    left: "Precision Manufacturing",
+    left: "Local Collaboration",
     plus: "+",
     right: "Smart Factory",
     equals: "=",
@@ -135,14 +135,14 @@ export const showcase = {
   },
   slides: [
     {
-      id: "manufacturing",
-      label: "Manufacturing",
-      title: "Precision Manufacturing",
-      subtitle: "CNC Turning · VMC · Precision Components",
+      id: "collaboration",
+      label: "Collaboration",
+      title: "Collaboration & Partnerships",
+      subtitle: "Your services. Our local reach.",
       image: "/images/banner-manufacturing.jpg",
-      imageAlt: "Precision CNC and VMC manufacturing at AK Precision Components",
-      href: "/manufacturing",
-      cta: "Explore Manufacturing",
+      imageAlt: "AKPC collaboration and partnership network across operating regions",
+      href: "/about",
+      cta: "Explore Partnerships",
     },
     {
       id: "software",
