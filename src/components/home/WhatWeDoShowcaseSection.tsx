@@ -91,7 +91,7 @@ export default function WhatWeDoShowcaseSection() {
           <div
             role="tablist"
             aria-label="AK Precision offerings"
-            className="flex gap-7 w-full max-w-full overflow-x-auto -mx-4 px-4 sm:mx-0 sm:px-0 sm:justify-center"
+            className="flex gap-7 w-full max-w-full overflow-x-auto sm:overflow-visible -mx-4 px-4 sm:mx-0 sm:px-0 sm:justify-center py-14"
           >
             {slides.map((slide, i) => {
               const isActive = active === i;
