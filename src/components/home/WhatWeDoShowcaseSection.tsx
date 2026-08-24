@@ -93,7 +93,7 @@ export default function WhatWeDoShowcaseSection() {
           <div
             role="tablist"
             aria-label="AK Precision offerings"
-            className="flex gap-3 w-full max-w-full overflow-x-auto -mx-4 px-4 sm:mx-0 sm:px-0 sm:justify-center"
+            className="flex gap-7 w-full max-w-full overflow-x-auto -mx-4 px-4 sm:mx-0 sm:px-0 sm:justify-center"
           >
             {slides.map((slide, i) => {
               const isActive = active === i;
@@ -106,16 +106,18 @@ export default function WhatWeDoShowcaseSection() {
                   aria-selected={isActive}
                   aria-controls="showcase-panel"
                   onClick={() => goTo(i)}
-                  className={`relative shrink-0 rounded-full px-5 py-[15px] text-base font-medium transition-all duration-300 ${
+                  className={`relative shrink-0 rounded-full px-7 py-3 text-base font-medium transition-all duration-300 ${
                     isActive
                       ? "bg-[#F0F2F5] text-[#315C4A] border border-white/40 shadow-btn"
                       : "text-nav-text hover:bg-light-sage/40 hover:text-[#17251F] border border-transparent"
                   }`}
                 >
-                  {slide.label}
+                  <span className={isActive ? "pb-1 border-b-2 border-forest" : ""}>
+                    {slide.label}
+                  </span>
                   {isActive && (
                     <span
-                      className="absolute inset-x-3 bottom-1.5 h-0.5 rounded-full bg-light-sage overflow-hidden"
+                      className="absolute inset-x-7 bottom-1.5 h-0.5 rounded-full bg-light-sage overflow-hidden"
                       aria-hidden
                     >
                       <motion.span
