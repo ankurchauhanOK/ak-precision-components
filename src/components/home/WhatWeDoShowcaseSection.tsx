@@ -122,7 +122,7 @@ export default function WhatWeDoShowcaseSection() {
             role="tabpanel"
             id="showcase-panel"
             aria-labelledby={`showcase-tab-${slides[active].id}`}
-            className="relative w-full aspect-[7/5] overflow-hidden rounded-[32px] bg-warm-bg"
+            className="relative w-full aspect-[7/5] overflow-hidden bg-warm-bg"
             onTouchStart={handleTouchStart}
             onTouchEnd={handleTouchEnd}
           >
