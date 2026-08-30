@@ -102,7 +102,10 @@ export default function SmartFactoryPage() {
                   <span className="w-3 h-3 rounded-full bg-emerald-400" />
                   <span className="ml-3 text-white font-semibold">{dashboard.title}</span>
                 </div>
-                <span className="text-sage text-sm">{dashboard.shift}</span>
+                <div className="flex items-center gap-3">
+                  <span className="text-[10px] font-medium uppercase tracking-wider text-sage/60 border border-sage/20 rounded-full px-2.5 py-0.5">Demo Data</span>
+                  <span className="text-sage text-sm">{dashboard.shift}</span>
+                </div>
               </div>
 
               <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">

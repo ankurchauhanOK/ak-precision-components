@@ -14,11 +14,13 @@ export default function JobCardsPage() {
               Job Card Tracking
             </h1>
             <p className="text-base md:text-[17px] text-sage leading-[1.5] mb-8">
-              Digital job cards from assignment to completion. Track every job
-              through each stage of production.
+              A job should never disappear between one operation and the next.
+              <br />
+              Digital job cards from assignment to completion, tracking every
+              job through each stage of production.
             </p>
             <Button href="/contact" variant="primary">
-              Book a Demo
+              Talk to AKPC
             </Button>
           </div>
         </Container>

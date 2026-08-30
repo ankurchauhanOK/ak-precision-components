@@ -9,29 +9,29 @@
 
 export const site = {
   company: "AK Precision Components",
-  tagline: "Precision Manufacturing. Practical Industry 4.0.",
-  contactEmail: "info@akprecision.com", // ⚠ SAMPLE — real email
-  contactPhone: "+91 98XXX XXXXX", // ⚠ SAMPLE — real phone
-  location: "Pune, Maharashtra, India", // ⚠ SAMPLE — real address
+  tagline: "Manufacturing. Software. Industrial Expertise.",
+  contactEmail: "info@akprecision.com", // TODO: replace with real email
+  contactPhone: "+91 98XXX XXXXX", // TODO: replace with real phone
+  location: "Rudrapur, Uttarakhand, India",
   metaTitle:
-    "AK Smart Factory Lite | Industry 4.0 for CNC & VMC Machine Shops",
+    "AK Precision Components | Precision Manufacturing & Factory Software",
   metaDescription:
-    "AK Smart Factory Lite connects CNC, VMC and other machines to one platform for live production monitoring, OEE, cycle-time tracking, QR traceability and inspection data.",
+    "AK Precision Components combines precision manufacturing, factory software and an industrial partner network for manufacturers in Rudrapur, Pantnagar and beyond.",
 };
 
 // ---------------------------------------------------------------------------
 // HERO
 // ---------------------------------------------------------------------------
 export const hero = {
-  eyebrow: "Precision Manufacturing + Industry 4.0",
+  eyebrow: "Precision Manufacturing",
   headline: [
-    [{ text: "Precision parts, Smarter", color: "forest" }],
-    [{ text: "manufacturing. Built", color: "deep-forest" }],
-    [{ text: "for what's next.", color: "sage-hero" }],
+    [{ text: "We make the parts.", color: "forest" }],
+    [{ text: "We are building what", color: "deep-forest" }],
+    [{ text: "makes factories better.", color: "sage-hero" }],
   ],
-  cta: "Book a Demo",
+  cta: "Talk to AKPC",
   ctaHref: "/contact",
-  ctaSecondary: "Explore Manufacturing",
+  ctaSecondary: "See What We Build",
   ctaSecondaryHref: "/manufacturing",
 };
 
@@ -78,33 +78,33 @@ export const whatWeDo = {
   eyebrow: "What We Do",
   heading: "What We Do.",
   subhead:
-    "Precision components, machining capability and practical factory technology — one engineering partner.",
+    "We make the parts. We build the software. We connect the expertise. AKPC started with precision component manufacturing and is extending that experience into digital factory systems and an industrial partner network.",
   items: [
     {
       number: "01",
-      title: "CNC Turning",
-      desc: "Precision turning for repeatable, production-ready components.",
-      cta: "Explore",
-      href: "/manufacturing/cnc-turning",
-    },
-    {
-      number: "02",
-      title: "VMC Machining",
-      desc: "Accurate milling and machining for complex component geometries.",
-      cta: "Explore",
-      href: "/manufacturing/vmc",
-    },
-    {
-      number: "03",
-      title: "Precision Components",
-      desc: "Manufacturing across materials and production requirements.",
+      title: "Manufacturing",
+      desc: "Precision components produced through CNC turning, VMC machining and controlled inspection.",
       cta: "Explore",
       href: "/manufacturing",
     },
     {
+      number: "02",
+      title: "Factory Software",
+      desc: "Digital systems for production, quality, maintenance, inspection and factory workflows.",
+      cta: "Explore",
+      href: "/software",
+    },
+    {
+      number: "03",
+      title: "Industrial Partner Network",
+      desc: "Local technical support and specialized industrial expertise, connected through AKPC.",
+      cta: "Explore",
+      href: "/partner-network",
+    },
+    {
       number: "04",
-      title: "Industry 4.0",
-      desc: "Practical factory monitoring, traceability and production visibility.",
+      title: "AK Smart Factory Lite",
+      desc: "Practical factory monitoring, traceability and production visibility for CNC and VMC machine shops.",
       cta: "Explore",
       href: "/smart-factory",
     },
@@ -112,7 +112,7 @@ export const whatWeDo = {
   equation: {
     left: "Precision Manufacturing",
     plus: "+",
-    right: "Smart Factory",
+    right: "Factory Software",
     equals: "=",
     result: "One Engineering Partner",
   },
@@ -123,46 +123,46 @@ export const whatWeDo = {
 // ---------------------------------------------------------------------------
 export const showcase = {
   eyebrow: "What We Do",
-  heading: "Collaboration. Digital systems. Connected automation.",
+  heading: "Manufacturing. Factory software. Industrial partner network.",
   subhead:
-    "One engineering partner for the modern factory — partnerships, software and integration under one roof.",
+    "Precision manufacturing, digital factory solutions and a growing industrial partner network — built around the problems factories face every day.",
   closing: {
-    left: "Local Collaboration",
+    left: "Precision Manufacturing",
     plus: "+",
-    right: "Smart Factory",
+    right: "Factory Software",
     equals: "=",
     result: "One Engineering Partner",
   },
   slides: [
     {
+      id: "manufacturing",
+      label: "Manufacturing",
+      title: "Precision Manufacturing",
+      subtitle: "We make components for production environments where accuracy and repeatability matter.",
+      image: "/images/banner-manufacturing.jpg",
+      imageAlt: "Precision manufacturing at AK Precision Components",
+      href: "/manufacturing",
+      cta: "Explore Manufacturing",
+    },
+    {
       id: "software",
-      label: "Software",
+      label: "Factory Software",
       title: "Factory Software",
-      subtitle: "AK Smart Factory Lite · OEE · Traceability",
+      subtitle: "We turn production, quality, maintenance and inspection workflows into connected digital systems.",
       image: "/images/banner-software.jpg",
       imageAlt: "AK Smart Factory Lite live production dashboard",
       href: "/software",
       cta: "Explore Software",
     },
     {
-      id: "automation",
-      label: "Automation + Integration",
-      title: "Automation & Integration",
-      subtitle: "Machine Connectivity · Shop-Floor Integration",
-      image: "/images/banner-automation.jpg",
-      imageAlt: "Factory automation and machine integration at AK Precision Components",
-      href: "/smart-factory",
-      cta: "Explore Automation",
-    },
-    {
-      id: "collaboration",
-      label: "Collaboration",
-      title: "Collaboration & Partnerships",
-      subtitle: "Your services. Our local reach.",
-      image: "/images/banner-manufacturing.jpg",
-      imageAlt: "AKPC collaboration and partnership network across operating regions",
-      href: "/collaboration",
-      cta: "Explore Partnerships",
+      id: "partner-network",
+      label: "Industrial Partner Network",
+      title: "Industrial Partner Network",
+      subtitle: "Your equipment may come from somewhere else. Your service problem is happening here.",
+      image: "/images/banner-partner-network.jpg",
+      imageAlt: "AKPC industrial partner network and local service support",
+      href: "/partner-network",
+      cta: "Explore Network",
     },
   ],
 };
@@ -174,15 +174,15 @@ export const softwarePage = {
   hero: {
     eyebrow: "Factory Software",
     heading: [
-      [{ text: "Software built for", color: "" }],
-      [{ text: "factories that need", color: "" }],
-      [{ text: "more control.", color: "forest" }],
+      [{ text: "Your factory already produces", color: "" }],
+      [{ text: "the data. The problem is", color: "" }],
+      [{ text: "where that data goes.", color: "forest" }],
     ],
     subhead:
-      "We build custom software for manufacturing businesses, from production and inventory management to quality, maintenance, traceability and internal workflows.",
-    cta: "Build Your Software",
+      "Production records, quality checks, maintenance logs, inspection readings and job information often live in different places. We build software that brings those workflows together around the way your factory actually works.",
+    cta: "Talk to AKPC",
     ctaHref: "/contact",
-    ctaSecondary: "View Projects",
+    ctaSecondary: "See What We Build",
     ctaSecondaryHref: "#projects",
     image: "/images/dashboard.jpg",
     imageAlt: "AKPC factory software dashboard",
@@ -193,39 +193,39 @@ export const softwarePage = {
       {
         number: "01",
         title: "Production Management",
-        desc: "Plan production, monitor output, track jobs and understand what is happening on the shop floor.",
+        desc: "Track jobs, production, targets and shop-floor progress in one place.",
       },
       {
         number: "02",
         title: "Inventory & Material Management",
-        desc: "Track raw materials, components, tools, consumables and finished goods.",
+        desc: "Know what material, component, tool and consumable is available, where it is and what needs attention.",
       },
       {
         number: "03",
         title: "Quality & Traceability",
-        desc: "Manage inspections, defects, rejection records and traceability across production.",
+        desc: "Record inspections, defects and production history without relying on disconnected paper records.",
       },
       {
         number: "04",
         title: "Maintenance Management",
-        desc: "Track machine maintenance, breakdowns, service history and preventive schedules.",
+        desc: "Keep machine history, preventive schedules, breakdowns and service records together.",
       },
       {
         number: "05",
         title: "Dashboards & Analytics",
-        desc: "Turn production data into useful operational information for management.",
+        desc: "Turn operational data into information management can actually use.",
       },
       {
         number: "06",
         title: "Custom Factory Systems",
-        desc: "Build software around workflows that existing systems cannot handle properly.",
+        desc: "When an existing system does not fit the workflow, we build around the workflow.",
       },
     ],
   },
   projects: {
     heading: "Built for real operations.",
     subhead:
-      "A look at the systems and digital tools we develop to solve practical manufacturing problems.",
+      "Good factory software starts with understanding the work. We build systems around the processes people already follow, then make those processes easier to see, manage and improve.",
     items: [
       {
         title: "Production Management System",
@@ -240,22 +240,22 @@ export const softwarePage = {
       {
         number: "01",
         title: "Understand",
-        desc: "Understand the workflow, bottlenecks and operational requirements.",
+        desc: "Understand the workflow, the people using it and where information gets lost.",
       },
       {
         number: "02",
         title: "Design",
-        desc: "Design the system around the actual business process.",
+        desc: "Turn the actual process into a system that is clear and practical.",
       },
       {
         number: "03",
         title: "Build",
-        desc: "Develop and integrate the required software.",
+        desc: "Develop the software around the agreed workflow.",
       },
       {
         number: "04",
         title: "Deploy",
-        desc: "Launch, improve and evolve the system as the business grows.",
+        desc: "Put it into use, learn from the first version and improve from there.",
       },
     ],
   },
@@ -269,111 +269,84 @@ export const softwarePage = {
 // ---------------------------------------------------------------------------
 // COLLABORATION PAGE
 // ---------------------------------------------------------------------------
-export const collaborationPage = {
+export const partnerNetworkPage = {
   hero: {
-    eyebrow: "Collaboration",
-    heading: "Your service shouldn't stop where your team does.",
+    eyebrow: "Industrial Partner Network",
+    heading: "Your equipment may come from somewhere else.\nYour service problem is happening here.",
     subhead:
-      "You may have the expertise, technology or service your customers need. But serving customers everywhere isn't always practical. We help extend your service reach into our region.",
-    cta: "Start a Collaboration",
+      "AKPC connects industrial companies with local technical support, service capabilities and specialized technology across Rudrapur, Pantnagar and the surrounding industrial region.",
+    ctaPrimary: "Become a Partner",
+    ctaPrimaryHref: "/contact",
+    ctaSecondary: "Request Industrial Service",
+    ctaSecondaryHref: "/contact",
+  },
+  forEquipmentCompanies: {
+    heading: "Need someone on the ground?",
+    subhead:
+      "You manufacture or supply industrial equipment, but do not have a dedicated service presence in Rudrapur or Pantnagar. AKPC can provide local technical support and customer-site assistance.",
+    items: [
+      "Installation support",
+      "Commissioning assistance",
+      "Preventive maintenance",
+      "Breakdown visits",
+      "Troubleshooting",
+      "Spare replacement",
+      "Customer support",
+      "Service reporting",
+      "Local coordination",
+    ],
+    cta: "Become an AKPC Partner",
     ctaHref: "/contact",
   },
-  problem: {
-    heading: "You're good at what you do.",
-    subheading: "But you can't be everywhere.",
-    paragraphs: [
-      "Your company may have specialized expertise, technology, trained teams, products or technical services that customers rely on.",
-      "But maintaining a local office in every region is expensive and impractical. A customer in another city or state may still need installation, inspection, maintenance, troubleshooting, technical assistance or after-sales support.",
-      "That gap between capability and reach is exactly what we solve.",
-    ],
-  },
-  transition: {
-    statement: "That's where we come in.",
-    flow: [
-      { label: "Your Company", sub: "Expertise + Technology" },
-      { label: "AKPC", sub: "Local Presence · Coordination · Execution" },
-      { label: "Your Customer", sub: "Served in our region" },
-    ],
-  },
-  proposition: {
-    heading: [
-      [{ text: "Your name.", color: "" }],
-      [{ text: "Your service.", color: "" }],
-      [{ text: "Our local presence.", color: "forest" }],
-    ],
-    paragraphs: [
-      "You continue to be the service provider. We become your local extension.",
-      "When your customer needs support in our region, we coordinate and deliver the agreed service on your behalf, under your brand and according to your standards.",
-    ],
-    highlight: {
-      left: "You stay the service provider.",
-      right: "We provide the local reach.",
-    },
-  },
-  howItWorks: {
-    heading: "How it works.",
-    steps: [
-      {
-        number: "01",
-        title: "You bring the expertise",
-        desc: "Your company provides the product, technology or specialized service.",
-      },
-      {
-        number: "02",
-        title: "Your customer needs local support",
-        desc: "A customer in our operating region needs installation, maintenance or technical assistance.",
-      },
-      {
-        number: "03",
-        title: "AKPC becomes your local extension",
-        desc: "We coordinate with your team and handle the local requirement.",
-      },
-      {
-        number: "04",
-        title: "Your customer gets served",
-        desc: "The customer receives the service without waiting for your team to travel.",
-      },
-    ],
-  },
-  localServices: {
-    heading: "What we can deliver locally.",
+  forFactories: {
+    heading: "Need technical support?",
+    subhead:
+      "Whether you need support for an existing industrial system or technical help with a new requirement, AKPC can connect you with the relevant capability through our network.",
     items: [
-      "Installation & Commissioning",
-      "Inspection & Technical Support",
-      "Maintenance & Servicing",
-      "On-site Assistance",
-      "Product Demonstration",
-      "Troubleshooting",
-      "Service Coordination",
-      "After-sales Support",
+      "Industrial equipment service",
+      "Automation & integration",
+      "Gauging & inspection",
+      "CNC / VMC / HMC support",
+      "Electrical & control systems",
+      "Pneumatics & hydraulics",
+      "Machine vision",
+      "Installation & commissioning",
+    ],
+    cta: "Tell Us What You Need",
+    ctaHref: "/contact",
+  },
+  automation: {
+    eyebrow: "Strategic Focus",
+    heading: "Automation & Integration",
+    subhead:
+      "Automation is where we are going deeper. We are building our technical expertise around the connection between machines, measurement and software. Where specialist hardware is required, we work with the right technology partners.",
+    capabilities: [
+      "PLC programming & configuration",
+      "Sensor & instrumentation",
+      "Drive systems & motor control",
+      "HMI development",
+      "Pneumatic & hydraulic systems",
+      "Machine interfaces & communication",
+      "CNC & VMC integration",
+      "Machine vision systems",
+      "Digital gauging",
+      "Data acquisition & connectivity",
     ],
   },
-  whyCollaborate: {
-    heading: "Extend your reach without building another office.",
-    points: [
-      {
-        title: "Local Presence",
-        desc: "A team that can physically support customers in our operating region.",
-      },
-      {
-        title: "Lower Operational Overhead",
-        desc: "Expand service coverage without establishing another branch.",
-      },
-      {
-        title: "Faster Response",
-        desc: "Reduce the time and complexity associated with sending teams from another region.",
-      },
-      {
-        title: "Local Execution",
-        desc: "Coordinate agreed services while maintaining alignment with your company.",
-      },
+  whyPartner: {
+    heading: "Why partner with AKPC?",
+    reasons: [
+      { title: "Local presence", desc: "Based in Rudrapur, within the SIDCUL industrial ecosystem." },
+      { title: "Technical capability", desc: "Manufacturing experience with a growing focus on software and industrial technology." },
+      { title: "Flexible engagement", desc: "Start with a pilot assignment and expand as the relationship proves itself." },
+      { title: "Training ready", desc: "We are willing to undergo OEM training and certification requirements." },
     ],
   },
   cta: {
-    heading: "Can't be everywhere?",
-    subheading: "Let us be there for you.",
-    subhead: "Talk to us about extending your service capabilities across our region.",
-    cta: "Start a Collaboration",
+    heading: "Your customers are already here. Your service network can be too.",
+    subhead:
+      "Partner with AKPC for local industrial service and technical support across Rudrapur, Pantnagar and the surrounding region.",
+    cta: "Become a Partner",
     ctaHref: "/contact",
   },
 };
@@ -534,29 +507,29 @@ export const machineToManagement = {
 // WHY AK — the equation
 // ---------------------------------------------------------------------------
 export const whyAK = {
-  eyebrow: "Why AK",
-  heading: "We understand the factory because we operate one.",
+  eyebrow: "Why AKPC",
+  heading: "We understand factories because we run one.",
   subhead:
-    "AK Precision Components combines real manufacturing experience with software and automation expertise. We design Industry 4.0 solutions around the realities of Indian manufacturing floors — not just theoretical digital transformation.",
+    "We manufacture components ourselves. That means we work with machines, tooling, tolerances, inspection, operators, production schedules and the everyday constraints of a real shop floor. That experience shapes the software we build and the industrial partnerships we develop.",
   pillars: [
     {
       title: "Manufacturing Experience",
-      desc: "Years of running CNC and VMC machines, meeting tolerances and hitting delivery dates.", // ⚠ SAMPLE — real years
+      desc: "Years of running CNC and VMC machines, meeting tolerances and hitting delivery dates.",
     },
     {
       title: "Software Engineering",
       desc: "Products designed by engineers who build, ship and support production software.",
     },
     {
-      title: "Automation",
+      title: "Industrial Technology",
       desc: "Machine connectivity, data collection and shop-floor integration experience.",
     },
     {
-      title: "AI / Analytics",
-      desc: "Turning raw production data into insights management can actually use.",
+      title: "Automation Focus",
+      desc: "Growing technical expertise in the connection between machines, measurement and software.",
     },
   ],
-  result: "Practical Industry 4.0",
+  result: "Practical Manufacturing Technology",
 };
 
 // ---------------------------------------------------------------------------
@@ -566,7 +539,7 @@ export const builtAroundMachines = {
   eyebrow: "Built Around Real Manufacturing",
   heading: "Tested on our own factory floor.",
   subhead:
-    "We don't just build factory software. We run it on our own machines — every shift, every day. Our Industry 4.0 solutions are designed with real machine-shop workflows in mind.",
+    "We don't just build factory software. We run it on our own machines — every shift, every day. Our solutions are designed with real machine-shop workflows in mind.",
   cta: "See Our Manufacturing Floor",
   ctaHref: "/manufacturing/machines",
 };
@@ -626,33 +599,24 @@ export const audiences = {
 // ---------------------------------------------------------------------------
 // CASE STUDIES — SAMPLE ONLY, replace with 3–5 real stories per the roadmap
 // ---------------------------------------------------------------------------
-export const caseStudies = {
+type CaseStudyItem = {
+  title: string;
+  customer: string;
+  before: string[];
+  after: string[];
+  stats: { label: string; value: string }[];
+};
+
+export const caseStudies: {
+  eyebrow: string;
+  heading: string;
+  note: string;
+  items: CaseStudyItem[];
+} = {
   eyebrow: "Case Studies",
-  heading: "Factories That Went Digital",
-  note: "Real results coming soon.", // ⚠ SAMPLE — remove once real
-  items: [
-    {
-      title: "Digitalizing a 24-Machine CNC Shop", // ⚠ SAMPLE
-      customer: "Sample Customer #1", // ⚠ SAMPLE
-      before: [
-        "Paper production records",
-        "Manual downtime tracking",
-        "No real-time OEE",
-        "Limited management visibility",
-      ],
-      after: [
-        "Live machine monitoring",
-        "Automated OEE",
-        "QR traceability",
-        "Digital inspection & remote dashboard",
-      ],
-      stats: [
-        { label: "Production Visibility", value: "+18%" }, // ⚠ SAMPLE
-        { label: "Untracked Downtime", value: "−32%" }, // ⚠ SAMPLE
-        { label: "Job Traceability", value: "100%" }, // ⚠ SAMPLE
-      ],
-    },
-  ],
+  heading: "Factory Deployments",
+  note: "More factory deployments coming soon.",
+  items: [],
 };
 
 // ---------------------------------------------------------------------------
@@ -678,9 +642,9 @@ export const roadmap = {
 export const pricing = {
   eyebrow: "Pricing",
   heading: "Start with one machine. Grow from there.",
-  startingFrom: "₹2,00,000", // ⚠ SAMPLE — roadmap says ₹2–10 lakh per factory
-  range: "₹2 to ₹10 lakh per factory", // ⚠ SAMPLE — depends on machine count, connectivity, sensors, PLC integration, deployment
-  note: "Scope depends on machine count, connectivity, sensors, PLC integration, deployment model and customization.",
+  startingFrom: "",
+  range: "",
+  note: "Pricing depends on machine count, connectivity, sensors, integration requirements, deployment model and customization. Contact us for a factory assessment.",
   cta: "Request a Factory Assessment",
 };
 
@@ -688,11 +652,11 @@ export const pricing = {
 // SMART FACTORY PRODUCT CTA — used at the end of the product page
 // ---------------------------------------------------------------------------
 export const finalCTA = {
-  heading: "Ready to See Your Factory Differently?",
+  heading: "Have a manufacturing problem you want to solve?",
   subhead:
-    "Let's connect your first machine and show you what your production data can tell you.",
-  ctaPrimary: "Book a Factory Demo",
-  ctaSecondary: "Talk to an Engineer",
+    "Whether you need precision components, factory software or local industrial support, tell us what you are working on.",
+  ctaPrimary: "Talk to AKPC",
+  ctaSecondary: "Request a Quote",
 };
 
 // ---------------------------------------------------------------------------
@@ -712,17 +676,17 @@ export const videoStory = {
 // READY TO BUILD — contact CTA
 // ---------------------------------------------------------------------------
 export const buildCTA = {
-  heading: "Let's Build Something Precise.",
+  heading: "Let's talk about what you are building.",
   subhead:
-    "Looking for precision components or practical Industry 4.0 solutions? Let's talk about your manufacturing requirements.",
-  cta: "Contact Us",
+    "Whether you need precision components, factory software or local industrial support, give us the context. We will start from the requirement, not the pitch.",
+  cta: "Talk to AKPC",
   ctaHref: "/contact",
-  ctaSecondary: "Book a Demo",
+  ctaSecondary: "Request a Quote",
   ctaSecondaryHref: "/contact",
   contacts: [
-    { label: "Phone", value: site.contactPhone }, // ⚠ SAMPLE — real phone
-    { label: "Email", value: site.contactEmail }, // ⚠ SAMPLE — real email
-    { label: "Location", value: site.location }, // ⚠ SAMPLE — real address
+    { label: "Phone", value: site.contactPhone },
+    { label: "Email", value: site.contactEmail },
+    { label: "Location", value: site.location },
   ],
 };
 
@@ -731,9 +695,9 @@ export const buildCTA = {
 // ---------------------------------------------------------------------------
 export const projectsPage = {
   eyebrow: "Projects",
-  heading: "Precision Manufacturing",
+  heading: "What we build starts with what needs solving.",
   subhead:
-    "Machining capabilities built around accuracy, repeatability and dependable production.",
+    "From precision-machined components to factory software, our work is shaped by real production requirements.",
   statement: {
     text: "Precision machining is only one part of what we build.",
     linkText: "Explore our manufacturing capabilities",
@@ -784,20 +748,20 @@ export const projectsPage = {
       number: "03",
       tab: "Software",
       name: "AK Smart Factory Lite",
-      category: "Industry 4.0 Platform",
+      category: "Factory Monitoring Platform",
       description:
         "Machine status, OEE, cycle times and inspection records in one live dashboard — built from our own shop floor.",
       image: "/images/dashboard.jpg",
       imageAlt: "AK Smart Factory Lite live production dashboard",
       specs: [
-        { label: "OEE", value: "87.4%" },
-        { label: "Production", value: "1,284 pcs" },
-        { label: "Downtime", value: "42 min" },
-        { label: "Efficiency", value: "92%" },
+        { label: "OEE", value: "Demo data" },
+        { label: "Production", value: "Demo data" },
+        { label: "Downtime", value: "Demo data" },
+        { label: "Efficiency", value: "Demo data" },
       ],
       rateLabel: "Subscription",
       rateValue: "On request",
-      cta: "Book a Demo",
+      cta: "Talk to AKPC",
       href: "/software",
     },
   ],
@@ -809,9 +773,9 @@ export const projectsPage = {
 export const productPage = {
   hero: {
     eyebrow: "AK Smart Factory Lite",
-    heading: "The practical Industry 4.0 platform.",
+    heading: "Start with one machine. See what your factory is actually doing.",
     subhead:
-      "Designed for CNC and VMC machine shops that want real visibility — without a six-month ERP project.",
+      "A practical factory monitoring and traceability platform for CNC and VMC machine shops that want live production visibility without starting with a large ERP implementation.",
     ctaPrimary: "Book a Factory Demo",
     ctaSecondary: "Request a Factory Assessment",
   },
@@ -824,10 +788,10 @@ export const productPage = {
     "Mobile app for operators & management",
   ],
   deployment: [
-    { step: "01", title: "Connect your first machine", desc: "We install the connectivity unit and pull live machine signals." }, // ⚠ SAMPLE
-    { step: "02", title: "See live data on day one", desc: "Machine status, cycle time and output start flowing to the dashboard." },
-    { step: "03", title: "Digitize quality & jobs", desc: "QR tags and digital inspection records replace paper." },
-    { step: "04", title: "Scale to the whole factory", desc: "Add machines, users and reports as you grow." },
+    { step: "01", title: "Connect your first machine", desc: "We install the connectivity unit and pull live machine signals." },
+    { step: "02", title: "See live data", desc: "Machine status, cycle time and output start flowing to the dashboard." },
+    { step: "03", title: "Digitize jobs and quality", desc: "QR tags and digital inspection records replace paper." },
+    { step: "04", title: "Expand across the factory", desc: "Add machines, users and reports as you grow." },
   ],
   architecture: {
     label: "Architecture",

@@ -7,7 +7,7 @@ export default function WhatWeDoSection() {
   const { eyebrow, heading, subhead, items, equation } = whatWeDo;
 
   return (
-    <section id="capabilities" className="py-20 md:py-24 bg-warm-bg">
+    <section id="capabilities" className="py-8 md:py-24 bg-warm-bg">
       <Container>
         <AnimatedSection>
           <div className="text-center max-w-3xl mx-auto">

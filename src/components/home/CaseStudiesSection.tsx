@@ -20,7 +20,7 @@ export default function CaseStudiesSection() {
           </div>
         </AnimatedSection>
 
-        {caseStudies.items.map((study, i) => (
+        {caseStudies.items.length > 0 && caseStudies.items.map((study, i) => (
           <AnimatedSection key={study.title} delay={i * 0.1}>
             <div className="bg-white rounded-3xl border border-light-sage p-8 md:p-10">
               <div className="flex items-start justify-between gap-4 flex-wrap mb-8">

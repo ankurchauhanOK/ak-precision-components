@@ -11,14 +11,16 @@ export default function QualityControlPage() {
               Software
             </p>
             <h1 className="text-[clamp(32px,3vw,40px)] font-semibold leading-[1.15] tracking-tight mb-8">
-              Quality Control Dashboard
+              Quality Control
             </h1>
             <p className="text-base md:text-[17px] text-sage leading-[1.5] mb-8">
-              Digital QC checklists, real-time defect tracking, and quality
-              analytics to maintain consistent product quality.
+              Quality records should tell you more than whether a part passed.
+              <br />
+              Digital checklists, defect tracking and quality analytics to
+              maintain consistent product quality.
             </p>
             <Button href="/contact" variant="primary">
-              Book a Demo
+              Talk to AKPC
             </Button>
           </div>
         </Container>

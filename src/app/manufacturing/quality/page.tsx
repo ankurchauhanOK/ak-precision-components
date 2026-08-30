@@ -13,8 +13,11 @@ export default function QualityPage() {
               Quality Control
             </h1>
             <p className="text-base md:text-[17px] text-sage leading-[1.5]">
-              Every component undergoes rigorous inspection to ensure it meets
-              your specifications.
+              Precision only means something when you can measure it.
+              <br />
+              Inspection is part of the process, not something added after production.
+              We check incoming material, in-process production and finished components
+              against the required specifications.
             </p>
           </div>
         </Container>

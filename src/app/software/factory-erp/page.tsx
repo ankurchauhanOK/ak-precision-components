@@ -14,11 +14,14 @@ export default function FactoryErpPage() {
               Factory ERP
             </h1>
             <p className="text-base md:text-[17px] text-sage leading-[1.5] mb-8">
-              End-to-end enterprise resource planning designed for manufacturing units.
-              Manage purchasing, production, inventory, sales, and finance in one place.
+              One system can connect the business. But it still has to fit the
+              factory.
+              <br />
+              Enterprise resource planning designed for manufacturing units —
+              purchasing, production, inventory, sales and finance in one place.
             </p>
             <Button href="/contact" variant="primary">
-              Book a Demo
+              Talk to AKPC
             </Button>
           </div>
         </Container>

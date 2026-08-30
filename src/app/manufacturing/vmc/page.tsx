@@ -14,8 +14,10 @@ export default function VmcPage() {
               VMC Machining
             </h1>
             <p className="text-base md:text-[17px] text-sage leading-[1.5] mb-8">
-              3-axis and 4-axis VMC machining for complex components with
-              superior surface finish and dimensional accuracy.
+              When the geometry gets harder, the process has to stay controlled.
+              <br />
+              We machine complex profiles and components on 3-axis and 4-axis VMC equipment
+              with attention to dimensional accuracy, repeatability and surface finish.
             </p>
             <Button href="/contact" variant="primary">
               Request Quote

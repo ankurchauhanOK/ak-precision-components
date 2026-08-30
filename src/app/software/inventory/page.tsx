@@ -14,11 +14,14 @@ export default function InventoryPage() {
               Inventory Management
             </h1>
             <p className="text-base md:text-[17px] text-sage leading-[1.5] mb-8">
-              Track raw materials, work-in-progress, and finished goods with
-              real-time stock visibility and automated reorder alerts.
+              Knowing what you have is only the first step. Knowing what you
+              need next is better.
+              <br />
+              Track raw materials, work-in-progress and finished goods with
+              real-time visibility across your inventory.
             </p>
             <Button href="/contact" variant="primary">
-              Book a Demo
+              Talk to AKPC
             </Button>
           </div>
         </Container>

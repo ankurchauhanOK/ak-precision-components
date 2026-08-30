@@ -14,11 +14,13 @@ export default function CustomDevelopmentPage() {
               Custom Software Development
             </h1>
             <p className="text-base md:text-[17px] text-sage leading-[1.5] mb-8">
-              Tailored software solutions built specifically for your
-              manufacturing operations. From simple tools to complex platforms.
+              When the workflow is specific, the software should be too.
+              <br />
+              Tailored solutions built around your manufacturing operations,
+              from focused tools to broader platforms.
             </p>
             <Button href="/contact" variant="primary">
-              Book a Demo
+              Talk to AKPC
             </Button>
           </div>
         </Container>

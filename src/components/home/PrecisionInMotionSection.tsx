@@ -7,7 +7,7 @@ import { videoStory } from "@/data/smartFactory";
 
 export default function PrecisionInMotionSection() {
   return (
-    <section className="bg-warm-bg pt-0 pb-16 md:pb-24">
+    <section className="bg-warm-bg pt-2 pb-6 md:pt-0 md:pb-24">
       <div className="w-full">
         <div className="flex flex-col items-center text-center">
           <motion.div
@@ -21,7 +21,7 @@ export default function PrecisionInMotionSection() {
           </motion.div>
 
           <AnimatedSection delay={0.1}>
-            <div className="mt-6 md:mt-8 flex flex-wrap items-center justify-center gap-2 md:gap-3">
+            <div className="mt-4 md:mt-8 flex flex-wrap items-center justify-center gap-2 md:gap-3">
               {videoStory.steps.map((step, i) => (
                 <span key={step} className="flex items-center gap-2 md:gap-3">
                   <span className="text-xs font-medium text-sage uppercase tracking-[0.2em]">

@@ -5,6 +5,7 @@ import Image from "next/image";
 import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
 import AnimatedSection from "@/components/ui/AnimatedSection";
 import Container from "@/components/ui/Container";
+import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
 import { showcase } from "@/data/smartFactory";
 
 const ROTATION_MS = 10000;
@@ -17,8 +18,10 @@ export default function WhatWeDoShowcaseSection() {
   const { slides, closing } = showcase;
   const [active, setActive] = useState(0);
   const [direction, setDirection] = useState<Direction>(1);
+  const [timerKey, setTimerKey] = useState(0);
   const reducedMotion = useReducedMotion();
   const touchStart = useRef<{ x: number; y: number } | null>(null);
+  const isHovered = useRef(false);
 
   const count = slides.length;
 
@@ -32,6 +35,7 @@ export default function WhatWeDoShowcaseSection() {
       if (clamped !== active) {
         setDirection(dir);
         setActive(clamped);
+        setTimerKey((k) => k + 1);
       }
     },
     [active, count]
@@ -44,7 +48,7 @@ export default function WhatWeDoShowcaseSection() {
     if (reducedMotion) return;
     const id = setTimeout(next, ROTATION_MS);
     return () => clearTimeout(id);
-  }, [next, reducedMotion]);
+  }, [next, reducedMotion, timerKey]);
 
   const handleTouchStart = (e: React.TouchEvent) => {
     touchStart.current = {
@@ -71,7 +75,7 @@ export default function WhatWeDoShowcaseSection() {
   };
 
   return (
-    <section className="bg-warm-bg pb-20 md:pb-24" aria-label="What we do showcase">
+    <section className="bg-warm-bg pt-4 pb-6 md:pt-0 md:pb-2" aria-label="What we do showcase">
       <Container>
         <AnimatedSection>
           <div className="text-center max-w-3xl mx-auto">
@@ -122,9 +126,11 @@ export default function WhatWeDoShowcaseSection() {
             role="tabpanel"
             id="showcase-panel"
             aria-labelledby={`showcase-tab-${slides[active].id}`}
-            className="relative w-full aspect-[7/5] overflow-hidden bg-warm-bg"
+            className="relative w-full aspect-[7/5] overflow-hidden bg-warm-bg group"
             onTouchStart={handleTouchStart}
             onTouchEnd={handleTouchEnd}
+            onMouseEnter={() => { isHovered.current = true; }}
+            onMouseLeave={() => { isHovered.current = false; }}
           >
             <AnimatePresence custom={direction} initial={false}>
               <motion.div
@@ -146,6 +152,56 @@ export default function WhatWeDoShowcaseSection() {
                 />
               </motion.div>
             </AnimatePresence>
+
+            {/* Previous arrow */}
+            <button
+              type="button"
+              onClick={prev}
+              aria-label="Previous slide"
+              className="absolute left-3 top-1/2 -translate-y-1/2 z-10 h-10 w-10 rounded-full bg-white/80 backdrop-blur-sm border border-white/40 shadow-md flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-200 hover:bg-white"
+            >
+              <ChevronLeftIcon className="w-5 h-5 text-deep-forest" />
+            </button>
+
+            {/* Next arrow */}
+            <button
+              type="button"
+              onClick={next}
+              aria-label="Next slide"
+              className="absolute right-3 top-1/2 -translate-y-1/2 z-10 h-10 w-10 rounded-full bg-white/80 backdrop-blur-sm border border-white/40 shadow-md flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-200 hover:bg-white"
+            >
+              <ChevronRightIcon className="w-5 h-5 text-deep-forest" />
+            </button>
+          </div>
+
+          {/* Pagination dots */}
+          <div className="mt-4 flex justify-center gap-2" role="tablist" aria-label="Slide navigation">
+            {slides.map((slide, i) => (
+              <button
+                key={slide.id}
+                type="button"
+                role="tab"
+                aria-selected={active === i}
+                aria-label={`Go to ${slide.label}`}
+                onClick={() => goTo(i)}
+                className={`h-2 rounded-full transition-all duration-300 ${
+                  active === i
+                    ? "w-6 bg-forest"
+                    : "w-2 bg-forest/30 hover:bg-forest/50"
+                }`}
+              />
+            ))}
+          </div>
+
+          {/* Slide CTA */}
+          <div className="mt-6 flex justify-center">
+            <a
+              href={slides[active].href}
+              className="inline-flex items-center gap-2 rounded-full bg-[#F0F2F5] border border-white/40 shadow-btn px-6 py-3 text-sm font-semibold text-[#315C4A] transition-colors duration-200 hover:bg-white"
+            >
+              {slides[active].cta}
+              <ChevronRightIcon className="w-4 h-4" />
+            </a>
           </div>
         </div>
 

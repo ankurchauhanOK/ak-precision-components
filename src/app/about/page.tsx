@@ -7,12 +7,12 @@ export default function AboutPage() {
         <Container>
           <div className="max-w-3xl">
             <p className="text-xs font-medium text-forest uppercase tracking-[0.16em] mb-3">
-              About
+              ABOUT AKPC
             </p>
             <h1 className="text-[clamp(32px,3vw,40px)] font-semibold leading-[1.15] tracking-tight mb-8">
-              Engineering Mindset.
+              We understand factories
               <br />
-              <span className="text-forest">Manufacturing Expertise.</span>
+              <span className="text-forest">because we run one.</span>
             </h1>
           </div>
         </Container>
@@ -24,28 +24,28 @@ export default function AboutPage() {
             <div>
               <h2 className="text-2xl font-semibold mb-4">Who We Are</h2>
               <p className="text-sage leading-normal mb-6">
-                AK Precision Components is an engineering company that
-                specializes in both precision component manufacturing and
-                industrial software development.
+                AK Precision Components began with precision component
+                manufacturing. Working on our own shop floor taught us what
+                factory problems actually look like: tolerances, tooling,
+                machines, inspection, production pressure and the information
+                that gets lost between them.
               </p>
               <p className="text-sage leading-normal mb-6">
-                We understand factories because we run one. We manufacture
-                precision components, and we create the software that makes
-                manufacturing smarter.
+                That experience is shaping where AKPC goes next.
               </p>
             </div>
             <div>
               <h2 className="text-2xl font-semibold mb-4">Our Mission</h2>
               <p className="text-sage leading-normal mb-6">
-                To be the engineering partner that helps manufacturers compete
-                in both the physical and digital worlds — delivering precision
-                components and smart factory solutions.
+                Manufacturing gives us the physical understanding. Software
+                helps us make factory workflows visible. Our Industrial Partner
+                Network helps connect factories with the technical expertise
+                they need.
               </p>
               <h2 className="text-2xl font-semibold mb-4 mt-8">Our Vision</h2>
               <p className="text-sage leading-normal">
-                A future where every workshop and factory has access to
-                world-class manufacturing and intelligent software — from one
-                partner.
+                A manufacturing ecosystem where practical engineering, useful
+                software and the right technical expertise are easier to access.
               </p>
             </div>
           </div>

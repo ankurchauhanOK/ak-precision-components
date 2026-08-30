@@ -13,8 +13,15 @@ const footerLinks = {
     { label: "Factory ERP", href: "/software/factory-erp" },
     { label: "Production Management", href: "/software/production-management" },
     { label: "Inventory", href: "/software/inventory" },
-    { label: "AI Inspection", href: "/software/ai-inspection" },
+    { label: "Quality Control", href: "/software/quality-control" },
     { label: "Machine Monitoring", href: "/software/machine-monitoring" },
+  ],
+  "Industrial Partner Network": [
+    { label: "Industrial Service", href: "/partner-network" },
+    { label: "Automation & Integration", href: "/partner-network" },
+    { label: "Gauging & Inspection", href: "/partner-network" },
+    { label: "Installation & Commissioning", href: "/partner-network" },
+    { label: "Become a Partner", href: "/contact" },
   ],
   Company: [
     { label: "About", href: "/about" },
@@ -37,8 +44,8 @@ export default function Footer() {
               </span>
             </Link>
             <p className="mt-3 text-sm text-sage leading-normal">
-              Precision component manufacturing and practical Industry 4.0
-              software for CNC &amp; VMC machine shops.
+              Precision component manufacturing, factory software and an
+              expanding industrial partner network.
             </p>
           </div>
           {Object.entries(footerLinks).map(([title, links]) => (
@@ -63,7 +70,7 @@ export default function Footer() {
         </div>
         <div className="mt-12 pt-8 border-t border-forest flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-sage">
           <p>&copy; {new Date().getFullYear()} AK Precision Components.</p>
-          <p>Precision Manufacturing. Practical Industry 4.0.</p>
+          <p>Manufacturing. Software. Industrial Expertise.</p>
         </div>
       </div>
     </footer>

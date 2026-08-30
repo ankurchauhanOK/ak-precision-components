@@ -14,11 +14,14 @@ export default function ProductionManagementPage() {
               Production Management
             </h1>
             <p className="text-base md:text-[17px] text-sage leading-[1.5] mb-8">
-              Plan, track, and optimize your production workflows in real time.
-              From job assignment to final dispatch.
+              Production becomes easier to manage when everyone can see the
+              same thing.
+              <br />
+              Track jobs from assignment to completion, see current production
+              status and identify delays before they disappear into paperwork.
             </p>
             <Button href="/contact" variant="primary">
-              Book a Demo
+              Talk to AKPC
             </Button>
           </div>
         </Container>

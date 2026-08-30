@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import Sidebar from "@/components/layout/Sidebar";
-import Footer from "@/components/layout/Footer";
 import { site } from "@/data/smartFactory";
 
 const zodiak = localFont({
@@ -63,11 +62,15 @@ export default function RootLayout({
     <html lang="en" className={`${zodiak.variable} ${pally.variable} ${sofiaPro.variable} scroll-smooth`}>
       <body className="flex flex-col lg:flex-row min-h-screen lg:h-screen lg:overflow-hidden bg-viewport-bg text-deep-forest font-sans antialiased">
         <Sidebar />
-        <div className="flex flex-col flex-1 min-w-0 lg:mt-[60px] lg:ml-6 lg:mr-6 lg:h-[calc(100vh-60px)] lg:overflow-y-auto bg-warm-bg lg:rounded-tl-[30px] lg:rounded-tr-[30px] lg:shadow-soft">
-          <div className="flex-1 px-6 md:px-16 lg:px-[120px]">
-            <main className="flex-1">{children}</main>
+        <div className="flex flex-col flex-1 min-w-0 lg:mt-[60px] lg:ml-6 lg:mr-6">
+          <div className="flex-1 lg:min-h-0 lg:overflow-y-auto">
+            <div className="mx-4 mt-4 rounded-[29px] shadow-soft bg-warm-bg lg:mx-0 lg:mt-0 lg:rounded-tl-[30px] lg:rounded-tr-[30px]">
+              <div className="px-3 py-4 md:px-16 lg:px-[120px] lg:py-0">
+                <main className="flex-1">{children}</main>
+              </div>
+            </div>
+            <div className="h-[140px] lg:hidden" />
           </div>
-          <Footer />
         </div>
       </body>
     </html>

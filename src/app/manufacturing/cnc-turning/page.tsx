@@ -14,8 +14,10 @@ export default function CncTurningPage() {
               CNC Turning
             </h1>
             <p className="text-base md:text-[17px] text-sage leading-[1.5] mb-8">
-              High-precision CNC turning with accuracy up to 0.005mm. We handle
-              complex geometries and tight tolerances for critical applications.
+              Every revolution has to land in the same place.
+              <br />
+              We use CNC turning for repeatable production of components with tight dimensional
+              requirements and complex geometries. Accuracy up to 0.005 mm.
             </p>
             <Button href="/contact" variant="primary">
               Request Quote

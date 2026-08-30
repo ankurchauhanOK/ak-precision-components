@@ -13,7 +13,10 @@ export default function GalleryPage() {
               Gallery
             </h1>
             <p className="text-base md:text-[17px] text-sage leading-[1.5]">
-              A look at our facility, machines, and components.
+              Before we show you the result, look at where it is made.
+              <br />
+              Machines, inspection equipment, components and the production environment
+              behind our work.
             </p>
           </div>
         </Container>
@@ -25,10 +28,8 @@ export default function GalleryPage() {
             {[1, 2, 3, 4, 5, 6].map((i) => (
               <div
                 key={i}
-                className="aspect-square bg-warm-bg rounded-2xl flex items-center justify-center text-sage text-sm"
-              >
-                Image {i}
-              </div>
+                className="aspect-square bg-warm-bg rounded-2xl flex items-center justify-center"
+              />
             ))}
           </div>
         </Container>

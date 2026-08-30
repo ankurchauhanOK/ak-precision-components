@@ -14,11 +14,14 @@ export default function MachineMonitoringPage() {
               Machine Monitoring
             </h1>
             <p className="text-base md:text-[17px] text-sage leading-[1.5] mb-8">
-              Live machine status, OEE tracking, downtime analysis, and
-              predictive alerts to maximize equipment productivity.
+              A machine that is running is not necessarily a machine that is
+              performing.
+              <br />
+              Live status, OEE tracking, downtime analysis and alerts to help
+              you understand what is actually happening on the shop floor.
             </p>
             <Button href="/contact" variant="primary">
-              Book a Demo
+              Talk to AKPC
             </Button>
           </div>
         </Container>

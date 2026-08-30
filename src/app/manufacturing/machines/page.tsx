@@ -20,7 +20,10 @@ export default function MachinesPage() {
               Our Machines
             </h1>
             <p className="text-base md:text-[17px] text-sage leading-[1.5]">
-              Modern CNC and conventional machinery for precision manufacturing.
+              Machines matter. Process control matters more.
+              <br />
+              Our equipment gives us the capability to produce a range of turned, milled,
+              drilled and finished components.
             </p>
           </div>
         </Container>

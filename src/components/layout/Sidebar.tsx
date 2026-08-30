@@ -7,7 +7,6 @@ import { motion, AnimatePresence } from "framer-motion";
 import {
   HomeIcon,
   CodeBracketIcon,
-  CpuChipIcon,
   UserGroupIcon,
   FolderIcon,
   BuildingOffice2Icon,
@@ -21,8 +20,7 @@ import { site } from "@/data/smartFactory";
 const navLinks = [
   { label: "Home", href: "/", icon: HomeIcon },
   { label: "Software", href: "/software", icon: CodeBracketIcon },
-  { label: "Automation + Integration", href: "/smart-factory", icon: CpuChipIcon },
-  { label: "Collaboration", href: "/collaboration", icon: UserGroupIcon },
+  { label: "Industrial Partner Network", href: "/partner-network", icon: UserGroupIcon },
   { label: "Projects", href: "/projects", icon: FolderIcon },
   { label: "About", href: "/about", icon: BuildingOffice2Icon },
   { label: "Contact", href: "/contact", icon: EnvelopeIcon },
@@ -75,13 +73,13 @@ function SidebarFooter() {
   return (
     <div className="px-10 py-6">
       <p className="px-2 text-[10px] font-medium uppercase tracking-[0.2em] text-nav-text">
-        Ready to work with us?
+        Let&apos;s talk
       </p>
       <Link
         href="/contact"
         className="mt-3 flex items-center justify-center gap-2 rounded-full bg-[#F0F2F5] border border-white/40 shadow-btn px-5 py-[15px] text-base font-medium text-[#315C4A] transition-colors duration-200 hover:bg-white"
       >
-        Book a Demo
+        Talk to AKPC
         <ArrowRightIcon className="w-4 h-4" />
       </Link>
       <p className="mt-4 px-2 text-xs text-nav-icon">{site.location}</p>

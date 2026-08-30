@@ -11,14 +11,16 @@ export default function AiInspectionPage() {
               Software
             </p>
             <h1 className="text-[clamp(32px,3vw,40px)] font-semibold leading-[1.15] tracking-tight mb-8">
-              AI Inspection System
+              AI Inspection
             </h1>
             <p className="text-base md:text-[17px] text-sage leading-[1.5] mb-8">
-              Automate visual quality inspection using computer vision and deep
-              learning. Detect surface defects, dimensional deviations, and more.
+              Some inspection decisions can be measured. Others can be seen.
+              <br />
+              Visual quality inspection using computer vision to detect surface
+              defects, dimensional deviations and more.
             </p>
             <Button href="/contact" variant="primary">
-              Book a Demo
+              Talk to AKPC
             </Button>
           </div>
         </Container>

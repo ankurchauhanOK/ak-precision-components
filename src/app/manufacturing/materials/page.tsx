@@ -22,7 +22,10 @@ export default function MaterialsPage() {
               Materials
             </h1>
             <p className="text-base md:text-[17px] text-sage leading-[1.5]">
-              We work with a wide range of materials to meet your specifications.
+              The material changes. The requirement for control does not.
+              <br />
+              We work with a range of metals and engineering plastics according to the
+              component specification and application.
             </p>
           </div>
         </Container>

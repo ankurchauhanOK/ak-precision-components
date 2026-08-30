@@ -22,7 +22,10 @@ export default function IndustriesPage() {
               Industries We Serve
             </h1>
             <p className="text-base md:text-[17px] text-sage leading-[1.5]">
-              Our precision components power critical industries.
+              The part may be small. Its role rarely is.
+              <br />
+              Precision components become part of larger systems, machines and products.
+              We work across the industries currently represented on our site.
             </p>
           </div>
         </Container>

@@ -128,7 +128,7 @@ export default function VideoPlayer({ src, className = "" }: VideoPlayerProps) {
   }, [togglePlay]);
 
   const controlClass =
-    "flex items-center justify-center gap-2 rounded-full px-5 h-[60px] bg-[#F0F2F5] border border-white/40 shadow-btn text-[#315C4A] text-sm font-medium transition-all duration-200 hover:bg-white";
+    "flex items-center justify-center gap-2 rounded-full h-10 px-4 md:h-[60px] md:px-5 bg-[#F0F2F5] border border-white/40 shadow-btn text-[#315C4A] text-sm font-medium transition-all duration-200 hover:bg-white";
 
   return (
     <div
@@ -214,7 +214,7 @@ export default function VideoPlayer({ src, className = "" }: VideoPlayerProps) {
           ) : (
             <SpeakerWaveIcon className="w-5 h-5" />
           )}
-          <span>{muted ? "Unmute" : "Mute"}</span>
+          <span className="hidden md:inline">{muted ? "Unmute" : "Mute"}</span>
         </button>
 
         <div
@@ -229,7 +229,7 @@ export default function VideoPlayer({ src, className = "" }: VideoPlayerProps) {
           onPointerMove={onBarPointerMove}
           onPointerUp={onBarPointerUp}
           onKeyDown={onBarKeyDown}
-          className="group relative flex-1 h-8 flex items-center cursor-pointer"
+          className="group relative flex-1 h-8 items-center cursor-pointer hidden md:flex"
         >
           <div
             className={`relative h-1 w-full rounded-full overflow-hidden ${
@@ -248,7 +248,7 @@ export default function VideoPlayer({ src, className = "" }: VideoPlayerProps) {
         </div>
 
         <span
-          className={`text-xs tabular-nums font-medium ${
+          className={`text-xs tabular-nums font-medium hidden md:inline ${
             fullscreen ? "text-light-sage" : "text-sage"
           }`}
         >
@@ -261,7 +261,7 @@ export default function VideoPlayer({ src, className = "" }: VideoPlayerProps) {
           type="button"
           onClick={toggleFullscreen}
           aria-label={fullscreen ? "Exit fullscreen" : "Enter fullscreen"}
-          className={controlClass}
+          className={`${controlClass} hidden md:flex`}
         >
           {fullscreen ? (
             <ArrowsPointingInIcon className="w-5 h-5" />

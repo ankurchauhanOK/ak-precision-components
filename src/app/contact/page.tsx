@@ -8,13 +8,15 @@ export default function ContactPage() {
         <Container>
           <div className="max-w-3xl">
             <p className="text-xs font-medium text-forest uppercase tracking-[0.16em] mb-3">
-              Contact
+              CONTACT
             </p>
             <h1 className="text-[clamp(32px,3vw,40px)] font-semibold leading-[1.15] tracking-tight mb-8">
-              Let&apos;s Build Something Better.
+              Tell us what you are trying to solve.
             </h1>
             <p className="text-base md:text-[17px] text-sage leading-[1.5] mb-8">
-              Tell us about your requirements. We&apos;ll respond within 24 hours.
+              Whether you need a precision component, factory software or
+              industrial technical support, give us the context. We will start
+              from the requirement, not the pitch.
             </p>
           </div>
         </Container>
@@ -77,13 +79,25 @@ export default function ContactPage() {
                 </div>
                 <div className="bg-warm-bg rounded-2xl p-6">
                   <h3 className="font-semibold text-deep-forest mb-2">
-                    Book Software Demo
+                    Request Software Demo
                   </h3>
                   <p className="text-sm text-sage mb-4">
                     See our software in action with a personalized demo.
                   </p>
                   <Button href="mailto:info@akprecision.com" variant="secondary">
                     Schedule Demo
+                  </Button>
+                </div>
+                <div className="bg-warm-bg rounded-2xl p-6">
+                  <h3 className="font-semibold text-deep-forest mb-2">
+                    Request Industrial Service
+                  </h3>
+                  <p className="text-sm text-sage mb-4">
+                    Need technical support or automation expertise in
+                    Rudrapur/Pantnagar?
+                  </p>
+                  <Button href="/contact" variant="secondary">
+                    Get in Touch
                   </Button>
                 </div>
               </div>

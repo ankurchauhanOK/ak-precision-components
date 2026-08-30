@@ -6,7 +6,7 @@ import { buildCTA } from "@/data/smartFactory";
 
 export default function BuildCTASection() {
   return (
-    <section className="bg-deep-forest text-white py-24 md:py-32">
+    <section className="bg-deep-forest text-white py-14 md:py-14">
       <Container>
         <AnimatedSection>
           <div className="max-w-3xl mx-auto text-center">

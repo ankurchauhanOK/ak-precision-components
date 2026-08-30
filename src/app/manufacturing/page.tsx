@@ -38,13 +38,15 @@ export default function ManufacturingPage() {
               Manufacturing
             </p>
             <h1 className="text-[clamp(32px,3vw,40px)] font-semibold leading-[1.15] tracking-tight mb-8">
-              Precision Components
+              Precision is not a specification.
               <br />
               <span className="text-forest">Engineered Excellence.</span>
+              <br />
+              It is something you have to repeat.
             </h1>
             <p className="text-base md:text-[17px] text-sage leading-[1.5] mb-8">
-              Advanced CNC turning and VMC machining with tight tolerances,
-              quality inspection, and on-time delivery for critical industries.
+              We manufacture CNC-turned and VMC-machined components for industrial applications
+              where dimensional accuracy, repeatability and dependable production matter.
             </p>
             <Button href="/contact" variant="primary">
               Request Quote
