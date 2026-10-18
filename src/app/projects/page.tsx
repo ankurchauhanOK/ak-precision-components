@@ -13,86 +13,69 @@ type Filter = (typeof filters)[number];
 
 function MachineCard({
   project,
-  mirrored,
 }: {
   project: (typeof projectsPage.projects)[number];
-  mirrored?: boolean;
 }) {
-  const info = (order: string) => (
-    <div className={`p-6 md:p-8 lg:p-10 flex flex-col min-w-0 ${order}`}>
-      <span className="text-xs font-medium text-forest tracking-[0.2em]">
-        {project.number} — {project.tab}
-      </span>
-      <h2 className="mt-3 text-2xl md:text-[30px] font-semibold tracking-tight text-deep-forest">
-        {project.name}
-      </h2>
-      <p className="mt-1.5 text-sm font-medium text-forest">
-        {project.category}
-      </p>
-      <p className="mt-4 text-[15px] md:text-base leading-normal text-sage max-w-[520px]">
-        {project.description}
-      </p>
+  const specsToShow = project.specs.slice(0, 3);
 
-      <dl className="mt-7 grid grid-cols-2 md:grid-cols-4 gap-x-6 gap-y-5 max-w-[560px]">
-        {project.specs.map((spec) => (
-          <div key={spec.label}>
-            <dt className="text-xs font-medium uppercase tracking-[0.14em] text-sage">
-              {spec.label}
-            </dt>
-            <dd className="mt-1 text-base font-medium text-deep-forest">{spec.value}</dd>
-          </div>
-        ))}
-      </dl>
-
-      <div className="mt-8 pt-6 border-t border-light-sage flex flex-col sm:flex-row sm:items-center justify-between gap-5">
-        <div>
-          <p className="text-xs font-medium uppercase tracking-[0.14em] text-sage">
-            {project.rateLabel}
-          </p>
-          <p className="mt-1 text-base font-medium text-deep-forest">{project.rateValue}</p>
-        </div>
-        <Link
-          href={project.href}
-          className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl text-base font-medium bg-action-green text-white transition-colors duration-200 hover:bg-action-green-dark"
-        >
-          {project.cta}
-          <span aria-hidden>→</span>
-        </Link>
-      </div>
-    </div>
-  );
-
-  const imageCol = (order: string) => (
-    <div
-      className={`relative ${order} bg-warm-bg p-4 md:p-6 flex items-center justify-center ${
-        mirrored ? "lg:border-r" : "lg:border-l"
-      } border-light-sage`}
-    >
-      <div className="relative w-full h-56 lg:h-[380px] rounded-xl overflow-hidden bg-white">
+  return (
+    <article className="bg-white rounded-[20px] md:rounded-[22px] border border-light-sage/70 shadow-sm hover:shadow-md transition-shadow duration-200 overflow-hidden flex flex-col min-w-0 h-full">
+      <div className="relative w-full aspect-[16/10] bg-white">
         <Image
           src={project.image}
           alt={project.imageAlt}
           fill
-          className="object-contain object-center"
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 100vw, 50vw"
+          className="object-cover object-center"
         />
       </div>
-    </div>
-  );
 
-  return (
-    <article className="bg-white rounded-2xl border border-light-sage shadow-sm overflow-hidden">
-      <div className="grid lg:grid-cols-[1fr_360px]">
-        {mirrored ? (
-          <>
-            {imageCol("order-1 lg:order-2")}
-            {info("order-2 lg:order-1")}
-          </>
-        ) : (
-          <>
-            {info("order-2 lg:order-1")}
-            {imageCol("order-1 lg:order-2")}
-          </>
-        )}
+      <div className="flex flex-col px-5 md:px-6 lg:px-7 pt-5 md:pt-6 lg:pt-7 pb-5 md:pb-6 lg:pb-7 min-w-0">
+        <span className="text-[11px] md:text-xs font-medium uppercase tracking-[0.18em] text-sage">
+          {project.number} / {project.tab.toUpperCase()}
+        </span>
+
+        <h2 className="mt-2 text-xl md:text-2xl lg:text-[28px] font-semibold tracking-tight text-deep-forest">
+          {project.name}
+        </h2>
+        <p className="mt-1 text-sm md:text-[15px] font-medium text-forest">
+          {project.category}
+        </p>
+
+        <p className="mt-3 text-[14px] md:text-[15px] leading-relaxed text-sage">
+          {project.description}
+        </p>
+
+        <dl className="mt-5 grid grid-cols-2 gap-x-6 gap-y-4 min-w-0">
+          {specsToShow.map((spec) => (
+            <div key={spec.label} className="min-w-0">
+              <dt className="text-[11px] uppercase tracking-[0.14em] text-sage">
+                {spec.label}
+              </dt>
+              <dd className="mt-0.5 text-sm md:text-base font-medium text-deep-forest break-words">
+                {spec.value}
+              </dd>
+            </div>
+          ))}
+        </dl>
+
+        <div className="mt-6 pt-5 border-t border-light-sage/80 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 min-w-0">
+          <div className="min-w-0">
+            <p className="text-[11px] uppercase tracking-[0.14em] text-sage">
+              {project.rateLabel}
+            </p>
+            <p className="mt-0.5 text-sm md:text-base font-medium text-deep-forest break-words">
+              {project.rateValue}
+            </p>
+          </div>
+          <Link
+            href={project.href}
+            className="inline-flex items-center gap-2 text-[15px] font-medium text-forest hover:text-deep-forest transition-colors shrink-0"
+          >
+            {project.cta}
+            <span aria-hidden>→</span>
+          </Link>
+        </div>
       </div>
     </article>
   );
@@ -152,13 +135,13 @@ export default function ProjectsPage() {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.3 }}
-              className="mx-auto mt-8 md:mt-10 w-full max-w-none sm:max-w-[92%] md:max-w-[88%]"
+              className="mt-8 md:mt-10 w-full"
             >
               {showMachines && (
-                <div className="space-y-8 md:space-y-10">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-7 lg:gap-8 xl:gap-10">
                   <MachineCard project={projectsPage.projects[0]} />
 
-                  <div className="py-2 text-center">
+                  <div className="lg:col-span-2 py-2 text-center">
                     <p className="text-[15px] md:text-base text-sage leading-normal">
                       {projectsPage.statement.text}{" "}
                       <Link
@@ -171,12 +154,14 @@ export default function ProjectsPage() {
                     </p>
                   </div>
 
-                  <MachineCard project={projectsPage.projects[1]} mirrored />
+                  <div className="lg:col-start-2 lg:row-start-1 h-full">
+                    <MachineCard project={projectsPage.projects[1]} />
+                  </div>
                 </div>
               )}
 
               {showSoftware && (
-                <div className="space-y-8 md:space-y-10">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-7 lg:gap-8 xl:gap-10">
                   <MachineCard project={projectsPage.projects[2]} />
                 </div>
               )}
