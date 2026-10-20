@@ -731,9 +731,9 @@ export const projectsPage = {
       category: "Vertical Machining Center",
       description:
         "Precision milling for complex components, accurate profiles and repeatable production.",
-      image: "/images/vmc-machine.jpg",
+      image: "/images/ace-vmc-740v-pro.png",
       imageAlt: "ACE VMC 740V PRO vertical machining center",
-      imageAspect: "aspect-[4/5]",
+      imageAspect: "aspect-[16/9]",
       specs: [
         { label: "Table Size", value: "800 × 500 mm" },
         { label: "Axes", value: "4-axis" },
