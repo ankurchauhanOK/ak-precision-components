@@ -711,12 +711,12 @@ export const projectsPage = {
       category: "CNC Turning Center",
       description:
         "High-precision CNC turning for consistent, repeatable component production.",
-      image: "/images/cnc-machine.jpg",
-      imageAlt: "JYOTI DX 200 CNC turning center",
+      image: "/images/jyoti-dx-200.png",
+      imageAlt: "Jyoti DX 200 CNC Turning Center",
+      imageAspect: "aspect-[21/10]",
       specs: [
         { label: "Max Turning Diameter", value: "200 mm" },
         { label: "Accuracy", value: "±0.005 mm" },
-        { label: "Production", value: "CNC Turning" },
         { label: "Machine Type", value: "CNC Turning Center" },
       ],
       rateLabel: "Hourly rate",
@@ -727,16 +727,16 @@ export const projectsPage = {
     {
       number: "02",
       tab: "VMC Machining",
-      name: "ACE VMC 740 PRO",
+      name: "ACE VMC 740V PRO",
       category: "Vertical Machining Center",
       description:
         "Precision milling for complex components, accurate profiles and repeatable production.",
       image: "/images/vmc-machine.jpg",
-      imageAlt: "ACE VMC 740 PRO vertical machining center",
+      imageAlt: "ACE VMC 740V PRO vertical machining center",
+      imageAspect: "aspect-[4/5]",
       specs: [
         { label: "Table Size", value: "800 × 500 mm" },
         { label: "Axes", value: "4-axis" },
-        { label: "Production", value: "VMC Machining" },
         { label: "Machine Type", value: "Vertical Machining Center" },
       ],
       rateLabel: "Hourly rate",
@@ -753,6 +753,7 @@ export const projectsPage = {
         "Machine status, OEE, cycle times and inspection records in one live dashboard — built from our own shop floor.",
       image: "/images/dashboard.jpg",
       imageAlt: "AK Smart Factory Lite live production dashboard",
+      imageAspect: "aspect-[16/10]",
       specs: [
         { label: "OEE", value: "Demo data" },
         { label: "Production", value: "Demo data" },
