@@ -78,14 +78,14 @@ export default function WhatWeDoShowcaseSection() {
     <section className="bg-warm-bg pt-4 pb-6 md:pt-0 md:pb-2" aria-label="What we do showcase">
       <Container>
         <AnimatedSection>
-          <div className="text-center max-w-3xl mx-auto">
+          <div className="max-w-3xl text-left">
             <p className="section-label text-forest mb-4">
               {showcase.eyebrow}
             </p>
-            <h2 className="text-[clamp(30px,3vw,40px)] section-title text-deep-forest">
+            <p className="section-description font-semibold leading-[1.5] text-deep-forest">
               {showcase.heading}
-            </h2>
-            <p className="mt-5 section-description text-deep-forest max-w-[580px] mx-auto">
+            </p>
+            <p className="mt-8 section-description font-medium leading-[1.5] text-forest">
               {showcase.subhead}
             </p>
           </div>
