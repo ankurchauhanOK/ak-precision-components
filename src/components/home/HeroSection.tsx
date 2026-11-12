@@ -34,7 +34,7 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="text-xs font-bold text-forest uppercase tracking-[0.16em]"
+            className="section-label text-forest"
           >
             {hero.eyebrow}
           </motion.p>
@@ -43,7 +43,7 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="mt-4 w-full text-[clamp(28px,7vw,58px)] font-semibold leading-[1.05] tracking-[-1.5px] md:mt-6 md:max-w-[1100px] md:text-[clamp(38px,4.5vw,58px)] md:leading-[1.08] md:tracking-[-2.24px] text-deep-forest"
+            className="mt-4 w-full text-[clamp(28px,7vw,58px)] font-semibold leading-[1.05] tracking-[-0.02em] md:mt-6 md:max-w-[1100px] md:text-[clamp(38px,4.5vw,58px)] md:leading-[1.08] md:tracking-[-0.025em] text-deep-forest"
           >
               {hero.headline.map((line, i) => (
               <Fragment key={i}>

@@ -8,13 +8,13 @@ export default function WhyAKSection() {
       <Container>
         <AnimatedSection>
           <div className="text-center mb-14">
-            <p className="text-xs font-medium text-forest uppercase tracking-[0.16em] mb-3">
+            <p className="section-label text-forest mb-3">
               {whyAK.eyebrow}
             </p>
-            <h2 className="text-[clamp(30px,3vw,40px)] font-semibold leading-[1.15] tracking-tight max-w-3xl mx-auto">
+            <h2 className="text-[clamp(30px,3vw,40px)] section-title max-w-3xl mx-auto">
               {whyAK.heading}
             </h2>
-            <p className="mt-4 text-sage max-w-2xl mx-auto leading-normal">
+            <p className="mt-4 section-description text-deep-forest max-w-2xl mx-auto">
               {whyAK.subhead}
             </p>
           </div>
@@ -27,8 +27,8 @@ export default function WhyAKSection() {
                 <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-forest to-action-green flex items-center justify-center text-white font-semibold mb-4">
                   {pillar.title.charAt(0)}
                 </div>
-                <h3 className="font-semibold text-deep-forest mb-2">{pillar.title}</h3>
-                <p className="text-sm text-sage leading-normal">
+                <h3 className="card-title text-deep-forest mb-2">{pillar.title}</h3>
+                <p className="card-description text-sage">
                   {pillar.desc}
                 </p>
               </div>

@@ -8,10 +8,10 @@ export default function RoadmapSection() {
       <Container>
         <AnimatedSection>
           <div className="text-center mb-14">
-            <p className="text-xs font-medium text-forest uppercase tracking-[0.16em] mb-3">
+            <p className="section-label text-forest mb-3">
               {roadmap.eyebrow}
             </p>
-            <h2 className="text-[clamp(30px,3vw,40px)] font-semibold leading-[1.15] tracking-tight">
+            <h2 className="text-[clamp(30px,3vw,40px)] section-title">
               {roadmap.heading}
             </h2>
           </div>
@@ -49,7 +49,7 @@ export default function RoadmapSection() {
         </div>
 
         <AnimatedSection delay={0.2}>
-          <p className="text-center text-sage max-w-2xl mx-auto leading-normal">
+          <p className="text-center section-description text-deep-forest max-w-2xl mx-auto">
             {roadmap.closer}
           </p>
         </AnimatedSection>

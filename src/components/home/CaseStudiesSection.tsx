@@ -8,10 +8,10 @@ export default function CaseStudiesSection() {
       <Container>
         <AnimatedSection>
           <div className="text-center mb-14">
-            <p className="text-xs font-medium text-forest uppercase tracking-[0.16em] mb-3">
+            <p className="section-label text-forest mb-3">
               {caseStudies.eyebrow}
             </p>
-            <h2 className="text-[clamp(30px,3vw,40px)] font-semibold leading-[1.15] tracking-tight">
+            <h2 className="text-[clamp(30px,3vw,40px)] section-title">
               {caseStudies.heading}
             </h2>
             <p className="mt-4 text-sage max-w-xl mx-auto">
@@ -25,7 +25,7 @@ export default function CaseStudiesSection() {
             <div className="bg-white rounded-3xl border border-light-sage p-8 md:p-10">
               <div className="flex items-start justify-between gap-4 flex-wrap mb-8">
                 <div>
-                  <h3 className="text-xl font-semibold text-deep-forest">{study.title}</h3>
+                  <h3 className="card-title text-deep-forest">{study.title}</h3>
                   <p className="text-sm text-sage mt-1">
                     {study.customer}
                   </p>
@@ -46,7 +46,7 @@ export default function CaseStudiesSection() {
 
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="bg-warm-bg rounded-2xl p-6">
-                  <p className="text-xs font-medium text-sage uppercase tracking-widest mb-3">
+                  <p className="section-label text-sage mb-3">
                     Before
                   </p>
                   <ul className="space-y-2">
@@ -59,7 +59,7 @@ export default function CaseStudiesSection() {
                   </ul>
                 </div>
                 <div className="bg-deep-forest rounded-2xl p-6">
-                  <p className="text-xs font-medium text-sage uppercase tracking-widest mb-3">
+                  <p className="section-label text-sage mb-3">
                     After
                   </p>
                   <ul className="space-y-2">

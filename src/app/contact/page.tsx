@@ -7,13 +7,13 @@ export default function ContactPage() {
       <section className="pt-32 pb-20 bg-warm-bg">
         <Container>
           <div className="max-w-3xl">
-            <p className="text-xs font-medium text-forest uppercase tracking-[0.16em] mb-3">
+            <p className="section-label text-forest mb-3">
               CONTACT
             </p>
-            <h1 className="text-[clamp(32px,3vw,40px)] font-semibold leading-[1.15] tracking-tight mb-8">
+            <h1 className="page-title text-[clamp(32px,3vw,40px)] mb-8">
               Tell us what you are trying to solve.
             </h1>
-            <p className="text-base md:text-[17px] text-sage leading-[1.5] mb-8">
+            <p className="section-description text-deep-forest mb-8">
               Whether you need a precision component, factory software or
               industrial technical support, give us the context. We will start
               from the requirement, not the pitch.
@@ -26,7 +26,7 @@ export default function ContactPage() {
         <Container>
           <div className="grid md:grid-cols-2 gap-12">
             <div>
-              <h2 className="text-2xl font-semibold mb-6">Send a Message</h2>
+              <h2 className="section-title text-2xl mb-6">Send a Message</h2>
               <form className="space-y-4">
                 <div>
                   <label className="block text-sm font-medium text-deep-forest mb-1">
@@ -64,13 +64,13 @@ export default function ContactPage() {
               </form>
             </div>
             <div>
-              <h2 className="text-2xl font-semibold mb-6">Quick Actions</h2>
+              <h2 className="section-title text-2xl mb-6">Quick Actions</h2>
               <div className="space-y-4">
                 <div className="bg-warm-bg rounded-2xl p-6">
-                  <h3 className="font-semibold text-deep-forest mb-2">
+                  <h3 className="card-title text-deep-forest mb-2">
                     Request Manufacturing Quote
                   </h3>
-                  <p className="text-sm text-sage mb-4">
+                  <p className="card-description text-sage mb-4">
                     Send us your drawings and specifications for a quick quote.
                   </p>
                   <Button href="mailto:info@akprecision.com" variant="primary">
@@ -78,10 +78,10 @@ export default function ContactPage() {
                   </Button>
                 </div>
                 <div className="bg-warm-bg rounded-2xl p-6">
-                  <h3 className="font-semibold text-deep-forest mb-2">
+                  <h3 className="card-title text-deep-forest mb-2">
                     Request Software Demo
                   </h3>
-                  <p className="text-sm text-sage mb-4">
+                  <p className="card-description text-sage mb-4">
                     See our software in action with a personalized demo.
                   </p>
                   <Button href="mailto:info@akprecision.com" variant="secondary">
@@ -89,10 +89,10 @@ export default function ContactPage() {
                   </Button>
                 </div>
                 <div className="bg-warm-bg rounded-2xl p-6">
-                  <h3 className="font-semibold text-deep-forest mb-2">
+                  <h3 className="card-title text-deep-forest mb-2">
                     Request Industrial Service
                   </h3>
-                  <p className="text-sm text-sage mb-4">
+                  <p className="card-description text-sage mb-4">
                     Need technical support or automation expertise in
                     Rudrapur/Pantnagar?
                   </p>

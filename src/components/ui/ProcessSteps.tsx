@@ -22,10 +22,10 @@ export default function ProcessSteps({ steps, className = "" }: ProcessStepsProp
             <span className="text-4xl md:text-5xl font-semibold text-light-sage leading-none">
               {step.number}
             </span>
-            <h3 className="mt-4 text-base md:text-lg font-semibold text-deep-forest">
+            <h3 className="mt-4 card-title text-deep-forest">
               {step.title}
             </h3>
-            <p className="mt-2 text-sm text-sage leading-relaxed">
+            <p className="mt-2 card-description text-sage">
               {step.desc}
             </p>
             {i < steps.length - 1 && (

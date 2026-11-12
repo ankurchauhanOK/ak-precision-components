@@ -20,10 +20,10 @@ export default function SoftwarePage() {
         <Container>
           <div className="grid lg:grid-cols-[1fr_1fr] gap-12 lg:gap-16 items-center">
             <AnimatedSection>
-              <p className="text-xs font-medium text-forest uppercase tracking-[0.16em] mb-4">
+              <p className="section-label text-forest mb-4">
                 {hero.eyebrow}
               </p>
-              <h1 className="text-[clamp(32px,4vw,52px)] font-semibold leading-[1.1] tracking-tight text-deep-forest">
+              <h1 className="page-title text-[clamp(32px,4vw,52px)] text-deep-forest">
                 {hero.heading.map((line, li) => (
                   <span key={li} className="block">
                     {line.map((seg, si) => (
@@ -34,7 +34,7 @@ export default function SoftwarePage() {
                   </span>
                 ))}
               </h1>
-              <p className="mt-6 text-base md:text-[17px] leading-[1.55] text-sage max-w-[520px]">
+              <p className="mt-6 section-description text-deep-forest max-w-[520px]">
                 {hero.subhead}
               </p>
               <div className="mt-8 flex flex-wrap items-center gap-4">
@@ -70,7 +70,7 @@ export default function SoftwarePage() {
       <section className="py-20 md:py-28">
         <Container>
           <AnimatedSection>
-            <h2 className="text-[clamp(28px,3vw,40px)] font-semibold leading-[1.15] tracking-tight text-deep-forest max-w-xl">
+            <h2 className="text-[clamp(28px,3vw,40px)] section-title text-deep-forest max-w-xl">
               {capabilities.heading}
             </h2>
           </AnimatedSection>
@@ -86,10 +86,10 @@ export default function SoftwarePage() {
         <Container>
           <AnimatedSection>
             <div className="max-w-3xl">
-              <h2 className="text-[clamp(28px,3vw,40px)] font-semibold leading-[1.15] tracking-tight text-deep-forest">
+              <h2 className="text-[clamp(28px,3vw,40px)] section-title text-deep-forest">
                 {projects.heading}
               </h2>
-              <p className="mt-4 text-base md:text-[17px] leading-[1.55] text-sage max-w-[520px]">
+              <p className="mt-4 section-description text-deep-forest max-w-[520px]">
                 {projects.subhead}
               </p>
             </div>
@@ -103,12 +103,12 @@ export default function SoftwarePage() {
             <AnimatedSection delay={0.15}>
               <div className="mt-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
                 <div>
-                  <h3 className="text-lg font-semibold text-deep-forest">
+                  <h3 className="card-title text-deep-forest">
                     {projects.items[0].title}
                   </h3>
                   <p className="mt-1 text-sm text-sage">{projects.items[0].category}</p>
                 </div>
-                <p className="text-sm text-sage max-w-[400px]">{projects.items[0].desc}</p>
+                <p className="card-description text-sage max-w-[400px]">{projects.items[0].desc}</p>
               </div>
             </AnimatedSection>
           </div>
@@ -119,7 +119,7 @@ export default function SoftwarePage() {
       <section className="py-20 md:py-28">
         <Container>
           <AnimatedSection>
-            <h2 className="text-[clamp(28px,3vw,40px)] font-semibold leading-[1.15] tracking-tight text-deep-forest max-w-xl">
+            <h2 className="text-[clamp(28px,3vw,40px)] section-title text-deep-forest max-w-xl">
               {process.heading}
             </h2>
           </AnimatedSection>
@@ -135,7 +135,7 @@ export default function SoftwarePage() {
         <Container>
           <AnimatedSection>
             <div className="max-w-3xl mx-auto text-center">
-              <h2 className="text-[clamp(28px,3vw,40px)] font-semibold leading-[1.15] tracking-tight">
+              <h2 className="text-[clamp(28px,3vw,40px)] section-title">
                 {cta.heading}
               </h2>
               <div className="mt-10">

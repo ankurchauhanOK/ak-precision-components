@@ -36,22 +36,22 @@ function MachineShowcase({ project }: { project: Project }) {
       </div>
 
       <div className="mt-8 md:mt-12 min-w-0">
-        <span className="text-xs font-medium uppercase tracking-[0.16em] text-forest">
+        <span className="section-label text-forest">
           {project.category}
         </span>
 
-        <h2 className="mt-3 text-[clamp(30px,3.4vw,42px)] font-semibold leading-[1.1] tracking-tight text-deep-forest">
+        <h2 className="mt-3 section-title text-[clamp(30px,3.4vw,42px)] text-deep-forest">
           {project.name}
         </h2>
 
-        <p className="mt-4 text-base md:text-[17px] leading-[1.55] text-sage max-w-[720px]">
+        <p className="mt-4 section-description text-deep-forest max-w-[720px]">
           {project.description}
         </p>
 
         <dl className="mt-8 md:mt-12 pt-8 md:pt-10 border-t border-light-sage/70 grid grid-cols-1 sm:grid-cols-3 gap-x-8 gap-y-6 min-w-0">
           {project.specs.map((spec) => (
             <div key={spec.label} className="min-w-0">
-              <dt className="text-[11px] uppercase tracking-[0.14em] text-sage">
+              <dt className="meta-label text-sage">
                 {spec.label}
               </dt>
               <dd className="mt-1.5 text-lg md:text-xl font-medium text-deep-forest break-words">
@@ -63,7 +63,7 @@ function MachineShowcase({ project }: { project: Project }) {
 
         <div className="mt-8 pt-6 md:pt-8 border-t border-light-sage/70 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 min-w-0">
           <div className="min-w-0">
-            <p className="text-[11px] uppercase tracking-[0.14em] text-sage">
+            <p className="meta-label text-sage">
               {project.rateLabel}
             </p>
             <p className="mt-1 text-base font-medium text-deep-forest break-words">
@@ -103,25 +103,25 @@ function MachineCard({
       </div>
 
       <div className="flex flex-col px-5 md:px-6 lg:px-7 pt-5 md:pt-6 lg:pt-7 pb-5 md:pb-6 lg:pb-7 min-w-0">
-        <span className="text-[11px] md:text-xs font-medium uppercase tracking-[0.18em] text-sage">
+        <span className="meta-label text-sage">
           {project.number} / {project.tab.toUpperCase()}
         </span>
 
-        <h2 className="mt-2 text-xl md:text-2xl lg:text-[28px] font-semibold tracking-tight text-deep-forest">
+        <h2 className="mt-2 card-title text-deep-forest">
           {project.name}
         </h2>
         <p className="mt-1 text-sm md:text-[15px] font-medium text-forest">
           {project.category}
         </p>
 
-        <p className="mt-3 text-[14px] md:text-[15px] leading-relaxed text-sage">
+        <p className="mt-3 card-description text-sage">
           {project.description}
         </p>
 
         <dl className="mt-5 grid grid-cols-2 gap-x-6 gap-y-4 min-w-0">
           {specsToShow.map((spec) => (
             <div key={spec.label} className="min-w-0">
-              <dt className="text-[11px] uppercase tracking-[0.14em] text-sage">
+              <dt className="meta-label text-sage">
                 {spec.label}
               </dt>
               <dd className="mt-0.5 text-sm md:text-base font-medium text-deep-forest break-words">
@@ -133,7 +133,7 @@ function MachineCard({
 
         <div className="mt-6 pt-5 border-t border-light-sage/80 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 min-w-0">
           <div className="min-w-0">
-            <p className="text-[11px] uppercase tracking-[0.14em] text-sage">
+            <p className="meta-label text-sage">
               {project.rateLabel}
             </p>
             <p className="mt-0.5 text-sm md:text-base font-medium text-deep-forest break-words">
@@ -161,13 +161,13 @@ export default function ProjectsPage() {
       <Container>
         <AnimatedSection>
           <div className="max-w-[640px]">
-            <p className="text-xs font-medium text-forest uppercase tracking-[0.16em]">
+            <p className="section-label text-forest">
               {projectsPage.eyebrow}
             </p>
-            <h1 className="mt-3 text-[clamp(36px,4vw,48px)] font-semibold leading-[1.1] tracking-tight text-deep-forest">
+            <h1 className="mt-3 page-title text-[clamp(36px,4vw,48px)] text-deep-forest">
               {projectsPage.heading}
             </h1>
-            <p className="mt-5 text-base md:text-[17px] leading-[1.55] text-sage max-w-[560px]">
+            <p className="mt-5 section-description text-deep-forest max-w-[560px]">
               {projectsPage.subhead}
             </p>
           </div>

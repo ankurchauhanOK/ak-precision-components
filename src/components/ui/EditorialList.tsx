@@ -29,10 +29,10 @@ export default function EditorialList({ items, className = "" }: EditorialListPr
                 {item.number}
               </span>
               <div className="flex-1 min-w-0">
-                <h3 className="text-lg md:text-xl font-semibold text-deep-forest group-hover:text-forest transition-colors">
+                <h3 className="card-title text-deep-forest group-hover:text-forest transition-colors">
                   {item.title}
                 </h3>
-                <p className="mt-2 text-sm md:text-base text-sage leading-relaxed">
+                <p className="mt-2 card-description text-sage">
                   {item.desc}
                 </p>
               </div>
@@ -49,10 +49,10 @@ export default function EditorialList({ items, className = "" }: EditorialListPr
                 {item.number}
               </span>
               <div className="flex-1 min-w-0">
-                <h3 className="text-lg md:text-xl font-semibold text-deep-forest">
+                <h3 className="card-title text-deep-forest">
                   {item.title}
                 </h3>
-                <p className="mt-2 text-sm md:text-base text-sage leading-relaxed">
+                <p className="mt-2 card-description text-sage">
                   {item.desc}
                 </p>
               </div>

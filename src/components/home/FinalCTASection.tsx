@@ -9,10 +9,10 @@ export default function FinalCTASection() {
       <Container>
         <AnimatedSection>
           <div className="bg-deep-forest text-white rounded-3xl p-10 md:p-16 text-center">
-            <h2 className="text-[clamp(30px,3vw,40px)] font-semibold leading-[1.15] tracking-tight mb-4">
+            <h2 className="text-[clamp(30px,3vw,40px)] section-title mb-4">
               {finalCTA.heading}
             </h2>
-            <p className="text-sage max-w-lg mx-auto mb-8">
+            <p className="section-description text-light-sage max-w-lg mx-auto mb-8">
               {finalCTA.subhead}
             </p>
             <div className="flex flex-wrap justify-center gap-4">

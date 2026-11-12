@@ -29,7 +29,7 @@ const navLinks = [
 function Logo() {
   return (
     <Link href="/" className="block">
-      <span className="font-pally font-bold leading-none tracking-[-0.02em] text-deep-forest text-[32px] sm:text-[36px]">
+      <span className="font-sans font-extrabold leading-none tracking-[-0.03em] text-deep-forest text-[32px] sm:text-[36px]">
         AKPC
       </span>
     </Link>
@@ -50,7 +50,7 @@ function SidebarNav({ pathname, onNavigate }: { pathname: string; onNavigate?: (
             href={link.href}
             onClick={onNavigate}
             aria-current={active ? "page" : undefined}
-            className={`flex items-center gap-3 h-12 w-full rounded-full px-3 text-base font-medium transition-colors duration-200 ${
+            className={`nav-item flex items-center gap-3 h-12 w-full rounded-full px-3 transition-colors duration-200 ${
               active
                 ? "bg-[#F0F2F5] text-[#315C4A] border border-white/40 shadow-btn font-semibold"
                 : "text-nav-text hover:bg-light-sage/40 hover:text-[#17251F]"
@@ -72,12 +72,12 @@ function SidebarNav({ pathname, onNavigate }: { pathname: string; onNavigate?: (
 function SidebarFooter() {
   return (
     <div className="px-10 py-6">
-      <p className="px-2 text-[10px] font-medium uppercase tracking-[0.2em] text-nav-text">
+      <p className="meta-label px-2 text-nav-text">
         Let&apos;s talk
       </p>
       <Link
         href="/contact"
-        className="mt-3 flex items-center justify-center gap-2 rounded-full bg-[#F0F2F5] border border-white/40 shadow-btn px-5 py-[15px] text-base font-medium text-[#315C4A] transition-colors duration-200 hover:bg-white"
+        className="mt-3 flex items-center justify-center gap-2 rounded-full bg-[#F0F2F5] border border-white/40 shadow-btn px-5 py-[15px] text-base font-medium tracking-[-0.01em] text-[#315C4A] transition-colors duration-200 hover:bg-white"
       >
         Talk to AKPC
         <ArrowRightIcon className="w-4 h-4" />

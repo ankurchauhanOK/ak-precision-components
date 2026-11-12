@@ -8,10 +8,10 @@ export default function ProblemSection() {
       <Container>
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           <AnimatedSection>
-            <p className="text-xs font-medium text-sage uppercase tracking-[0.16em] mb-3">
+            <p className="section-label text-sage mb-3">
               {problem.eyebrow}
             </p>
-            <h2 className="text-[clamp(30px,3vw,40px)] font-semibold leading-[1.15] tracking-tight text-white">
+            <h2 className="text-[clamp(30px,3vw,40px)] section-title text-white">
               {problem.heading}
             </h2>
             <p className="mt-6 text-emerald-400 font-semibold text-lg">

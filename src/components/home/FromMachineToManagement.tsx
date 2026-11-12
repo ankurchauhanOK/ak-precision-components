@@ -28,10 +28,10 @@ export default function FromMachineToManagement() {
     <section className="py-20 md:py-28 bg-deep-forest overflow-hidden">
       <Container>
         <div className="text-center mb-14">
-          <p className="text-xs font-medium text-sage uppercase tracking-[0.16em] mb-3">
+          <p className="section-label text-sage mb-3">
             {machineToManagement.eyebrow}
           </p>
-          <h2 className="text-[clamp(30px,3vw,40px)] font-semibold leading-[1.15] tracking-tight text-white">
+          <h2 className="text-[clamp(30px,3vw,40px)] section-title text-white">
             {machineToManagement.heading}
           </h2>
         </div>
@@ -40,7 +40,7 @@ export default function FromMachineToManagement() {
           {/* SHOP FLOOR */}
           <motion.div style={{ opacity: floorOpacity }}>
             <div className="bg-white/5 border border-white/10 rounded-2xl p-6 text-center">
-              <p className="text-xs font-medium text-sage uppercase tracking-widest mb-4">
+              <p className="section-label text-sage mb-4">
                 Shop Floor
               </p>
               <div className="flex justify-center gap-3 flex-wrap">

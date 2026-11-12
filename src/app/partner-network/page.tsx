@@ -23,13 +23,13 @@ export default function PartnerNetworkPage() {
         <Container>
           <AnimatedSection>
             <div className="max-w-3xl">
-              <p className="text-xs font-medium text-forest uppercase tracking-[0.16em] mb-4">
+              <p className="section-label text-forest mb-4">
                 {hero.eyebrow}
               </p>
-              <h1 className="text-[clamp(32px,4vw,52px)] font-semibold leading-[1.1] tracking-tight text-deep-forest whitespace-pre-line">
+              <h1 className="page-title text-[clamp(32px,4vw,52px)] text-deep-forest whitespace-pre-line">
                 {hero.heading}
               </h1>
-              <p className="mt-6 text-base md:text-[17px] leading-[1.55] text-sage max-w-[580px]">
+              <p className="mt-6 section-description text-deep-forest max-w-[580px]">
                 {hero.subhead}
               </p>
               <div className="mt-8 flex flex-col sm:flex-row gap-4">
@@ -51,10 +51,10 @@ export default function PartnerNetworkPage() {
           <div className="grid md:grid-cols-2 gap-12 md:gap-16">
             {/* For Equipment Companies */}
             <AnimatedSection>
-              <h2 className="text-[clamp(24px,3vw,36px)] font-semibold leading-[1.15] tracking-tight text-deep-forest">
+              <h2 className="text-[clamp(24px,3vw,36px)] section-title text-deep-forest">
                 {forEquipmentCompanies.heading}
               </h2>
-              <p className="mt-4 text-base md:text-[17px] leading-[1.55] text-sage">
+              <p className="mt-4 section-description text-deep-forest">
                 {forEquipmentCompanies.subhead}
               </p>
 
@@ -62,7 +62,7 @@ export default function PartnerNetworkPage() {
                 {forEquipmentCompanies.items.map((item, i) => (
                   <div key={i} className="flex items-start gap-3">
                     <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-forest shrink-0" />
-                    <span className="text-sm text-sage">{item}</span>
+                    <span className="card-description text-sage">{item}</span>
                   </div>
                 ))}
               </div>
@@ -76,10 +76,10 @@ export default function PartnerNetworkPage() {
 
             {/* For Factories */}
             <AnimatedSection delay={0.1}>
-              <h2 className="text-[clamp(24px,3vw,36px)] font-semibold leading-[1.15] tracking-tight text-deep-forest">
+              <h2 className="text-[clamp(24px,3vw,36px)] section-title text-deep-forest">
                 {forFactories.heading}
               </h2>
-              <p className="mt-4 text-base md:text-[17px] leading-[1.55] text-sage">
+              <p className="mt-4 section-description text-deep-forest">
                 {forFactories.subhead}
               </p>
 
@@ -87,7 +87,7 @@ export default function PartnerNetworkPage() {
                 {forFactories.items.map((item, i) => (
                   <div key={i} className="flex items-start gap-3">
                     <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-forest shrink-0" />
-                    <span className="text-sm text-sage">{item}</span>
+                    <span className="card-description text-sage">{item}</span>
                   </div>
                 ))}
               </div>
@@ -107,13 +107,13 @@ export default function PartnerNetworkPage() {
         <Container>
           <AnimatedSection>
             <div className="max-w-3xl">
-              <p className="text-xs font-medium text-forest uppercase tracking-[0.16em] mb-4">
+              <p className="section-label text-forest mb-4">
                 {automation.eyebrow}
               </p>
-              <h2 className="text-[clamp(28px,3vw,40px)] font-semibold leading-[1.15] tracking-tight text-deep-forest">
+              <h2 className="text-[clamp(28px,3vw,40px)] section-title text-deep-forest">
                 {automation.heading}
               </h2>
-              <p className="mt-4 text-base md:text-[17px] leading-[1.55] text-sage max-w-[580px]">
+              <p className="mt-4 section-description text-deep-forest max-w-[580px]">
                 {automation.subhead}
               </p>
             </div>
@@ -135,7 +135,7 @@ export default function PartnerNetworkPage() {
       <section className="py-20 md:py-28">
         <Container>
           <AnimatedSection>
-            <h2 className="text-[clamp(28px,3vw,40px)] font-semibold leading-[1.15] tracking-tight text-deep-forest max-w-xl">
+            <h2 className="text-[clamp(28px,3vw,40px)] section-title text-deep-forest max-w-xl">
               {whyPartner.heading}
             </h2>
           </AnimatedSection>
@@ -143,8 +143,8 @@ export default function PartnerNetworkPage() {
           <div className="mt-10 md:mt-14 grid sm:grid-cols-2 gap-8 md:gap-10 max-w-[800px]">
             {whyPartner.reasons.map((reason, i) => (
               <AnimatedSection key={reason.title} delay={i * 0.08}>
-                <h3 className="text-lg font-semibold text-deep-forest">{reason.title}</h3>
-                <p className="mt-2 text-sm text-sage leading-relaxed">{reason.desc}</p>
+                <h3 className="card-title text-deep-forest">{reason.title}</h3>
+                <p className="mt-2 card-description text-sage">{reason.desc}</p>
               </AnimatedSection>
             ))}
           </div>
@@ -156,10 +156,10 @@ export default function PartnerNetworkPage() {
         <Container>
           <AnimatedSection>
             <div className="max-w-3xl mx-auto text-center">
-              <h2 className="text-[clamp(28px,3vw,40px)] font-semibold leading-[1.15] tracking-tight">
+              <h2 className="text-[clamp(28px,3vw,40px)] section-title">
                 {cta.heading}
               </h2>
-              <p className="mt-4 text-base text-sage max-w-xl mx-auto">
+              <p className="mt-4 section-description text-light-sage max-w-xl mx-auto">
                 {cta.subhead}
               </p>
               <div className="mt-10">

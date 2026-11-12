@@ -7,16 +7,15 @@ export default function InventoryPage() {
       <section className="pt-32 pb-20 bg-warm-bg">
         <Container>
           <div className="max-w-3xl">
-            <p className="text-xs font-medium text-forest uppercase tracking-[0.16em] mb-3">
+            <p className="section-label text-forest mb-3">
               Software
             </p>
-            <h1 className="text-[clamp(32px,3vw,40px)] font-semibold leading-[1.15] tracking-tight mb-8">
+            <h1 className="page-title text-[clamp(32px,3vw,40px)] mb-8">
               Inventory Management
             </h1>
-            <p className="text-base md:text-[17px] text-sage leading-[1.5] mb-8">
+            <p className="section-description text-deep-forest mb-8">
               Knowing what you have is only the first step. Knowing what you
               need next is better.
-              <br />
               Track raw materials, work-in-progress and finished goods with
               real-time visibility across your inventory.
             </p>
@@ -31,7 +30,7 @@ export default function InventoryPage() {
         <Container>
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-white rounded-2xl border border-light-sage p-6">
-              <h3 className="font-semibold text-deep-forest mb-4">Key Features</h3>
+              <h3 className="card-title text-deep-forest mb-4">Key Features</h3>
               <ul className="space-y-3 text-sm text-sage">
                 <li>• Multi-location inventory tracking</li>
                 <li>• Barcode / QR code scanning</li>
@@ -41,7 +40,7 @@ export default function InventoryPage() {
               </ul>
             </div>
             <div className="bg-white rounded-2xl border border-light-sage p-6">
-              <h3 className="font-semibold text-deep-forest mb-4">Benefits</h3>
+              <h3 className="card-title text-deep-forest mb-4">Benefits</h3>
               <ul className="space-y-3 text-sm text-sage">
                 <li>• Prevent stockouts and overstocking</li>
                 <li>• Reduce carrying costs</li>

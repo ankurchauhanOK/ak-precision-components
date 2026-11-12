@@ -10,16 +10,16 @@ export default function ManufacturingCredibilitySection() {
       <Container>
         <div className="grid lg:grid-cols-[1.1fr_1fr] gap-12 items-center">
           <AnimatedSection>
-            <p className="text-xs font-medium text-forest uppercase tracking-[0.16em] mb-3">
+            <p className="section-label text-forest mb-3">
               {credibility.eyebrow}
             </p>
-            <h2 className="text-[clamp(30px,3vw,40px)] font-semibold leading-[1.15] tracking-tight">
+            <h2 className="text-[clamp(30px,3vw,40px)] section-title">
               {credibility.heading}
             </h2>
-            <p className="mt-6 text-sage leading-normal">
+            <p className="mt-6 section-description text-deep-forest">
               {credibility.paragraphs[0]}
             </p>
-            <p className="mt-6 text-sage leading-normal">
+            <p className="mt-6 section-description text-deep-forest">
               {credibility.paragraphs[1]}
             </p>
             <div className="mt-6 flex flex-wrap items-center gap-2">
@@ -51,10 +51,10 @@ export default function ManufacturingCredibilitySection() {
                   href={item.href}
                   className="block bg-white rounded-2xl border border-light-sage p-6 h-full hover:shadow-md hover:border-light-sage transition-all duration-300 group"
                 >
-                  <h3 className="font-semibold text-deep-forest group-hover:text-forest transition-colors">
+                  <h3 className="card-title text-deep-forest group-hover:text-forest transition-colors">
                     {item.title}
                   </h3>
-                  <p className="text-sm text-sage mt-2 mb-3">{item.desc}</p>
+                  <p className="card-description text-sage mt-2 mb-3">{item.desc}</p>
                   <span className="text-sm font-medium text-forest">
                     Explore →
                   </span>

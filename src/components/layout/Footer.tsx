@@ -37,20 +37,20 @@ export default function Footer() {
       <div className="w-full py-16">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           <div className="col-span-2 md:col-span-1">
-            <Link href="/" className="text-xl font-semibold tracking-tight">
+            <Link href="/" className="text-xl font-extrabold tracking-[-0.03em]">
               AK<span className="text-forest">.</span>
-              <span className="hidden sm:inline text-xs text-sage font-normal ml-2">
+              <span className="hidden sm:inline text-xs text-sage font-normal tracking-normal ml-2">
                 Precision Components
               </span>
             </Link>
-            <p className="mt-3 text-sm text-sage leading-normal">
+            <p className="mt-3 text-sm text-sage leading-[1.6]">
               Precision component manufacturing, factory software and an
               expanding industrial partner network.
             </p>
           </div>
           {Object.entries(footerLinks).map(([title, links]) => (
             <div key={title}>
-              <h4 className="text-sm font-medium text-light-sage uppercase tracking-wider mb-3">
+              <h4 className="section-label text-light-sage mb-3">
                 {title}
               </h4>
               <ul className="space-y-2">
@@ -58,7 +58,7 @@ export default function Footer() {
                   <li key={link.href}>
                     <Link
                       href={link.href}
-                      className="text-sm text-sage hover:text-white transition-colors"
+                      className="text-sm font-medium text-sage hover:text-white transition-colors"
                     >
                       {link.label}
                     </Link>
@@ -69,8 +69,8 @@ export default function Footer() {
           ))}
         </div>
         <div className="mt-12 pt-8 border-t border-forest flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-sage">
-          <p>&copy; {new Date().getFullYear()} AK Precision Components.</p>
-          <p>Manufacturing. Software. Industrial Expertise.</p>
+          <p className="font-medium">&copy; {new Date().getFullYear()} AK Precision Components.</p>
+          <p className="font-medium">Manufacturing. Software. Industrial Expertise.</p>
         </div>
       </div>
     </footer>

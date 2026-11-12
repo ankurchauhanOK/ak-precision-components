@@ -34,17 +34,17 @@ export default function ManufacturingPage() {
       <section className="pt-32 pb-20 bg-warm-bg">
         <Container>
           <div className="max-w-3xl">
-            <p className="text-xs font-medium text-forest uppercase tracking-[0.16em] mb-3">
+            <p className="section-label text-forest mb-3">
               Manufacturing
             </p>
-            <h1 className="text-[clamp(32px,3vw,40px)] font-semibold leading-[1.15] tracking-tight mb-8">
+            <h1 className="page-title text-[clamp(32px,3vw,40px)] mb-8">
               Precision is not a specification.
               <br />
               <span className="text-forest">Engineered Excellence.</span>
               <br />
               It is something you have to repeat.
             </h1>
-            <p className="text-base md:text-[17px] text-sage leading-[1.5] mb-8">
+            <p className="section-description text-deep-forest mb-8">
               We manufacture CNC-turned and VMC-machined components for industrial applications
               where dimensional accuracy, repeatability and dependable production matter.
             </p>
@@ -57,7 +57,7 @@ export default function ManufacturingPage() {
 
       <section className="py-20">
         <Container>
-          <h2 className="text-2xl font-semibold mb-8">Capabilities</h2>
+          <h2 className="section-title text-2xl mb-8">Capabilities</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {capabilities.map((cap) => (
               <div
@@ -73,7 +73,7 @@ export default function ManufacturingPage() {
 
       <section className="py-20 bg-warm-bg">
         <Container>
-          <h2 className="text-2xl font-semibold mb-8">Materials</h2>
+          <h2 className="section-title text-2xl mb-8">Materials</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {materials.map((m) => (
               <div
@@ -89,7 +89,7 @@ export default function ManufacturingPage() {
 
       <section className="py-20">
         <Container>
-          <h2 className="text-2xl font-semibold mb-8">Industries We Serve</h2>
+          <h2 className="section-title text-2xl mb-8">Industries We Serve</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {industries.map((ind) => (
               <div

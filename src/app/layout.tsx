@@ -1,50 +1,12 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
+import { Inter } from "next/font/google";
 import "./globals.css";
 import Sidebar from "@/components/layout/Sidebar";
 import { site } from "@/data/smartFactory";
 
-const zodiak = localFont({
-  src: [
-    { path: "../fonts/zodiak-var.woff2", style: "normal", weight: "100 900" },
-    { path: "../fonts/zodiak-italic.woff2", style: "italic", weight: "100 900" },
-  ],
-  variable: "--font-zodiak",
-  display: "swap",
-});
-
-const pally = localFont({
-  src: [
-    { path: "../fonts/pally-variable.woff2", style: "normal", weight: "400 700" },
-  ],
-  variable: "--font-pally",
-  display: "swap",
-});
-
-const sofiaPro = localFont({
-  src: [
-    {
-      path: "../../sofia-pro-cufonfonts/Sofia Pro Regular Az.otf",
-      style: "normal",
-      weight: "400",
-    },
-    {
-      path: "../../sofia-pro-cufonfonts/Sofia Pro Medium Az.otf",
-      style: "normal",
-      weight: "500",
-    },
-    {
-      path: "../../sofia-pro-cufonfonts/Sofia Pro Semi Bold Az.otf",
-      style: "normal",
-      weight: "600",
-    },
-    {
-      path: "../../sofia-pro-cufonfonts/Sofia Pro Bold Az.otf",
-      style: "normal",
-      weight: "700",
-    },
-  ],
-  variable: "--font-sofia",
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
   display: "swap",
 });
 
@@ -59,7 +21,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${zodiak.variable} ${pally.variable} ${sofiaPro.variable} scroll-smooth`}>
+    <html lang="en" className={`${inter.variable} scroll-smooth`}>
       <body className="flex flex-col lg:flex-row min-h-screen lg:h-screen lg:overflow-hidden bg-viewport-bg text-deep-forest font-sans antialiased">
         <Sidebar />
         <div className="flex flex-col flex-1 min-w-0 lg:mt-[60px] lg:ml-6 lg:mr-6">

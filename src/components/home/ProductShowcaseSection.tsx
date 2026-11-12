@@ -20,13 +20,13 @@ export default function ProductShowcaseSection() {
       <Container>
         <AnimatedSection>
           <div className="text-center mb-14">
-            <p className="text-xs font-medium text-forest uppercase tracking-[0.16em] mb-3">
+            <p className="section-label text-forest mb-3">
               The Product
             </p>
-            <h2 className="text-[clamp(30px,3vw,40px)] font-semibold leading-[1.15] tracking-tight">
+            <h2 className="text-[clamp(30px,3vw,40px)] section-title">
               Meet <span className="text-forest">AK Smart Factory Lite</span>
             </h2>
-            <p className="mt-4 text-sage max-w-2xl mx-auto">
+            <p className="mt-4 section-description text-deep-forest max-w-2xl mx-auto">
               A practical factory monitoring and traceability platform for CNC
               and VMC machine shops — not a six-month ERP project.
             </p>

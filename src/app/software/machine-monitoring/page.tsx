@@ -7,16 +7,15 @@ export default function MachineMonitoringPage() {
       <section className="pt-32 pb-20 bg-warm-bg">
         <Container>
           <div className="max-w-3xl">
-            <p className="text-xs font-medium text-forest uppercase tracking-[0.16em] mb-3">
+            <p className="section-label text-forest mb-3">
               Software
             </p>
-            <h1 className="text-[clamp(32px,3vw,40px)] font-semibold leading-[1.15] tracking-tight mb-8">
+            <h1 className="page-title text-[clamp(32px,3vw,40px)] mb-8">
               Machine Monitoring
             </h1>
-            <p className="text-base md:text-[17px] text-sage leading-[1.5] mb-8">
+            <p className="section-description text-deep-forest mb-8">
               A machine that is running is not necessarily a machine that is
               performing.
-              <br />
               Live status, OEE tracking, downtime analysis and alerts to help
               you understand what is actually happening on the shop floor.
             </p>
@@ -31,7 +30,7 @@ export default function MachineMonitoringPage() {
         <Container>
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-white rounded-2xl border border-light-sage p-6">
-              <h3 className="font-semibold text-deep-forest mb-4">Key Features</h3>
+              <h3 className="card-title text-deep-forest mb-4">Key Features</h3>
               <ul className="space-y-3 text-sm text-sage">
                 <li>• Real-time machine status dashboard</li>
                 <li>• OEE (Overall Equipment Effectiveness)</li>
@@ -41,7 +40,7 @@ export default function MachineMonitoringPage() {
               </ul>
             </div>
             <div className="bg-white rounded-2xl border border-light-sage p-6">
-              <h3 className="font-semibold text-deep-forest mb-4">Benefits</h3>
+              <h3 className="card-title text-deep-forest mb-4">Benefits</h3>
               <ul className="space-y-3 text-sm text-sage">
                 <li>• Increase machine utilization</li>
                 <li>• Reduce unplanned downtime</li>

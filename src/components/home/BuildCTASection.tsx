@@ -10,10 +10,10 @@ export default function BuildCTASection() {
       <Container>
         <AnimatedSection>
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-[clamp(30px,3vw,40px)] font-semibold leading-[1.15] tracking-tight">
+            <h2 className="text-[clamp(30px,3vw,40px)] section-title">
               {buildCTA.heading}
             </h2>
-            <p className="mt-6 text-base md:text-[17px] leading-[1.55] text-sage max-w-xl mx-auto">
+            <p className="mt-6 section-description text-light-sage max-w-xl mx-auto">
               {buildCTA.subhead}
             </p>
             <div className="mt-10">

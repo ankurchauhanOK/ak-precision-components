@@ -15,15 +15,14 @@ export default function IndustriesPage() {
       <section className="pt-32 pb-20 bg-warm-bg">
         <Container>
           <div className="max-w-3xl">
-            <p className="text-xs font-medium text-forest uppercase tracking-[0.16em] mb-3">
+            <p className="section-label text-forest mb-3">
               Manufacturing
             </p>
-            <h1 className="text-[clamp(32px,3vw,40px)] font-semibold leading-[1.15] tracking-tight mb-8">
+            <h1 className="page-title text-[clamp(32px,3vw,40px)] mb-8">
               Industries We Serve
             </h1>
-            <p className="text-base md:text-[17px] text-sage leading-[1.5]">
+            <p className="section-description text-deep-forest">
               The part may be small. Its role rarely is.
-              <br />
               Precision components become part of larger systems, machines and products.
               We work across the industries currently represented on our site.
             </p>
@@ -36,8 +35,8 @@ export default function IndustriesPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {industries.map((ind) => (
               <div key={ind.name} className="bg-white rounded-2xl border border-light-sage p-6 hover:shadow-md transition-all">
-                <h3 className="font-semibold text-deep-forest mb-2">{ind.name}</h3>
-                <p className="text-sm text-sage leading-normal">{ind.desc}</p>
+                <h3 className="card-title text-deep-forest mb-2">{ind.name}</h3>
+                <p className="card-description text-sage">{ind.desc}</p>
               </div>
             ))}
           </div>

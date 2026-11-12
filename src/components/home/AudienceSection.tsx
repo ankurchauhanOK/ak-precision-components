@@ -8,10 +8,10 @@ export default function AudienceSection() {
       <Container>
         <AnimatedSection>
           <div className="text-center mb-14">
-            <p className="text-xs font-medium text-forest uppercase tracking-[0.16em] mb-3">
+            <p className="section-label text-forest mb-3">
               {audiences.eyebrow}
             </p>
-            <h2 className="text-[clamp(30px,3vw,40px)] font-semibold leading-[1.15] tracking-tight">
+            <h2 className="text-[clamp(30px,3vw,40px)] section-title">
               {audiences.heading}
             </h2>
           </div>
@@ -24,10 +24,10 @@ export default function AudienceSection() {
                 <span className="inline-block text-xs font-medium text-forest bg-forest/10 rounded-full px-3 py-1 mb-4">
                   {audience.scope}
                 </span>
-                <h3 className="text-xl font-semibold text-deep-forest mb-3">
+                <h3 className="card-title text-deep-forest mb-3">
                   {audience.title}
                 </h3>
-                <p className="text-sm text-sage leading-normal">
+                <p className="card-description text-sage">
                   {audience.desc}
                 </p>
               </div>

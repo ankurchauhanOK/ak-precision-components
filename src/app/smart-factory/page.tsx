@@ -27,13 +27,13 @@ export default function SmartFactoryPage() {
       <section className="pt-32 pb-20 bg-warm-bg">
         <Container>
           <div className="max-w-3xl">
-            <p className="text-xs font-medium text-forest uppercase tracking-[0.16em] mb-3">
+            <p className="section-label text-forest mb-3">
               {productPage.hero.eyebrow}
             </p>
-            <h1 className="text-[clamp(32px,3vw,40px)] font-semibold leading-[1.15] tracking-tight mb-8">
+            <h1 className="page-title text-[clamp(32px,3vw,40px)] mb-8">
               {productPage.hero.heading}
             </h1>
-            <p className="text-base md:text-[17px] text-sage leading-[1.5] mb-8">
+            <p className="section-description text-deep-forest mb-8">
               {productPage.hero.subhead}
             </p>
             <div className="flex flex-wrap gap-4">
@@ -52,10 +52,10 @@ export default function SmartFactoryPage() {
         <Container>
           <AnimatedSection>
             <div className="text-center mb-14">
-              <p className="text-xs font-medium text-forest uppercase tracking-[0.16em] mb-3">
+              <p className="section-label text-forest mb-3">
                 One Platform
               </p>
-              <h2 className="text-[clamp(30px,3vw,40px)] font-semibold leading-[1.15] tracking-tight">
+              <h2 className="text-[clamp(30px,3vw,40px)] section-title">
                 Seven Capabilities
               </h2>
             </div>
@@ -65,12 +65,12 @@ export default function SmartFactoryPage() {
               <AnimatedSection key={cap.title} delay={i * 0.05}>
                 <div className="bg-white rounded-2xl border border-light-sage p-6 h-full hover:shadow-md hover:border-light-sage transition-all duration-300">
                   <div className="flex items-start justify-between mb-3">
-                    <h3 className="font-semibold text-deep-forest text-lg">{cap.title}</h3>
+                    <h3 className="card-title text-deep-forest">{cap.title}</h3>
                     <span className="text-sm font-medium text-forest">
                       {cap.number}
                     </span>
                   </div>
-                  <p className="text-sm text-sage leading-normal">
+                  <p className="card-description text-sage">
                     {cap.desc}
                   </p>
                 </div>
@@ -84,10 +84,10 @@ export default function SmartFactoryPage() {
         <Container>
           <AnimatedSection>
             <div className="text-center mb-14">
-              <p className="text-xs font-medium text-forest uppercase tracking-[0.16em] mb-3">
+              <p className="section-label text-forest mb-3">
                 The Dashboard
               </p>
-              <h2 className="text-[clamp(30px,3vw,40px)] font-semibold leading-[1.15] tracking-tight">
+              <h2 className="text-[clamp(30px,3vw,40px)] section-title">
                 Everything live. Nothing guessed.
               </h2>
             </div>
@@ -167,10 +167,10 @@ export default function SmartFactoryPage() {
         <Container>
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <AnimatedSection>
-              <p className="text-xs font-medium text-forest uppercase tracking-[0.16em] mb-3">
+              <p className="section-label text-forest mb-3">
                 What&apos;s Included
               </p>
-              <h2 className="text-[clamp(30px,3vw,40px)] font-semibold leading-[1.15] tracking-tight mb-8">
+              <h2 className="text-[clamp(30px,3vw,40px)] section-title mb-8">
                 Everything you need to go digital.
               </h2>
               <ul className="space-y-3">
@@ -187,7 +187,7 @@ export default function SmartFactoryPage() {
 
             <AnimatedSection delay={0.1}>
               <div className="bg-deep-forest rounded-3xl p-8">
-                <p className="text-xs font-medium text-sage uppercase tracking-widest mb-6">
+                <p className="section-label text-sage mb-6">
                   {productPage.architecture.label}
                 </p>
                 <div className="space-y-0">
@@ -215,10 +215,10 @@ export default function SmartFactoryPage() {
         <Container>
           <AnimatedSection>
             <div className="text-center mb-14">
-              <p className="text-xs font-medium text-forest uppercase tracking-[0.16em] mb-3">
+              <p className="section-label text-forest mb-3">
                 Deployment
               </p>
-              <h2 className="text-[clamp(30px,3vw,40px)] font-semibold leading-[1.15] tracking-tight">
+              <h2 className="text-[clamp(30px,3vw,40px)] section-title">
                 Start small. Scale when ready.
               </h2>
             </div>
@@ -228,8 +228,8 @@ export default function SmartFactoryPage() {
               <AnimatedSection key={step.step} delay={i * 0.08}>
                 <div className="bg-white rounded-2xl border border-light-sage p-6 h-full hover:shadow-md transition-all duration-300">
                   <p className="text-sm font-medium text-forest mb-3">{step.step}</p>
-                  <h3 className="font-semibold text-deep-forest mb-2">{step.title}</h3>
-                  <p className="text-sm text-sage leading-normal">{step.desc}</p>
+                  <h3 className="card-title text-deep-forest mb-2">{step.title}</h3>
+                  <p className="card-description text-sage">{step.desc}</p>
                 </div>
               </AnimatedSection>
             ))}
@@ -241,16 +241,16 @@ export default function SmartFactoryPage() {
         <Container>
           <AnimatedSection>
             <div className="bg-white rounded-3xl border border-light-sage p-10 md:p-14 text-center max-w-3xl mx-auto shadow-sm">
-              <p className="text-xs font-medium text-forest uppercase tracking-[0.16em] mb-3">
+              <p className="section-label text-forest mb-3">
                 {pricing.eyebrow}
               </p>
-              <h2 className="text-[clamp(30px,3vw,40px)] font-semibold leading-[1.15] tracking-tight mb-4">
+              <h2 className="text-[clamp(30px,3vw,40px)] section-title mb-4">
                 {pricing.heading}
               </h2>
               <p className="text-4xl font-semibold text-deep-forest mb-2">
                 {pricing.startingFrom}
               </p>
-              <p className="text-sm text-sage mb-4">{pricing.range}</p>
+              <p className="card-description text-sage mb-4">{pricing.range}</p>
               <p className="text-sm text-sage max-w-md mx-auto mb-8">
                 {pricing.note}
               </p>
